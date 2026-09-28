@@ -1,0 +1,48 @@
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+secrets/*
+!secrets/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.mobileprovision
+credentials.json
+token.json
+
+# Browser/session data
+browser-profile/
+playwright/.auth/
+storage-state*.json
+cookies*.json
+session*.json
+
+# Private/stateful data that may contain sensitive values
+state/private/
+output/private/
+
+# Automation output
+output/screenshots/
+output/logs/
+output/downloads/
+tmp/
+temp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local tooling
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
