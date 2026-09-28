@@ -1,0 +1,56 @@
+schema_version: 1
+last_updated: "2026-09-28"
+
+rules:
+  - "Codex may use only assets with approved_public_use: true."
+  - "Missing assets must not be replaced with scraped or generated substitutes without explicit approval."
+  - "Never store identity documents or authentication material in this directory."
+
+assets:
+  primary_logo_transparent:
+    expected_path: "assets/logo/nhamycali-logo-transparent.png"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: "NHÀ MỸ CALI"
+    notes: "Awaiting upload."
+
+  avatar_square:
+    expected_path: "assets/avatar/nhamycali-avatar-square.png"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: "NHÀ MỸ CALI"
+    notes: "Awaiting upload."
+
+  helen_headshot:
+    expected_path: "assets/helen/helen-ha-nguyen-headshot.jpg"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: null
+    notes: "Awaiting official/current photo and public-use approval."
+
+  generic_cover_master:
+    expected_path: "assets/cover/nhamycali-cover-master.jpg"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: "NHÀ MỸ CALI"
+    notes: "Awaiting upload or approved design source."
+
+  horizontal_logo:
+    expected_path: "assets/logo/nhamycali-logo-horizontal.png"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: "NHÀ MỸ CALI"
+    notes: "Optional second-wave asset."
+
+  logo_svg_master:
+    expected_path: "assets/logo/nhamycali-logo.svg"
+    present: false
+    approved_public_use: false
+    source: null
+    owner: "NHÀ MỸ CALI"
+    notes: "Optional but preferred if official source exists."
