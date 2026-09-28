@@ -7,12 +7,44 @@ brand:
   ascii_name: "Nha My Cali"
   preferred_username: "nhamycali"
   tagline_vi: "Giúp Người Việt An Tâm Mua Nhà Mỹ"
+  taglines:
+    core_mission_vi: "Giúp Người Việt An Tâm Mua Nhà Mỹ"
+    visual_banner_vi: "Ngôi Nhà Mỹ Mơ Ước Cho Người Việt"
+    avatar_support_en: "Bay Area Dream Home"
+    hierarchy_note: >-
+      The core mission remains the primary brand promise. The banner and avatar
+      lines are approved supporting visual taglines and must not be treated as
+      separate brands or replacements for the core mission.
   category_primary: "Real Estate"
   category_secondary:
     - "Real Estate Agent"
     - "Real Estate Education"
   primary_language: "vi"
   secondary_language: "en"
+
+visual_identity:
+  asset_status: "approved first-wave source set supplied by project owner on 2026-09-28"
+  default_brand_avatar: "assets/avatar/nhamycali-avatar-square.png"
+  full_logo: "assets/logo/nhamycali-logo-transparent.png"
+  helen_professional_portrait: "assets/helen/helen-ha-nguyen-headshot.png"
+  official_cover_banner: "assets/cover/nhamycali-cover-official.png"
+  asset_manifest: "assets/ASSET_MANIFEST.yaml"
+  asset_policy: "assets/PLATFORM_ASSET_POLICY.yaml"
+  palette_status: "No authoritative HEX palette supplied yet"
+  observed_visual_language:
+    - "blue / dark blue"
+    - "white"
+    - "light blue accents"
+    - "house / roof symbol"
+    - "star symbol"
+    - "Bay Area / San Francisco visual context"
+  cover_note: >-
+    The supplied 851x315 banner includes Coldwell Banker Realty co-branding.
+    Use the banner intact when dimensions fit. Do not extract the Coldwell Banker
+    mark or infer a different legal relationship from the visual.
+  identity_rule: >-
+    Brand accounts default to the NHÀ MỸ CALI avatar. Helen's portrait is for
+    accounts or author identities explicitly representing Helen as a person.
 
 website:
   canonical_url: "https://nhamycali.com/"

@@ -33,10 +33,12 @@ Codex phải bắt đầu từ:
 3. `brand/OFFICIAL_LINKS.yaml`
 4. `brand/BRAND_DNA.md`
 5. `brand/COPY_LIBRARY.md`
-6. `campaign/ACCOUNT_CREATION_RULES.md`
-7. `campaign/SEO_LINK_POLICY.md`
-8. `campaign/PLATFORMS.yaml`
-9. `state/`
+6. `assets/ASSET_MANIFEST.yaml`
+7. `assets/PLATFORM_ASSET_POLICY.yaml`
+8. `campaign/ACCOUNT_CREATION_RULES.md`
+9. `campaign/SEO_LINK_POLICY.md`
+10. `campaign/PLATFORMS.yaml`
+11. `state/`
 
 ## Cấu trúc hiện tại
 
@@ -51,7 +53,16 @@ Codex phải bắt đầu từ:
 │   └── COPY_LIBRARY.md
 ├── assets/
 │   ├── README.md
-│   └── ASSET_MANIFEST.yaml
+│   ├── ASSET_MANIFEST.yaml
+│   ├── PLATFORM_ASSET_POLICY.yaml
+│   ├── avatar/
+│   │   └── nhamycali-avatar-square.png
+│   ├── cover/
+│   │   └── nhamycali-cover-official.png
+│   ├── helen/
+│   │   └── helen-ha-nguyen-headshot.png
+│   └── logo/
+│       └── nhamycali-logo-transparent.png
 ├── campaign/
 │   ├── PLATFORMS.yaml
 │   ├── ACCOUNT_CREATION_RULES.md
@@ -104,7 +115,7 @@ Continue to next platform
 - [x] Chặng 1 — Agent rules + brand source of truth.
 - [x] Chặng 2 — Platform registry + SEO/link policy.
 - [x] Chặng 3 — Account state + execution templates.
-- [ ] Chặng 4 — Nạp và duyệt brand assets thật.
+- [x] Chặng 4 — Nạp và duyệt brand assets thật.
 - [ ] Chặng 5 — Xác nhận registration email / recovery workflow ngoài Git.
 - [ ] Chặng 6 — Research live Wave 1 platforms trước khi signup.
 - [ ] Chặng 7 — Pilot automation trên một nhóm nhỏ.
@@ -124,14 +135,24 @@ Xem:
 
 **`docs/HUMAN_INPUTS_REQUIRED.md`**
 
-Ưu tiên hiện tại là nạp asset chính thức:
+Bộ asset first-wave đã hoàn tất và được commit từ đúng các file người dùng cung cấp:
 
-- logo transparent;
-- square avatar;
-- Helen official headshot;
-- generic brand cover/banner.
+- `assets/logo/nhamycali-logo-transparent.png`
+- `assets/avatar/nhamycali-avatar-square.png`
+- `assets/helen/helen-ha-nguyen-headshot.png`
+- `assets/cover/nhamycali-cover-official.png`
 
-Không cần gửi password hoặc giấy tờ định danh vào repo.
+Banner hiện tại là asset chính thức 851×315, đủ làm reference/cover ở nơi phù hợp nhưng **không được coi là high-resolution master cho mọi nền tảng**.
+
+Ưu tiên tiếp theo:
+
+- xác nhận registration email dùng cho các account mới;
+- recovery email/phone nếu muốn sử dụng;
+- cách quản lý password ngoài Git;
+- xác nhận những account cũ mà người dùng biết đã tồn tại;
+- live research Wave 1 trước khi signup.
+
+Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
 
 ## Canonical website
 

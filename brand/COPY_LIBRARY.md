@@ -30,6 +30,23 @@ ASCII fallback when a platform rejects Vietnamese characters:
 
 Do not treat the English support line as a replacement for the Vietnamese core mission.
 
+
+### Approved supporting visual taglines
+
+Banner tagline:
+
+**Ngôi Nhà Mỹ Mơ Ước Cho Người Việt**
+
+Avatar support line:
+
+**Bay Area Dream Home**
+
+Hierarchy rule:
+- “Giúp Người Việt An Tâm Mua Nhà Mỹ” remains the primary brand mission.
+- “Ngôi Nhà Mỹ Mơ Ước Cho Người Việt” is an approved visual/banner tagline.
+- “Bay Area Dream Home” is an approved supporting line present in the brand avatar.
+- Do not rotate these three randomly just to create copy variation.
+
 ---
 
 ## 3. Ultra-short bios
