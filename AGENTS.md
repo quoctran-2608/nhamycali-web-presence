@@ -37,7 +37,8 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 10. `campaign/SEO_LINK_POLICY.md`
 11. `campaign/PLATFORMS.yaml`
 12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
-13. the relevant state files under `state/`
+13. `playbooks/PILOT_SEQUENCE.yaml` and the exact platform playbook before pilot execution
+14. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
@@ -229,6 +230,14 @@ Examples from the 2026-09-28 Wave 1 research:
 - do not treat Feedly follows as backlinks.
 
 Re-check official platform policy immediately before execution if the research snapshot is no longer current.
+
+## 11.2. Playbook precedence
+
+For a researched pilot platform, follow the corresponding file in `playbooks/` rather than improvising browser actions.
+
+The platform playbook may be more restrictive than the generic username, asset, or execution rules in this file. The more specific, safety-preserving instruction wins.
+
+Never use a fallback username merely because it appears in the global username list if the platform-specific playbook says to stop for a naming decision.
 
 ## 12. State discipline
 
