@@ -1,0 +1,93 @@
+schema_version: 1
+last_updated: "2026-09-28"
+
+purpose: >-
+  Tell Codex which approved image to use for each identity context.
+  This policy prevents accidental mixing of the NHÀ MỸ CALI brand identity
+  with Helen Hà Nguyễn's personal/professional identity.
+
+canonical_assets:
+  brand_avatar: "assets/avatar/nhamycali-avatar-square.png"
+  full_logo: "assets/logo/nhamycali-logo-transparent.png"
+  helen_headshot: "assets/helen/helen-ha-nguyen-headshot.png"
+  official_cover: "assets/cover/nhamycali-cover-official.png"
+
+defaults:
+  brand_account_avatar: "brand_avatar"
+  brand_publication_avatar: "brand_avatar"
+  brand_header_logo: "full_logo"
+  human_author_avatar: "helen_headshot"
+  cover_if_compatible: "official_cover"
+
+identity_rules:
+  - "If the account represents NHÀ MỸ CALI as a brand, default to brand_avatar."
+  - "If the account explicitly represents Helen Hà Nguyễn as an individual Realtor/author, use helen_headshot."
+  - "Do not switch a brand account to Helen's face merely because a platform asks for a profile photo."
+  - "Do not switch a Helen individual profile to the brand avatar unless the human owner explicitly chooses co-branding."
+  - "If account identity is ambiguous, stop and ask before publishing."
+
+cover_rules:
+  - "The supplied official cover is 851x315 (~2.70:1), not a universal high-resolution master."
+  - "Use it only when the destination can preserve the meaningful content."
+  - "Do not auto-crop away the Coldwell Banker Realty mark, NHÀ MỸ CALI title, taglines, phone, or website."
+  - "Do not upscale substantially."
+  - "For incompatible dimensions, create a separate approved derivative later."
+
+co_branding_rules:
+  - "The official cover visibly contains Coldwell Banker Realty branding."
+  - "The presence of that logo in the supplied banner does not change the canonical legal-relationship wording in BRAND_ENTITY.yaml."
+  - "Do not extract the Coldwell Banker Realty logo from the banner for standalone reuse."
+  - "Use the supplied cover as an intact approved asset only."
+
+wave_1_guidance:
+
+  gravatar:
+    default: "brand_avatar"
+    exception: "Use helen_headshot only if the Gravatar identity is explicitly Helen's individual professional identity."
+
+  pinterest:
+    default: "brand_avatar"
+    cover: null
+
+  bluesky:
+    default: "brand_avatar"
+    cover: "Only if current Bluesky dimensions can preserve the official cover without destructive crop; otherwise omit until a derivative is approved."
+
+  about_me:
+    default: "stop_and_choose_identity"
+    note: "About.me can be brand-centered or Helen-centered. Decide identity before account creation."
+
+  medium:
+    account_avatar: "stop_and_choose_identity"
+    publication_avatar: "brand_avatar"
+    author_avatar: "helen_headshot"
+    note: "Do not confuse a Medium publication identity with Helen's author identity."
+
+  substack:
+    publication_avatar: "brand_avatar"
+    author_avatar: "helen_headshot"
+    note: "Use Helen's portrait only where Substack explicitly exposes an author/person identity."
+
+  blogger:
+    default: "brand_avatar"
+    header_logo: "full_logo"
+
+  google_sites:
+    header_logo: "full_logo"
+    cover: "official_cover_if_dimensions_fit"
+
+  feedly:
+    default: "brand_avatar_if_profile_image_supported"
+
+  inoreader:
+    default: "brand_avatar_if_public_profile_image_supported"
+
+  linktree:
+    default: "audit_existing_before_change"
+    note: "Do not overwrite the existing official Linktree image until its current branding is compared with the canonical asset set."
+
+quality_checks:
+  - "Confirm the platform preview at small size before saving."
+  - "Check circular-crop preview for clipped text."
+  - "Verify no private metadata/contact value is exposed unintentionally."
+  - "Record any platform-specific derived image path in ASSET_MANIFEST.yaml before use."
