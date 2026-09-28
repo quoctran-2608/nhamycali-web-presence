@@ -39,7 +39,8 @@ Codex phải bắt đầu từ:
 9. `campaign/ACCOUNT_CREATION_RULES.md`
 10. `campaign/SEO_LINK_POLICY.md`
 11. `campaign/PLATFORMS.yaml`
-12. `state/`
+12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
+13. `state/`
 
 ## Cấu trúc hiện tại
 
@@ -73,6 +74,9 @@ Codex phải bắt đầu từ:
 │   ├── EXECUTION_ROADMAP.md
 │   ├── HUMAN_INPUTS_REQUIRED.md
 │   └── REGISTRATION_POLICY.md
+├── research/
+│   ├── WAVE_1_DECISIONS.yaml
+│   └── WAVE_1_LIVE_RESEARCH_2026-09-28.md
 ├── secrets/
 │   └── .env.example
 ├── state/
@@ -120,8 +124,8 @@ Continue to next platform
 - [x] Chặng 4 — Nạp và duyệt brand assets thật.
 - [x] Chặng 5A — Xác nhận registration mailbox + SMS verification policy ngoài Git.
 - [ ] Chặng 5B — Chọn password-management workflow; recovery email là tùy chọn.
-- [ ] Chặng 6 — Research live Wave 1 platforms trước khi signup.
-- [ ] Chặng 7 — Pilot automation trên một nhóm nhỏ.
+- [x] Chặng 6 — Research live Wave 1 platforms trước khi signup.
+- [ ] Chặng 7 — Pilot browser-assisted trên Bluesky → Substack → Blogger, từng nền tảng một.
 - [ ] Chặng 8 — Audit pilot rồi mới scale.
 
 ## Registry hiện tại
@@ -154,11 +158,23 @@ Registration policy hiện đã xác nhận ở mức cần thiết để resear
 - exact values chỉ được nạp qua local `secrets/.env`;
 - Pinterest đã có nhưng không còn nằm trong active campaign.
 
+Live Wave 1 research đã hoàn tất. Kết quả chính:
+
+- **Ready for pilot:** Bluesky, Substack, Blogger.
+- **Existing — audit only:** Gravatar, Linktree.
+- **Manual-only:** Medium.
+- **Deferred:** Google Sites.
+- **Removed from active signup:** About.me, Feedly, Inoreader, Pinterest.
+
+Chi tiết:
+- `research/WAVE_1_LIVE_RESEARCH_2026-09-28.md`
+- `research/WAVE_1_DECISIONS.yaml`
+
 Ưu tiên tiếp theo:
 
 - chọn cách quản lý password ngoài Git;
 - recovery email nếu muốn;
-- live research Wave 1 trước khi signup;
+- bắt đầu pilot **Bluesky trước**, sau đó audit kết quả rồi mới đi Substack/Blogger;
 - xác nhận thêm các account cũ nếu owner nhớ ra.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
