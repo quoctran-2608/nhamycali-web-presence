@@ -68,13 +68,23 @@ Before any actual signup, re-check the exact target in-platform because a public
 
 ## Phase 3 — Pilot batch
 
+Status: **execution playbooks prepared; live account execution not started.**
+
+Pilot package:
+- `docs/CODEX_BROWSER_PILOT.md`
+- `playbooks/PILOT_SEQUENCE.yaml`
+- `playbooks/BLUESKY.md`
+- `playbooks/SUBSTACK.md`
+- `playbooks/BLOGGER.md`
+- `content/seed/`
+
 Do not start with all platforms.
 
 ### Active browser-assisted creation candidates
 
-1. **Bluesky**
-2. **Substack**
-3. **Blogger**
+1. **Bluesky** — run first and stop after public audit.
+2. **Substack** — run only after Bluesky pilot review.
+3. **Blogger** — run only after Substack review.
 
 ### Existing-account audits
 
