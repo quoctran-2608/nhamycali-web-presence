@@ -1,6 +1,6 @@
 platform_id,platform_name,status,username,registration_email,profile_url,website_added,profile_verified,email_verified,credential_managed_externally,manual_action_required,last_checked,notes
-blogger,Blogger,not_started,,,,false,false,false,true,false,,
-gravatar,Gravatar,not_started,,,,false,false,false,true,false,,
+blogger,Blogger,ready_for_pilot,,,,false,false,false,true,false,2026-09-28,Live research complete; inspect authorized Blogger dashboard for existing NHÀ MỸ CALI blog before creating
+gravatar,Gravatar,existing_account_found,helensoldhouses,,https://gravatar.com/helensoldhouses,true,true,false,true,true,2026-09-28,Existing Helen Ha Nguyen personal professional profile already links to NHÀ MỸ CALI; confirm owner access before any changes; do not create duplicate
 wordpress_com,WordPress.com,not_started,,,,false,false,false,true,false,,
 weebly,Weebly,research_needed,,,,false,false,false,true,false,,Distinct use case required
 toodledo,Toodledo,not_suitable,,,,false,false,false,true,false,,Not an SEO target
@@ -8,7 +8,7 @@ tumblr,Tumblr,not_started,,,,false,false,false,true,false,,
 pinterest,Pinterest,not_suitable,,,,false,false,false,true,false,2026-09-28,Owner confirmed an existing account but intentionally excluded Pinterest from the active campaign; do not create or develop unless reactivated
 diigo,Diigo,research_needed,,,,false,false,false,true,false,,No mass bookmarking
 diigo_library,Diigo Library,not_suitable,,,,false,false,false,true,false,,Feature of Diigo; not separate account
-bluesky,Bluesky,not_started,,,,false,false,false,true,false,,
+bluesky,Bluesky,ready_for_pilot,,,,false,false,false,true,false,2026-09-28,Live research complete; re-check in-platform existence before signup; preferred long-term handle @nhamycali.com after separate DNS approval
 instapaper,Instapaper,not_suitable,,,,false,false,false,true,false,,Read-later utility
 bitly,Bitly,not_started,,,,false,false,false,true,false,,Tracking utility; manual plan required
 evernote,Evernote,not_suitable,,,,false,false,false,true,false,,Productivity tool
@@ -22,12 +22,12 @@ fivehundredpx,500px,manual_asset_required,,,,false,false,false,true,true,,Requir
 raindrop,Raindrop.io,research_needed,,,,false,false,false,true,false,,No bookmark spam
 follow_it,Follow.it,not_started,,,,false,false,false,true,false,,
 newsblur,NewsBlur,not_started,,,,false,false,false,true,false,,
-inoreader,Inoreader,not_started,,,,false,false,false,true,false,,
+inoreader,Inoreader,not_suitable,,,,false,false,false,true,false,2026-09-28,Terms explicitly classify automated registrations for SEO boosting as abusive; optional manual internal monitoring only
 feedspot,Feedspot,not_started,,,,false,false,false,true,false,,
 writexo,Writexo,research_needed,,,,false,false,false,true,false,,Exact service/domain unverified
 lnk_bio,Lnk.Bio,not_started,,,,false,false,false,true,false,,
 bloglovin,Bloglovin,research_needed,,,,false,false,false,true,false,,Verify current service health
-feedly,Feedly,not_started,,,,false,false,false,true,false,,
+feedly,Feedly,not_suitable,,,,false,false,false,true,false,2026-09-28,Private feed-following workflow is not a meaningful public backlink; optional internal RSS monitoring only
 skillshare,Skillshare,not_suitable,,,,false,false,false,true,false,,Only for real course strategy
 alltop,Alltop,research_needed,,,,false,false,false,true,false,,Verify current editorial submission
 flipboard,Flipboard,not_started,,,,false,false,false,true,false,,
@@ -35,19 +35,19 @@ feeder,Feeder,not_started,,,,false,false,false,true,false,,
 protopage,Protopage,research_needed,,,,false,false,false,true,false,,Only useful public page
 the_old_reader,The Old Reader,not_started,,,,false,false,false,true,false,,
 justpast_it,Justpast.it (user-provided name),research_needed,,,,false,false,false,true,true,,Ambiguous name; verify before action
-google_sites,Google Sites,not_started,,,,false,false,false,true,false,,Distinct resource-hub plan required
+google_sites,Google Sites,manual_action_required,,,,false,false,false,true,true,2026-09-28,Live research complete; deferred until a distinct resource-hub/event concept is approved
 pearltrees,Pearltrees,research_needed,,,,false,false,false,true,false,,
 ifttt,IFTTT,not_started,,,,false,false,false,true,false,,Automation utility; not backlink target
 postach,Postach / Postach.io,research_needed,,,,false,false,false,true,false,,Verify exact current service/domain
 behance,Behance,manual_asset_required,,,,false,false,false,true,true,,Needs genuine creative portfolio
 strikingly,Strikingly,research_needed,,,,false,false,false,true,false,,Distinct landing/resource purpose required
-about_me,About.me,not_started,,,,false,false,false,true,false,,
+about_me,About.me,not_suitable,,,,false,false,false,true,false,2026-09-28,Current Terms frame service as personal use by an individual; do not create NHÀ MỸ CALI brand account; reconsider only as Helen personal profile
 reddit,Reddit,not_started,,,,false,false,false,true,false,,Profile only by default; no automated promotional posts
 ted,TED,research_needed,,,,false,false,false,true,false,,Relevant public account use case unverified
 disqus,Disqus,not_started,,,,false,false,false,true,false,,No automated comment-link campaign
-substack,Substack,not_started,,,,false,false,false,true,false,,
+substack,Substack,ready_for_pilot,,,,false,false,false,true,false,2026-09-28,Live research complete; human-supervised candidate; re-check account existence before signup
 all4webs,All4webs,research_needed,,,,false,false,false,true,false,,Exact current service/domain unverified
 kickstarter,Kickstarter,not_suitable,,,,false,false,false,true,false,,Only for genuine crowdfunding
-medium,Medium,not_started,,,,false,false,false,true,false,,
+medium,Medium,manual_action_required,,,,false,false,false,true,true,2026-09-28,Medium Rules prohibit automated registration and automated posting; Codex may prepare copy/content but human must perform platform actions
 soundcloud,SoundCloud,manual_asset_required,,,,false,false,false,true,true,,Only with audio/podcast plan
-linktree,Linktree,existing_account_found,nhamycali,,https://linktr.ee/nhamycali,true,true,false,true,false,2026-09-28,Known official public account; audit only
+linktree,Linktree,existing_account_found,nhamycali,,https://linktr.ee/nhamycali,true,true,false,true,true,2026-09-28,Public audit complete; official account exists; Terms restrict automated access/editing; human may later remove Pinterest icon
