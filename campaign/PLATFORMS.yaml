@@ -27,7 +27,6 @@ waves:
     objective: "High-signal entity, publishing, social and feed presence"
     platform_ids:
       - gravatar
-      - pinterest
       - bluesky
       - about_me
       - medium
@@ -161,12 +160,12 @@ platforms:
     name: "Pinterest"
     domain: "pinterest.com"
     role: "visual"
-    tier: 1
-    initial_status: "existing_account_check_needed"
-    automation_mode: "audit_existing"
-    website_link_expected: true
-    publish_content: true
-    note: "Prior public Linktree research indicated a Pinterest link, but the canonical profile URL is not yet recorded. Verify before creating."
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: null
+    publish_content: false
+    note: "Owner confirmed an existing NHÀ MỸ CALI Pinterest account but intentionally excluded Pinterest from the active web-presence/SEO campaign because the channel is not a current brand priority. Do not create, develop, or modify it unless the owner later reactivates the platform."
 
   - id: diigo
     name: "Diigo"
