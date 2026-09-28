@@ -5,7 +5,7 @@ wordpress_com,WordPress.com,not_started,,,,false,false,false,true,false,,
 weebly,Weebly,research_needed,,,,false,false,false,true,false,,Distinct use case required
 toodledo,Toodledo,not_suitable,,,,false,false,false,true,false,,Not an SEO target
 tumblr,Tumblr,not_started,,,,false,false,false,true,false,,
-pinterest,Pinterest,existing_account_check_needed,,,,false,false,false,true,false,,Prior Linktree research indicated Pinterest; verify URL/ownership first
+pinterest,Pinterest,not_suitable,,,,false,false,false,true,false,2026-09-28,Owner confirmed an existing account but intentionally excluded Pinterest from the active campaign; do not create or develop unless reactivated
 diigo,Diigo,research_needed,,,,false,false,false,true,false,,No mass bookmarking
 diigo_library,Diigo Library,not_suitable,,,,false,false,false,true,false,,Feature of Diigo; not separate account
 bluesky,Bluesky,not_started,,,,false,false,false,true,false,,

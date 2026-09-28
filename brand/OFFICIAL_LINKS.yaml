@@ -29,7 +29,10 @@ canonical:
 
 unverified_or_not_yet_recorded:
   tiktok: null
-  pinterest: null
+  pinterest:
+    url: null
+    status: "known_existing_excluded_from_campaign"
+    note: "Owner confirmed an existing NHÀ MỸ CALI Pinterest account. Canonical URL is not recorded here, and the platform is intentionally excluded from active development. Do not create or modify unless reactivated."
   bluesky: null
   medium: null
   substack: null

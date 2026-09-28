@@ -46,6 +46,8 @@ Typical allowed public fields:
 
 The email used to register an account does **not** automatically become a public contact field.
 
+Use the owner-approved runtime registration mailbox from `secrets/.env` according to `docs/REGISTRATION_POLICY.md`. Do not copy that private login value into public state files.
+
 The automation must distinguish:
 
 - `registration_email`: private login/account-purpose value;
@@ -125,12 +127,20 @@ Record:
 
 ## 10. Phone/SMS
 
+Follow `docs/REGISTRATION_POLICY.md`.
+
+Current precedence is:
+1. owner-approved Vietnam mobile from runtime secrets;
+2. owner-approved U.S. business phone as fallback only when the platform does not accept Vietnam numbers.
+
 Do not use:
 - temporary SMS services;
 - rented verification numbers;
 - numbers not controlled by the authorized brand owner.
 
-If SMS is mandatory and no approved number is configured:
+OTP entry is a human-action step. Never store OTP values.
+
+If SMS is mandatory and no approved runtime number is configured:
 - stop;
 - record manual action.
 

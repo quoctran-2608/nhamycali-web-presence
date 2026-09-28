@@ -29,11 +29,15 @@ Completed:
 - asset provenance/hashes recorded;
 - brand-vs-person usage policy defined.
 
+Confirmed:
+- primary registration mailbox selected by the owner and kept as a runtime secret outside Git;
+- preferred SMS verification order selected: Vietnam mobile first, U.S. business phone only as fallback when Vietnam numbers are unsupported;
+- Pinterest is known to exist and is intentionally excluded from the active campaign.
+
 Still required before pilot signup:
-- confirm registration-email strategy;
-- confirm recovery email/phone policy if used;
-- confirm password-management workflow outside Git;
-- confirm any pre-existing accounts already known by the owner.
+- choose/confirm password-management workflow outside Git;
+- optionally choose a recovery email;
+- confirm any additional pre-existing accounts already known by the owner.
 
 Current public contact facts remain in `brand/BRAND_ENTITY.yaml` and should be re-confirmed if the owner reports a change.
 
@@ -70,7 +74,7 @@ Recommended pilot:
 3. Bluesky
 4. Medium
 
-Pinterest should be audited first because an existing official account may already exist.
+Pinterest is excluded from the active campaign by owner decision and should not be part of the pilot.
 
 For each:
 - verify existing account;
@@ -115,10 +119,11 @@ Only seed content where there is an actual content role.
 
 Only with suitable assets:
 
-- Pinterest
 - Behance
 - 500px
 - SoundCloud
+
+Pinterest remains excluded unless explicitly reactivated by the owner.
 
 No scraped or synthetic representation of real properties/persons.
 
