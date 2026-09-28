@@ -1,0 +1,50 @@
+schema_version: 1
+last_verified: "2026-09-28"
+
+canonical:
+  website:
+    url: "https://nhamycali.com/"
+    status: "verified"
+
+  facebook:
+    url: "https://www.facebook.com/nhamycali/"
+    handle: "nhamycali"
+    status: "verified_public"
+
+  instagram:
+    url: "https://www.instagram.com/nhamycali/"
+    handle: "nhamycali"
+    status: "verified_public"
+
+  youtube:
+    url: "https://www.youtube.com/@nhamycali"
+    handle: "@nhamycali"
+    channel_id: "UCcl9WeLlvBw4BT8aLYgHl3w"
+    status: "verified_public"
+
+  linktree:
+    url: "https://linktr.ee/nhamycali"
+    handle: "nhamycali"
+    status: "verified_public"
+
+unverified_or_not_yet_recorded:
+  tiktok: null
+  pinterest: null
+  bluesky: null
+  medium: null
+  substack: null
+  blogger: null
+  wordpress_com: null
+  google_sites: null
+  about_me: null
+  lnk_bio: null
+  gravatar: null
+  flipboard: null
+  feedly: null
+  inoreader: null
+  feedspot: null
+
+rules:
+  - "Never infer a profile URL from the preferred username."
+  - "Search for existing official accounts before creating new accounts."
+  - "Move a URL into canonical only after public verification and known ownership."
