@@ -72,16 +72,17 @@ Use only if a distinct public purpose is defined. Do not create redundant micros
 
 ### Pinterest
 
-Potential boards:
+**Current campaign status: excluded by owner.**
 
-- Nhà Đẹp California
-- Mua Nhà Mỹ
-- San Jose Real Estate
-- Bay Area Homes
-- Open House California
-- Nhà Vui
+NHÀ MỸ CALI already has a Pinterest presence, but Pinterest is not a current channel-development priority for this program.
 
-Pins should link to the most relevant verified page.
+Do not:
+- create a second account;
+- seed boards;
+- publish pins;
+- modify the existing account for SEO purposes.
+
+Revisit only if the owner explicitly reactivates Pinterest later.
 
 ### Behance
 
@@ -166,15 +167,16 @@ Never seed from unverified scraped third-party copy.
 Start with a small set:
 
 1. Gravatar — entity/profile
-2. Pinterest — visual discovery
-3. Bluesky — social presence
-4. About.me — entity profile if still suitable
-5. Medium — educational publishing
-6. Substack — newsletter
-7. Blogger — supporting publication
-8. Google Sites — only if a distinct resource-hub concept is approved
-9. Feedly — feed discovery
-10. Inoreader — feed discovery
+2. Bluesky — social presence
+3. About.me — entity profile if still suitable
+4. Medium — educational publishing
+5. Substack — newsletter
+6. Blogger — supporting publication
+7. Google Sites — only if a distinct resource-hub concept is approved
+8. Feedly — feed discovery
+9. Inoreader — feed discovery
+
+Pinterest is intentionally excluded from the active campaign by owner decision.
 
 Audit before expanding.
 
