@@ -19,6 +19,8 @@ Seed content must serve one of these purposes:
 
 ### Medium
 
+**Execution rule: manual platform actions only.** Medium Rules currently prohibit automated/systematic/programmatic account registration and posting. Codex may prepare drafts, copy and QA, but must not execute automated signup/posting.
+
 Recommended role:
 - educational essays;
 - buyer myths;
@@ -125,12 +127,24 @@ Profile may be created if there is a legitimate commenting workflow.
 
 ## 5. Distribution/readers
 
-Platforms such as Feedly, Inoreader, NewsBlur, Feeder, Follow.it, Feedspot, The Old Reader should be evaluated for:
+### Feedly
 
-- feed discovery;
-- public feed page;
-- notification/subscription;
-- current availability.
+Removed from active SEO/account signup after live research. Following a source is primarily a private content-consumption workflow, not a meaningful public backlink.
+
+Optional use:
+- internal RSS monitoring;
+- checking whether the NHÀ MỸ CALI feed is discoverable.
+
+### Inoreader
+
+Removed from active SEO/account signup. Current Terms explicitly identify automated registrations for SEO boosting as abusive.
+
+Optional use:
+- manually configured internal monitoring only.
+
+### Other readers/distribution platforms
+
+NewsBlur, Feeder, Follow.it, Feedspot and The Old Reader still require individual live research before any execution.
 
 Do not create fake “content” inside a feed reader just for a link.
 
@@ -140,8 +154,9 @@ Examples:
 
 - Linktree
 - Lnk.bio
-- About.me
 - Gravatar
+
+About.me is currently excluded from NHÀ MỸ CALI brand signup under the live Terms interpretation. It may only be reconsidered as a Helen personal profile with explicit approval.
 
 Purpose:
 - entity consistency;
@@ -162,23 +177,35 @@ When seeding content, prefer:
 
 Never seed from unverified scraped third-party copy.
 
-## 8. First-wave recommendation
+## 8. First-wave recommendation — updated after live research
 
-Start with a small set:
+### Browser-assisted pilot candidates
 
-1. Gravatar — entity/profile
-2. Bluesky — social presence
-3. About.me — entity profile if still suitable
-4. Medium — educational publishing
-5. Substack — newsletter
-6. Blogger — supporting publication
-7. Google Sites — only if a distinct resource-hub concept is approved
-8. Feedly — feed discovery
-9. Inoreader — feed discovery
+1. Bluesky — social/entity presence.
+2. Substack — newsletter/editorial channel.
+3. Blogger — supporting educational publication.
 
-Pinterest is intentionally excluded from the active campaign by owner decision.
+### Audit existing
 
-Audit before expanding.
+4. Gravatar — existing Helen professional profile already links NHÀ MỸ CALI.
+5. Linktree — existing official account; manual changes only.
+
+### Manual-only
+
+6. Medium — useful educational publishing channel, but do not automate platform signup/posting.
+
+### Deferred
+
+7. Google Sites — only if a distinct resource-hub/event concept is approved.
+
+### Excluded from active signup
+
+- About.me
+- Feedly
+- Inoreader
+- Pinterest
+
+Audit the first three candidates one platform at a time before expanding.
 
 ## 9. Success criteria
 

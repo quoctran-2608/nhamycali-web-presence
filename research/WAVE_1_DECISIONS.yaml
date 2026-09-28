@@ -1,0 +1,170 @@
+schema_version: 1
+research_date: "2026-09-28"
+
+summary:
+  active_pilot_candidates:
+    - bluesky
+    - substack
+    - blogger
+  existing_account_audits:
+    - gravatar
+    - linktree
+  manual_platform_execution:
+    - medium
+  deferred:
+    - google_sites
+  removed_from_active_signup:
+    - about_me
+    - feedly
+    - inoreader
+    - pinterest
+
+platforms:
+
+  gravatar:
+    decision: "audit_existing_only"
+    existing_profile_url: "https://gravatar.com/helensoldhouses"
+    existing_identity: "Helen Ha Nguyen personal professional profile"
+    brand_link_present: true
+    public_profile_verified: true
+    ownership_access_confirmed: false
+    create_new_account: false
+    rationale: "Existing Helen profile already links to NHÀ MỸ CALI; duplicate profile adds little value."
+    official_sources:
+      - "https://support.gravatar.com/your-profile/links/"
+      - "https://support.gravatar.com/your-profile/"
+      - "https://support.gravatar.com/managing-account-settings/"
+
+  bluesky:
+    decision: "active_pilot_candidate"
+    existing_public_match_found: false
+    existing_search_confidence: "targeted web search only; re-check inside platform"
+    create_new_account_if_absent: true
+    execution: "human_supervised_browser"
+    preferred_long_term_handle: "@nhamycali.com"
+    requires_dns_for_domain_handle: true
+    brand_avatar: "assets/avatar/nhamycali-avatar-square.png"
+    rationale: "Official organizations are supported; Bluesky encourages owned-domain handles for organizational identity verification."
+    official_sources:
+      - "https://bsky.social/about/support/tos"
+      - "https://bsky.social/about/blog/4-28-2023-domain-handle-tutorial"
+      - "https://bsky.social/about/blog/04-21-2025-verification"
+
+  about_me:
+    decision: "not_suitable_for_brand_campaign"
+    create_new_account: false
+    execution: "none"
+    rationale: "Current public Terms frame About.me as personal use by an individual and not on behalf of/for benefit of a third party."
+    reconsideration: "Only as Helen's personal professional profile with explicit human decision and fresh Terms check."
+    official_sources:
+      - "https://about.me/features/signature"
+      - "https://about.me/legal/terms"
+
+  medium:
+    decision: "manual_only"
+    existing_public_match_found: false
+    existing_search_confidence: "targeted web search only; re-check inside Medium"
+    automated_signup_allowed_by_project: false
+    automated_posting_allowed_by_project: false
+    rationale: "Medium Rules prohibit registering accounts or posting content automatically/systematically/programmatically."
+    profile_link_capability: true
+    publication_requires_active_membership: true
+    codex_allowed_work:
+      - "draft bio"
+      - "draft About page"
+      - "draft articles"
+      - "prepare approved images"
+      - "provide manual setup checklist"
+    official_sources:
+      - "https://help.medium.com/hc/en-us/articles/115004747067-Your-profile-page"
+      - "https://help.medium.com/hc/en-us/articles/115004681607-Getting-started-with-a-Medium-publication"
+      - "https://help.medium.com/hc/en-us/articles/213477928-Medium-Rules"
+
+  substack:
+    decision: "active_pilot_candidate"
+    existing_public_match_found: false
+    existing_search_confidence: "targeted web search only; re-check inside Substack"
+    create_new_account_if_absent: true
+    execution: "human_supervised_browser"
+    custom_domain_required: false
+    canonical_site_should_remain: "https://nhamycali.com/"
+    rationale: "Strong newsletter/publishing fit with profile, website/social links, homepage links and outbound navigation."
+    official_sources:
+      - "https://support.substack.com/hc/en-us/articles/29152946791188-How-can-I-publish-on-Substack"
+      - "https://support.substack.com/hc/en-us/articles/360037825111-How-do-I-create-a-publication-on-Substack"
+      - "https://support.substack.com/hc/en-us/articles/360059181172-How-do-I-add-links-to-my-Substack-homepage"
+      - "https://support.substack.com/hc/en-us/articles/20512194655892-How-do-I-organize-the-navigation-bar-on-my-Substack-publication"
+      - "https://substack.com/tos"
+
+  blogger:
+    decision: "active_pilot_candidate"
+    existing_public_match_found: false
+    existing_search_confidence: "targeted web search only; inspect Blogger dashboard after authorized Google login"
+    create_new_blog_if_absent: true
+    execution: "human_supervised_browser"
+    account_model: "Google Account"
+    rationale: "Supports public blog, posts, static pages, and page-list links to external websites."
+    official_sources:
+      - "https://support.google.com/blogger/answer/1623800"
+      - "https://support.google.com/blogger/answer/154172"
+      - "https://support.google.com/blogger/answer/165955"
+
+  google_sites:
+    decision: "deferred_concept_required"
+    create_new_site_now: false
+    execution: "manual_plan_required"
+    rationale: "Technically supports public sites and external buttons, but a thin site made only for a backlink is not justified."
+    acceptable_future_use:
+      - "distinct resource hub"
+      - "event microsite"
+      - "specific public resource that cannot be served better on nhamycali.com"
+    official_sources:
+      - "https://support.google.com/sites/answer/98081"
+      - "https://support.google.com/sites/answer/6372880"
+      - "https://support.google.com/sites/answer/90538"
+
+  feedly:
+    decision: "remove_from_active_signup"
+    create_new_account_for_seo: false
+    execution: "skip_for_seo"
+    rationale: "Follow Sources is primarily a private content-consumption workflow; not a meaningful public backlink asset."
+    optional_future_use: "internal RSS monitoring / feed-discoverability check"
+    official_sources:
+      - "https://docs.feedly.com/article/806-how-to-follow-sources"
+      - "https://developers.feedly.com/reference/feedly-api-terms-of-service"
+
+  inoreader:
+    decision: "remove_from_active_signup"
+    create_new_account_for_seo: false
+    execution: "skip_for_seo"
+    rationale: "Terms explicitly classify automated registrations for SEO boosting as abusive."
+    optional_future_use: "manual internal monitoring only"
+    official_sources:
+      - "https://www.inoreader.com/ca/tos"
+      - "https://www.inoreader.com/blog/2024/11/getting-started-with-inoreader.html"
+
+  linktree:
+    decision: "existing_account_manual_audit_only"
+    existing_profile_url: "https://linktr.ee/nhamycali"
+    public_profile_verified: true
+    create_new_account: false
+    automated_editing_allowed_by_project: false
+    rationale: "Official account already exists; Linktree Terms restrict bots/scripts/automated processes and multiple automated account creation."
+    observed:
+      title: "NHÀ MỸ CALI | Giúp Người Việt"
+      description: "Kênh bất động sản Bay Area, California đáng tin cậy cho cộng đồng người Việt"
+      canonical_website_present: true
+      pinterest_icon_present: true
+      joined: "April 2025"
+    human_audit_recommendations:
+      - "Consider removing Pinterest icon because Pinterest is no longer an active brand priority."
+      - "Compare current avatar with canonical asset set."
+      - "Keep nhamycali.com prominent."
+    official_sources:
+      - "https://linktr.ee/nhamycali"
+      - "https://linktr.ee/s/terms"
+
+limitations:
+  - "No-match web search is not proof that an account does not exist."
+  - "Re-check exact account existence inside the target platform immediately before signup."
+  - "Policies and interfaces may change after the research date."

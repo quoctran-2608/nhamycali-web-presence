@@ -27,6 +27,14 @@ canonical:
     handle: "nhamycali"
     status: "verified_public"
 
+related_professional_profiles:
+  helen_gravatar:
+    url: "https://gravatar.com/helensoldhouses"
+    identity: "Helen Ha Nguyen"
+    status: "verified_public_ownership_access_not_confirmed"
+    brand_link_present: true
+    note: "Existing personal professional profile already links to NHÀ MỸ CALI. Do not treat as a separate NHÀ MỸ CALI brand account or create a duplicate solely for SEO."
+
 unverified_or_not_yet_recorded:
   tiktok: null
   pinterest:

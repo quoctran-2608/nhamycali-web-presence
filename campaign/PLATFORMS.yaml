@@ -18,23 +18,21 @@ last_updated: "2026-09-28"
 # Automation modes:
 # candidate            = may proceed after preflight verification
 # audit_existing       = find/verify existing official account; do not create duplicate
+# manual_only          = platform action must be performed manually; Codex may prepare copy/checklists
 # manual_plan_required = do not auto-create/publish until a human-approved use case exists
 # skip_for_seo         = do not create for backlink purposes
 # research_first       = verify exact platform/current status before any account action
 
 waves:
   wave_1:
-    objective: "High-signal entity, publishing, social and feed presence"
+    objective: "Live-researched high-signal presence; execution mode differs by platform"
     platform_ids:
       - gravatar
       - bluesky
-      - about_me
       - medium
       - substack
       - blogger
       - google_sites
-      - feedly
-      - inoreader
       - linktree
 
   wave_2:
@@ -87,6 +85,9 @@ waves:
       - writexo
       - all4webs
       - justpast_it
+      - about_me
+      - feedly
+      - inoreader
 
 platforms:
 
@@ -95,22 +96,23 @@ platforms:
     domain: "blogger.com"
     role: "publishing"
     tier: 1
-    initial_status: "not_started"
+    initial_status: "ready_for_pilot"
     automation_mode: "candidate"
     website_link_expected: true
     publish_content: true
-    note: "Use as a distinct supporting publication; do not mirror the full main site."
+    note: "Live research complete 2026-09-28. Uses a Google Account. Inspect the authorized Blogger dashboard for any existing NHÀ MỸ CALI blog before creating one. Use only as a distinct supporting publication; do not mirror the full main site."
 
   - id: gravatar
     name: "Gravatar"
     domain: "gravatar.com"
     role: "entity_profile"
     tier: 1
-    initial_status: "not_started"
-    automation_mode: "candidate"
+    initial_status: "existing_account_found"
+    automation_mode: "audit_existing"
     website_link_expected: true
     publish_content: false
-    note: "Good entity/profile candidate; use approved avatar."
+    canonical_url: "https://gravatar.com/helensoldhouses"
+    note: "Live research found an existing Helen Ha Nguyen personal professional profile already linking to NHÀ MỸ CALI. Do not create a duplicate. Confirm owner access before any normalization."
 
   - id: wordpress_com
     name: "WordPress.com"
@@ -194,11 +196,12 @@ platforms:
     domain: "bsky.app"
     role: "social"
     tier: 1
-    initial_status: "not_started"
+    initial_status: "ready_for_pilot"
     automation_mode: "candidate"
     website_link_expected: true
     publish_content: true
-    note: "Public social presence and educational updates."
+    preferred_long_term_handle: "@nhamycali.com"
+    note: "Live research complete 2026-09-28. Official organizations are supported; Bluesky strongly encourages owned-domain handles. Re-check in-platform existence before signup. Domain-handle DNS is a separate human-approved step."
 
   - id: instapaper
     name: "Instapaper"
@@ -346,13 +349,13 @@ platforms:
   - id: inoreader
     name: "Inoreader"
     domain: "inoreader.com"
-    role: "rss_distribution"
-    tier: 1
-    initial_status: "not_started"
-    automation_mode: "candidate"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
     website_link_expected: false
     publish_content: false
-    note: "Evaluate feed discovery/subscription and any public profile/feed page."
+    note: "Live Terms research 2026-09-28 explicitly identifies automated registrations for SEO boosting as abusive. Do not create an account for this campaign. Optional later use: manually configured internal monitoring only."
 
   - id: feedspot
     name: "Feedspot"
@@ -401,13 +404,13 @@ platforms:
   - id: feedly
     name: "Feedly"
     domain: "feedly.com"
-    role: "rss_distribution"
-    tier: 1
-    initial_status: "not_started"
-    automation_mode: "candidate"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
     website_link_expected: false
     publish_content: false
-    note: "Use for feed discovery/subscription; do not describe private subscription as a backlink."
+    note: "Live research 2026-09-28: Follow Sources is primarily a private content-consumption workflow, not a meaningful public backlink. Optional later use for internal RSS monitoring/feed-discoverability checks."
 
   - id: skillshare
     name: "Skillshare"
@@ -490,12 +493,12 @@ platforms:
     name: "Google Sites"
     domain: "sites.google.com"
     role: "publishing"
-    tier: 1
-    initial_status: "not_started"
+    tier: 2
+    initial_status: "manual_action_required"
     automation_mode: "manual_plan_required"
     website_link_expected: true
     publish_content: true
-    note: "Create only after a distinct resource-hub purpose is defined; no doorway-site duplication."
+    note: "Live research complete 2026-09-28. Google Sites supports public publishing and outbound buttons, but creation is deferred until a distinct resource-hub or event use case is approved. Do not create a thin backlink microsite."
 
   - id: pearltrees
     name: "Pearltrees"
@@ -556,12 +559,12 @@ platforms:
     name: "About.me"
     domain: "about.me"
     role: "entity_profile"
-    tier: 1
-    initial_status: "not_started"
-    automation_mode: "candidate"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "manual_only"
     website_link_expected: true
     publish_content: false
-    note: "Good candidate if current free/public profile remains suitable."
+    note: "Live Terms research 2026-09-28: current Terms frame About.me as personal use by an individual and not on behalf of/for the benefit of a third party. Do not create a NHÀ MỸ CALI brand account. Reconsider only as Helen's personal professional profile with explicit human approval."
 
   - id: reddit
     name: "Reddit"
@@ -601,11 +604,11 @@ platforms:
     domain: "substack.com"
     role: "publishing"
     tier: 1
-    initial_status: "not_started"
+    initial_status: "ready_for_pilot"
     automation_mode: "candidate"
     website_link_expected: true
     publish_content: true
-    note: "Use as a real newsletter/editorial channel, not a one-post backlink shell."
+    note: "Live research complete 2026-09-28. Strong newsletter/editorial fit with profile and homepage links. Use a human-supervised browser session, re-check account existence first, and do not mirror the entire canonical website."
 
   - id: all4webs
     name: "All4webs"
@@ -634,11 +637,11 @@ platforms:
     domain: "medium.com"
     role: "publishing"
     tier: 1
-    initial_status: "not_started"
-    automation_mode: "candidate"
+    initial_status: "manual_action_required"
+    automation_mode: "manual_only"
     website_link_expected: true
     publish_content: true
-    note: "Good educational publishing candidate. Use original/substantial adapted content."
+    note: "Live Rules research 2026-09-28: Medium prohibits registering accounts or posting content automatically/systematically/programmatically. Keep Medium as a valuable manual publishing candidate; Codex may draft copy/content/checklists but must not execute automated signup or posting. Creating a Medium publication currently requires active membership."
 
   - id: soundcloud
     name: "SoundCloud"
@@ -657,8 +660,8 @@ platforms:
     role: "entity_profile"
     tier: 1
     initial_status: "existing_account_found"
-    automation_mode: "audit_existing"
+    automation_mode: "manual_only"
     website_link_expected: true
     publish_content: false
     canonical_url: "https://linktr.ee/nhamycali"
-    note: "Known official public account. Audit/normalize only; do not create another."
+    note: "Public audit completed 2026-09-28. Official account already exists and links nhamycali.com plus Facebook/Instagram/YouTube/WhatsApp/Pinterest. Linktree Terms restrict bots/scripts and automated access; do not automate edits or create another account. Human may later remove Pinterest icon."

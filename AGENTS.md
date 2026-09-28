@@ -36,7 +36,8 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 9. `campaign/ACCOUNT_CREATION_RULES.md`
 10. `campaign/SEO_LINK_POLICY.md`
 11. `campaign/PLATFORMS.yaml`
-12. the relevant state files under `state/`
+12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
+13. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
@@ -216,6 +217,19 @@ For each platform:
 16. Record blockers in `state/manual_actions.md`.
 17. Save evidence/screenshot outside Git if it may contain sensitive data.
 
+## 11.1. Live-research precedence
+
+For platforms already researched in `research/`, the latest dated research decision takes precedence over older generic assumptions in campaign planning.
+
+Examples from the 2026-09-28 Wave 1 research:
+- do not create a duplicate Gravatar account when Helen's existing profile already serves the identity/link purpose;
+- do not automate Medium signup/posting;
+- do not create Inoreader accounts for SEO boosting;
+- do not create About.me as a NHÀ MỸ CALI brand account under the current Terms interpretation;
+- do not treat Feedly follows as backlinks.
+
+Re-check official platform policy immediately before execution if the research snapshot is no longer current.
+
 ## 12. State discipline
 
 Every platform must have a state.
@@ -224,6 +238,7 @@ Allowed high-level statuses:
 
 - `not_started`
 - `research_needed`
+- `ready_for_pilot`
 - `existing_account_found`
 - `ownership_check_needed`
 - `in_progress`
