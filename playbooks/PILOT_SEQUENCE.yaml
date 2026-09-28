@@ -1,0 +1,97 @@
+schema_version: 1
+last_updated: "2026-09-28"
+
+purpose: >-
+  Execution order and gates for the first live browser-assisted NHÀ MỸ CALI
+  web-presence pilot. This file does not authorize bypassing security controls.
+
+global_gates:
+  required_reading:
+    - "AGENTS.md"
+    - "brand/BRAND_ENTITY.yaml"
+    - "brand/OFFICIAL_LINKS.yaml"
+    - "brand/COPY_LIBRARY.md"
+    - "assets/ASSET_MANIFEST.yaml"
+    - "assets/PLATFORM_ASSET_POLICY.yaml"
+    - "docs/REGISTRATION_POLICY.md"
+    - "research/WAVE_1_DECISIONS.yaml"
+  runtime_secrets_required:
+    - "REGISTRATION_EMAIL"
+  optional_runtime_secrets:
+    - "SMS_PHONE_PRIMARY"
+    - "SMS_PHONE_FALLBACK"
+  password_storage_requirement: >-
+    Before creating more than one new account, confirm that unique credentials
+    can be stored securely outside Git. Browser/password-manager storage is acceptable
+    if configured by the authorized owner.
+  stop_on:
+    - "CAPTCHA requiring human interaction"
+    - "OTP/SMS code"
+    - "identity or business document request"
+    - "payment request not explicitly authorized"
+    - "existing account with uncertain ownership"
+    - "unexpected Terms/policy conflict"
+    - "requested public field would expose a private registration secret"
+
+sequence:
+
+  - order: 1
+    platform_id: "bluesky"
+    playbook: "playbooks/BLUESKY.md"
+    mode: "human_supervised_browser"
+    goal: "Create or normalize one official NHÀ MỸ CALI brand account if absent."
+    post_step_gate: "Audit public profile before continuing to another new account."
+
+  - order: 2
+    platform_id: "gravatar"
+    playbook: "playbooks/GRAVATAR_AUDIT.md"
+    mode: "audit_existing"
+    goal: "Confirm ownership/access and canonical link on existing Helen profile."
+    post_step_gate: "No new Gravatar account."
+
+  - order: 3
+    platform_id: "linktree"
+    playbook: "playbooks/LINKTREE_AUDIT.md"
+    mode: "manual_audit"
+    goal: "Review existing official Linktree; no automated edits."
+    post_step_gate: "Record recommendations only unless owner manually edits."
+
+  - order: 4
+    platform_id: "substack"
+    playbook: "playbooks/SUBSTACK.md"
+    mode: "human_supervised_browser"
+    goal: "Create a genuine NHÀ MỸ CALI newsletter/publication if absent."
+    post_step_gate: "Verify public profile/publication and first content before continuing."
+
+  - order: 5
+    platform_id: "blogger"
+    playbook: "playbooks/BLOGGER.md"
+    mode: "human_supervised_browser"
+    goal: "Create a distinct educational supporting blog if absent."
+    post_step_gate: "Verify public blog/About/canonical link and first article."
+
+  - order: 6
+    platform_id: "medium"
+    playbook: "playbooks/MEDIUM_MANUAL.md"
+    mode: "manual_only"
+    goal: "Prepare materials; human performs any Medium account/publication actions."
+    post_step_gate: "Never automate signup/posting under current Medium Rules."
+
+excluded_from_pilot:
+  - "pinterest"
+  - "about_me"
+  - "feedly"
+  - "inoreader"
+
+deferred:
+  google_sites:
+    reason: "Requires an approved distinct resource-hub/event concept."
+
+completion_definition:
+  - "Every created profile is publicly verified."
+  - "No duplicate official identity was created."
+  - "Canonical website is present where appropriate."
+  - "Approved assets are used correctly."
+  - "No private credential/verification data is committed."
+  - "state/accounts.csv is updated after every platform."
+  - "A batch report is created from templates/platform_report.md."
