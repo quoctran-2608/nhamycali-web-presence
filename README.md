@@ -35,10 +35,11 @@ Codex phải bắt đầu từ:
 5. `brand/COPY_LIBRARY.md`
 6. `assets/ASSET_MANIFEST.yaml`
 7. `assets/PLATFORM_ASSET_POLICY.yaml`
-8. `campaign/ACCOUNT_CREATION_RULES.md`
-9. `campaign/SEO_LINK_POLICY.md`
-10. `campaign/PLATFORMS.yaml`
-11. `state/`
+8. `docs/REGISTRATION_POLICY.md`
+9. `campaign/ACCOUNT_CREATION_RULES.md`
+10. `campaign/SEO_LINK_POLICY.md`
+11. `campaign/PLATFORMS.yaml`
+12. `state/`
 
 ## Cấu trúc hiện tại
 
@@ -70,7 +71,8 @@ Codex phải bắt đầu từ:
 │   └── CONTENT_SEEDING_PLAN.md
 ├── docs/
 │   ├── EXECUTION_ROADMAP.md
-│   └── HUMAN_INPUTS_REQUIRED.md
+│   ├── HUMAN_INPUTS_REQUIRED.md
+│   └── REGISTRATION_POLICY.md
 ├── secrets/
 │   └── .env.example
 ├── state/
@@ -116,7 +118,8 @@ Continue to next platform
 - [x] Chặng 2 — Platform registry + SEO/link policy.
 - [x] Chặng 3 — Account state + execution templates.
 - [x] Chặng 4 — Nạp và duyệt brand assets thật.
-- [ ] Chặng 5 — Xác nhận registration email / recovery workflow ngoài Git.
+- [x] Chặng 5A — Xác nhận registration mailbox + SMS verification policy ngoài Git.
+- [ ] Chặng 5B — Chọn password-management workflow; recovery email là tùy chọn.
 - [ ] Chặng 6 — Research live Wave 1 platforms trước khi signup.
 - [ ] Chặng 7 — Pilot automation trên một nhóm nhỏ.
 - [ ] Chặng 8 — Audit pilot rồi mới scale.
@@ -126,7 +129,7 @@ Continue to next platform
 - **52 platform IDs** đã được phân loại.
 - `state/accounts.csv` có **52 state rows**, khớp 1:1 với platform registry.
 - Linktree đã được ghi nhận là account hiện hữu.
-- Pinterest được đánh dấu **existing-account check needed**.
+- Pinterest: owner xác nhận đã có account nhưng **đã loại khỏi chiến dịch chủ động**; Codex không tạo, phát triển hay sửa profile này nếu chưa được tái kích hoạt.
 - Những platform chưa xác minh chính xác như Writexo/All4webs/Justpast.it/Postach được khóa ở chế độ **research first**.
 
 ## Human input tiếp theo
@@ -144,13 +147,19 @@ Bộ asset first-wave đã hoàn tất và được commit từ đúng các file
 
 Banner hiện tại là asset chính thức 851×315, đủ làm reference/cover ở nơi phù hợp nhưng **không được coi là high-resolution master cho mọi nền tảng**.
 
+Registration policy hiện đã xác nhận ở mức cần thiết để research/pilot:
+
+- primary registration mailbox: đã chọn, giữ ngoài Git;
+- SMS verification: ưu tiên số Việt Nam do owner kiểm soát; dùng số business Mỹ làm fallback khi nền tảng không nhận số Việt Nam;
+- exact values chỉ được nạp qua local `secrets/.env`;
+- Pinterest đã có nhưng không còn nằm trong active campaign.
+
 Ưu tiên tiếp theo:
 
-- xác nhận registration email dùng cho các account mới;
-- recovery email/phone nếu muốn sử dụng;
-- cách quản lý password ngoài Git;
-- xác nhận những account cũ mà người dùng biết đã tồn tại;
-- live research Wave 1 trước khi signup.
+- chọn cách quản lý password ngoài Git;
+- recovery email nếu muốn;
+- live research Wave 1 trước khi signup;
+- xác nhận thêm các account cũ nếu owner nhớ ra.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
 
