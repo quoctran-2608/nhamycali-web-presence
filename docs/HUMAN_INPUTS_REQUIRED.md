@@ -2,38 +2,39 @@
 
 This file records information that must come from the authorized NHÀ MỸ CALI owner rather than being inferred by Codex.
 
-## 1. Visual assets — first priority
+## 1. Visual assets — first-wave requirement COMPLETE
 
-Please provide, if available:
+Received from the project owner on **2026-09-28** and committed as approved source assets:
 
-### Required
+1. **Official NHÀ MỸ CALI transparent logo**  
+   `assets/logo/nhamycali-logo-transparent.png`
 
-1. **Official NHÀ MỸ CALI logo**
-   - transparent PNG preferred;
-   - original/highest-resolution version;
-   - SVG also welcome.
+2. **Official square/circular brand avatar**  
+   `assets/avatar/nhamycali-avatar-square.png`
 
-2. **Official square avatar/profile image**
-   - ideally the exact version already used on current social channels;
-   - 1:1;
-   - high resolution.
+3. **Helen Hà Nguyễn official professional portrait**  
+   `assets/helen/helen-ha-nguyen-headshot.png`
 
-3. **Helen Hà Nguyễn official professional headshot**
-   - current image;
-   - approved for public reuse across third-party profiles.
+4. **Official NHÀ MỸ CALI / Coldwell Banker Realty banner**  
+   `assets/cover/nhamycali-cover-official.png`
 
-4. **Generic NHÀ MỸ CALI cover/banner**
-   - if there is an existing official banner, send the original;
-   - if none exists, a design can be created later from approved brand assets.
+Technical hashes, dimensions and approval state are recorded in:
 
-### Helpful
+- `assets/ASSET_MANIFEST.yaml`
+- `assets/PLATFORM_ASSET_POLICY.yaml`
 
-5. Horizontal logo.
-6. Light/dark logo variants.
-7. Current Facebook/YouTube/Instagram brand graphics.
-8. Canva/exported source templates.
-9. Original San Jose/Bay Area/property photos owned or licensed by NHÀ MỸ CALI.
-10. Official Coldwell Banker co-brand artwork that NHÀ MỸ CALI/Helen is authorized to reuse.
+### Optional visual inputs still useful later
+
+These are **not blockers for the pilot**:
+
+- official SVG/vector logo;
+- horizontal logo;
+- light/dark logo variants;
+- higher-resolution cover/banner master;
+- platform-specific cover source files;
+- Canva/exported source templates;
+- original San Jose/Bay Area/property photos owned or licensed by NHÀ MỸ CALI;
+- separately authorized Coldwell Banker co-brand source files, if available.
 
 ## 2. Brand-design facts
 
