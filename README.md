@@ -16,6 +16,7 @@ Repo phục vụ 4 mục tiêu chính:
 ## Nguyên tắc
 
 - **Brand consistency trước số lượng account.**
+- **Verify first, create second.**
 - **Không tạo account trùng nếu profile chính thức đã tồn tại.**
 - **Không dùng automation để bypass CAPTCHA, anti-bot, phone verification, identity verification hoặc security controls.**
 - **Không tạo nội dung/link chỉ để thao túng ranking.**
@@ -23,7 +24,21 @@ Repo phục vụ 4 mục tiêu chính:
 - Dữ liệu động phải được kiểm tra lại trước khi xuất bản.
 - Credential, password, recovery code, TOTP secret, ID document và payment information **không được commit vào repo**.
 
-## Cấu trúc dự kiến
+## Codex: đọc gì trước?
+
+Codex phải bắt đầu từ:
+
+1. `AGENTS.md`
+2. `brand/BRAND_ENTITY.yaml`
+3. `brand/OFFICIAL_LINKS.yaml`
+4. `brand/BRAND_DNA.md`
+5. `brand/COPY_LIBRARY.md`
+6. `campaign/ACCOUNT_CREATION_RULES.md`
+7. `campaign/SEO_LINK_POLICY.md`
+8. `campaign/PLATFORMS.yaml`
+9. `state/`
+
+## Cấu trúc hiện tại
 
 ```text
 .
@@ -35,12 +50,18 @@ Repo phục vụ 4 mục tiêu chính:
 │   ├── OFFICIAL_LINKS.yaml
 │   └── COPY_LIBRARY.md
 ├── assets/
-│   └── README.md
+│   ├── README.md
+│   └── ASSET_MANIFEST.yaml
 ├── campaign/
 │   ├── PLATFORMS.yaml
 │   ├── ACCOUNT_CREATION_RULES.md
 │   ├── SEO_LINK_POLICY.md
 │   └── CONTENT_SEEDING_PLAN.md
+├── docs/
+│   ├── EXECUTION_ROADMAP.md
+│   └── HUMAN_INPUTS_REQUIRED.md
+├── secrets/
+│   └── .env.example
 ├── state/
 │   ├── accounts.csv
 │   ├── failures.csv
@@ -60,6 +81,8 @@ Read brand source of truth
   ↓
 Check whether official account already exists
   ↓
+Research current platform/domain/signup requirements
+  ↓
 Classify platform purpose
   ↓
 Create/update profile only when appropriate
@@ -77,15 +100,38 @@ Continue to next platform
 
 ## Trạng thái
 
-Repo đang được xây dựng theo từng chặng:
-
 - [x] Khởi tạo repository.
-- [ ] Chặng 1 — Agent rules + brand source of truth.
-- [ ] Chặng 2 — Platform registry + SEO/link policy.
-- [ ] Chặng 3 — Account state + execution templates.
-- [ ] Chặng 4 — Brand assets.
-- [ ] Chặng 5 — Pilot automation trên một nhóm nhỏ platform.
-- [ ] Chặng 6 — Audit rồi mới scale.
+- [x] Chặng 1 — Agent rules + brand source of truth.
+- [x] Chặng 2 — Platform registry + SEO/link policy.
+- [x] Chặng 3 — Account state + execution templates.
+- [ ] Chặng 4 — Nạp và duyệt brand assets thật.
+- [ ] Chặng 5 — Xác nhận registration email / recovery workflow ngoài Git.
+- [ ] Chặng 6 — Research live Wave 1 platforms trước khi signup.
+- [ ] Chặng 7 — Pilot automation trên một nhóm nhỏ.
+- [ ] Chặng 8 — Audit pilot rồi mới scale.
+
+## Registry hiện tại
+
+- **52 platform IDs** đã được phân loại.
+- `state/accounts.csv` có **52 state rows**, khớp 1:1 với platform registry.
+- Linktree đã được ghi nhận là account hiện hữu.
+- Pinterest được đánh dấu **existing-account check needed**.
+- Những platform chưa xác minh chính xác như Writexo/All4webs/Justpast.it/Postach được khóa ở chế độ **research first**.
+
+## Human input tiếp theo
+
+Xem:
+
+**`docs/HUMAN_INPUTS_REQUIRED.md`**
+
+Ưu tiên hiện tại là nạp asset chính thức:
+
+- logo transparent;
+- square avatar;
+- Helen official headshot;
+- generic brand cover/banner.
+
+Không cần gửi password hoặc giấy tờ định danh vào repo.
 
 ## Canonical website
 
