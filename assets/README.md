@@ -1,121 +1,243 @@
-# NHÀ MỸ CALI — Asset Registry
+# NHÀ MỸ CALI — Approved Brand Assets
 
-This directory will hold **approved brand-owned visual assets** used by Codex/browser automation.
+This directory contains the **approved visual source set** Codex/browser automation may use for NHÀ MỸ CALI public profiles.
 
-At the moment, no production asset should be assumed to exist until a human uploads and approves it.
+Approval and technical metadata live in:
 
-## 1. Required first-wave assets
+- `assets/ASSET_MANIFEST.yaml`
+- `assets/PLATFORM_ASSET_POLICY.yaml`
 
-Please provide the following source files if available.
+Codex must not use an asset unless `approved_public_use: true`.
 
-### A. Primary logo — transparent
+---
 
-Preferred filename:
+## 1. Canonical first-wave assets
 
-`assets/logo/nhamycali-logo-transparent.png`
-
-Preferred source:
-- PNG with transparent background;
-- ideally at least 1600 px on the longest side;
-- SVG is welcome as a master source if available.
-
-Use:
-- profile branding;
-- page headers;
-- social/public profiles where a full logo works.
-
-### B. Square avatar/profile mark
-
-Preferred filename:
+### Brand avatar
 
 `assets/avatar/nhamycali-avatar-square.png`
 
-Preferred:
-- 1:1;
-- 1200 × 1200 px or larger;
-- readable at small sizes;
-- no tiny text that disappears at 64 px.
+- Source filename: `avatar.png`
+- 550 × 550
+- PNG / RGBA / transparent outside the circular mark
+- Contains:
+  - NHÀ MỸ CALI house/star identity
+  - “Bay Area Dream Home”
+- **Default image for NHÀ MỸ CALI brand accounts.**
 
-If the current NHÀ MỸ CALI logo is already designed for a circular avatar, send that exact official version.
+Use for:
+- social/profile avatars;
+- publication icons;
+- public brand profiles.
 
-### C. Helen Hà Nguyễn professional headshot
+Do not use it as Helen's personal portrait.
 
-Preferred filename:
+---
 
-`assets/helen/helen-ha-nguyen-headshot.jpg`
+### Full transparent logo
 
-Preferred:
-- high-resolution;
-- official/current;
-- neutral or real-estate-appropriate background;
-- permission to use across public profiles.
+`assets/logo/nhamycali-logo-transparent.png`
 
-This is important because some platforms are better represented by a real professional/person than by the brand logo.
+- Source filename: `logo.png`
+- 550 × 550
+- PNG / RGBA / transparent
+- Contains the NHÀ MỸ CALI house/star symbol and wordmark.
 
-### D. Generic brand cover/banner
+Use for:
+- headers;
+- full-logo fields;
+- transparent placements;
+- website/resource layouts where the wordmark stays legible.
 
-Preferred filename:
+Avoid using it as the default tiny circular avatar because the full wordmark can become difficult to read.
 
-`assets/cover/nhamycali-cover-master.jpg`
+---
 
-Suggested master:
-- 2560 × 1440 px or larger;
-- logo/tagline within a central safe zone;
-- no platform-specific UI baked into the master.
+### Helen Hà Nguyễn professional portrait
 
-The master can later be resized/cropped per platform.
+`assets/helen/helen-ha-nguyen-headshot.png`
 
-## 2. Helpful second-wave assets
+- Source filename: `Helen_Ha_Nguyen.png`
+- 941 × 1672
+- PNG
+- Official user-supplied professional portrait.
 
-If available:
+Use for:
+- Helen author profiles;
+- Helen Realtor/professional bio pages;
+- platforms explicitly representing Helen as a person.
 
+Do **not** automatically replace a NHÀ MỸ CALI brand avatar with Helen's portrait.
+
+Never generate or substitute a fake Helen face.
+
+---
+
+### Official supplied banner
+
+`assets/cover/nhamycali-cover-official.png`
+
+- Source filename: `banner.png`
+- 851 × 315
+- Approximate aspect ratio: 2.70:1
+- PNG
+- Contains:
+  - Coldwell Banker Realty co-branding;
+  - NHÀ MỸ CALI;
+  - “Ngôi Nhà Mỹ Mơ Ước Cho Người Việt”;
+  - “Kênh bất động sản đáng tin cậy tại Bay Area, California”;
+  - “Giúp người Việt an tâm mua nhà Mỹ”;
+  - phone;
+  - website;
+  - Bay Area/San Francisco waterfront visual.
+
+This is an **official supplied banner**, but it is not a universal high-resolution master.
+
+Use only when:
+- the target aspect ratio is compatible;
+- the text and logos remain readable;
+- no destructive crop is required.
+
+Do not:
+- significantly upscale it;
+- crop out the Coldwell Banker Realty mark;
+- crop out contact information or brand text;
+- extract the Coldwell Banker Realty logo as a standalone asset.
+
+---
+
+## 2. Brand-vs-person identity rule
+
+This distinction is mandatory.
+
+### NHÀ MỸ CALI brand account
+
+Default:
+
+`assets/avatar/nhamycali-avatar-square.png`
+
+### Helen Hà Nguyễn individual professional/author account
+
+Default:
+
+`assets/helen/helen-ha-nguyen-headshot.png`
+
+### Ambiguous platform
+
+Stop and decide identity before publishing.
+
+Examples where this matters:
+- About.me
+- Medium
+- Substack
+- Gravatar when the underlying email/person identity is unclear.
+
+See `assets/PLATFORM_ASSET_POLICY.yaml`.
+
+---
+
+## 3. Exact source preservation
+
+The four files above were committed from the exact files supplied by the project owner on 2026-09-28.
+
+The manifest records:
+- original filename;
+- byte size;
+- dimensions;
+- SHA-256;
+- Git blob SHA;
+- transparency;
+- approval state.
+
+This lets future agents confirm they are using the intended asset rather than a scraped or regenerated copy.
+
+---
+
+## 4. Optional assets still useful later
+
+The first-wave account pilot does **not** require these, but they would improve future platform adaptation:
+
+- official SVG/vector logo;
 - horizontal logo;
-- monochrome/light logo;
-- monochrome/dark logo;
-- logo SVG;
-- official Coldwell Banker co-brand asset currently approved for use;
-- Helen full/half-body professional photo;
-- original Bay Area / San Jose property photography;
-- original Open House visual template;
-- current YouTube/Facebook banner source files;
-- brand color/font specification;
-- brand icon set;
-- Canva/exported social templates.
+- official light/dark logo variants;
+- higher-resolution banner master;
+- platform-specific cover derivatives;
+- official color HEX values;
+- official font names;
+- Canva/source templates;
+- original Bay Area/property photography;
+- current approved Coldwell Banker co-brand source material if separately licensed/authorized.
 
-## 3. Do not upload here
+Do not infer official font or HEX values from screenshots when a source file may exist.
 
-Do not commit:
+---
+
+## 5. Creating derivatives later
+
+When a platform requires a different size or crop:
+
+1. preserve the original canonical asset;
+2. create a separate derivative file;
+3. never overwrite the source;
+4. keep important text/logo inside the platform safe area;
+5. preview circular/square/cover crops;
+6. add the derivative to `ASSET_MANIFEST.yaml`;
+7. mark it approved before Codex uses it.
+
+Recommended directory pattern:
+
+```text
+assets/
+├── avatar/
+│   ├── nhamycali-avatar-square.png
+│   └── derived/
+├── cover/
+│   ├── nhamycali-cover-official.png
+│   └── derived/
+├── helen/
+│   ├── helen-ha-nguyen-headshot.png
+│   └── derived/
+└── logo/
+    ├── nhamycali-logo-transparent.png
+    └── derived/
+```
+
+---
+
+## 6. Sensitive/non-public material
+
+Never commit here:
 
 - driver license;
 - passport;
 - SSN;
-- bank statement;
-- real-estate transaction documents containing private client data;
+- bank statements;
+- client transaction documents;
 - private contracts;
-- credit-card images;
+- card images;
 - recovery codes;
 - login QR codes;
 - authentication screenshots;
-- unlicensed stock imagery.
+- MLS credentials;
+- unlicensed third-party photography.
 
-Identity/business-verification documents, if ever required, must be handled outside Git.
+Identity/business-verification documents, if a platform later requires them, must be handled outside Git.
 
-## 4. Approval metadata
+---
 
-When assets are added, create/update a small registry in this file or a future `assets/ASSET_MANIFEST.yaml` with:
+## 7. Image-generation rule
 
-- filename;
-- asset type;
-- source;
-- owner;
-- approved public use: yes/no;
-- date approved;
-- notes.
+Do not generate a replacement Helen portrait.
 
-Codex must use only assets marked approved.
+Generated decorative real-estate visuals may only be used after explicit approval and must never be represented as photographs of a real listing.
 
-## 5. Image-generation rule
+---
 
-Do not generate a fake Helen headshot or substitute a synthetic person.
+## 8. Current status
 
-Generated decorative real-estate visuals may only be used if explicitly approved for a specific purpose and must not be presented as photographs of a real listing.
+**First-wave visual asset requirement: complete as of 2026-09-28.**
+
+Remaining pre-pilot work is primarily:
+- registration/recovery workflow;
+- existing-account audit;
+- live platform research.
