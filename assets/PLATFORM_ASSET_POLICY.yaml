@@ -46,8 +46,9 @@ wave_1_guidance:
     exception: "Use helen_headshot only if the Gravatar identity is explicitly Helen's individual professional identity."
 
   pinterest:
-    default: "brand_avatar"
-    cover: null
+    status: "excluded_from_active_campaign"
+    default: "no_action"
+    note: "Owner confirmed an existing NHÀ MỸ CALI Pinterest account but chose not to develop Pinterest at this time. Do not change its avatar/profile unless the platform is explicitly reactivated."
 
   bluesky:
     default: "brand_avatar"
