@@ -30,19 +30,22 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 3. `brand/OFFICIAL_LINKS.yaml`
 4. `brand/BRAND_DNA.md`
 5. `brand/COPY_LIBRARY.md`
-6. `campaign/ACCOUNT_CREATION_RULES.md`
-7. `campaign/SEO_LINK_POLICY.md`
-8. `campaign/PLATFORMS.yaml`
-9. the relevant state files under `state/`
+6. `assets/ASSET_MANIFEST.yaml`
+7. `assets/PLATFORM_ASSET_POLICY.yaml`
+8. `campaign/ACCOUNT_CREATION_RULES.md`
+9. `campaign/SEO_LINK_POLICY.md`
+10. `campaign/PLATFORMS.yaml`
+11. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
 1. explicit human instruction in the current task;
 2. `AGENTS.md`;
 3. canonical structured brand data;
-4. campaign rules;
-5. prior execution state;
-6. generated copy/templates.
+4. approved asset manifest and platform asset policy;
+5. campaign rules;
+6. prior execution state;
+7. generated copy/templates.
 
 ## 3. Canonical identity
 
@@ -244,13 +247,35 @@ Do not add guessed URLs.
 
 ## 14. Asset policy
 
-Only use files from `assets/` that are marked approved in `assets/README.md`.
+Asset approval lives in `assets/ASSET_MANIFEST.yaml`. Platform-specific identity choices live in `assets/PLATFORM_ASSET_POLICY.yaml`.
+
+Only use files whose manifest entry has:
+
+`approved_public_use: true`
+
+Canonical first-wave defaults:
+
+- brand account avatar → `assets/avatar/nhamycali-avatar-square.png`
+- full transparent logo → `assets/logo/nhamycali-logo-transparent.png`
+- Helen individual/author portrait → `assets/helen/helen-ha-nguyen-headshot.png`
+- official supplied banner → `assets/cover/nhamycali-cover-official.png`
+
+Identity rule:
+
+- NHÀ MỸ CALI brand account → brand avatar by default;
+- Helen individual Realtor/author identity → Helen headshot;
+- ambiguous identity → stop and decide before publishing.
+
+The official cover is 851×315 and contains Coldwell Banker Realty co-branding. Treat it as an intact approved banner/reference, not as a universal high-resolution master.
 
 Do not:
 
-- scrape a low-resolution logo from Google Images;
+- scrape a logo or portrait from web search;
 - invent a new logo;
 - replace Helen's headshot with generated imagery;
+- extract the Coldwell Banker Realty mark from the supplied banner for standalone reuse;
+- silently crop away important branding/text;
+- substantially upscale the official cover;
 - use unlicensed third-party photography.
 
 ## 15. Change-management rule
