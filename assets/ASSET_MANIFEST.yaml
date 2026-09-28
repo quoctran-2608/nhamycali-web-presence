@@ -1,43 +1,139 @@
-schema_version: 1
+schema_version: 2
 last_updated: "2026-09-28"
 
 rules:
   - "Codex may use only assets with approved_public_use: true."
-  - "Missing assets must not be replaced with scraped or generated substitutes without explicit approval."
-  - "Never store identity documents or authentication material in this directory."
+  - "Use the exact canonical paths below; do not guess filenames."
+  - "Do not replace supplied official assets with scraped, AI-generated, or third-party substitutes."
+  - "Do not store identity documents or authentication material in this directory."
+  - "Do not extract the Coldwell Banker Realty mark from the supplied cover as a standalone asset."
+  - "Do not silently crop away brand text, the star mark, Helen's face, or Coldwell Banker co-branding."
+  - "If a platform requires a substantially different aspect ratio, create an approved derivative rather than destructive auto-cropping."
 
 assets:
+
   primary_logo_transparent:
-    expected_path: "assets/logo/nhamycali-logo-transparent.png"
-    present: false
-    approved_public_use: false
-    source: null
+    path: "assets/logo/nhamycali-logo-transparent.png"
+    source_filename: "logo.png"
+    source: "User-supplied official NHÀ MỸ CALI asset"
+    received_date: "2026-09-28"
+    present: true
+    approved_public_use: true
     owner: "NHÀ MỸ CALI"
-    notes: "Awaiting upload."
+    mime_type: "image/png"
+    width_px: 550
+    height_px: 550
+    color_mode: "RGBA"
+    transparency: "true; alpha range 0-255"
+    size_bytes: 120578
+    sha256: "2c930cdfe81dfb7374652e8ee9d294558ed0f05249a221597bd3170a25cc3ddd"
+    git_blob_sha: "d684894b5e954beca3181248a19c644975f7d694"
+    content_summary: "NHÀ MỸ CALI wordmark with stylized blue roof/house symbol and star."
+    usage:
+      - "full brand logo"
+      - "transparent-background placements"
+      - "headers or layouts where the full wordmark remains readable"
+    avoid:
+      - "tiny circular avatars where the wordmark may become unreadable"
+      - "cropping the house/star/wordmark"
+    notes: "Exact user-supplied PNG committed; byte identity verified through Git blob SHA."
 
   avatar_square:
-    expected_path: "assets/avatar/nhamycali-avatar-square.png"
-    present: false
-    approved_public_use: false
-    source: null
+    path: "assets/avatar/nhamycali-avatar-square.png"
+    source_filename: "avatar.png"
+    source: "User-supplied official NHÀ MỸ CALI asset"
+    received_date: "2026-09-28"
+    present: true
+    approved_public_use: true
     owner: "NHÀ MỸ CALI"
-    notes: "Awaiting upload."
+    mime_type: "image/png"
+    width_px: 550
+    height_px: 550
+    color_mode: "RGBA"
+    transparency: "true; alpha range 0-255"
+    size_bytes: 344803
+    sha256: "bc88a20b31ef586fe8436b5e38c6a7e6dfe9a3c4e4d825889253e5ec35652783"
+    git_blob_sha: "61ec70f660cc5505883470cd6cd8170a25572567"
+    content_summary: "Circular NHÀ MỸ CALI avatar with house/star mark and 'Bay Area Dream Home' supporting line."
+    usage:
+      - "default avatar for NHÀ MỸ CALI brand accounts"
+      - "profile icon where a square/circular crop is expected"
+    avoid:
+      - "using as a Helen personal headshot"
+      - "cropping the circular border or 'Bay Area Dream Home' line"
+    notes: "Exact user-supplied PNG committed; preferred default for brand-profile avatars."
 
   helen_headshot:
-    expected_path: "assets/helen/helen-ha-nguyen-headshot.jpg"
-    present: false
-    approved_public_use: false
-    source: null
-    owner: null
-    notes: "Awaiting official/current photo and public-use approval."
+    path: "assets/helen/helen-ha-nguyen-headshot.png"
+    source_filename: "Helen_Ha_Nguyen.png"
+    source: "User-supplied official professional portrait"
+    received_date: "2026-09-28"
+    present: true
+    approved_public_use: true
+    owner: "Provided by authorized NHÀ MỸ CALI project owner"
+    subject: "Helen Hà Nguyễn / Helen Ha Nguyen"
+    mime_type: "image/png"
+    width_px: 941
+    height_px: 1672
+    color_mode: "RGBA"
+    transparency: "false in practice; alpha is fully opaque"
+    size_bytes: 2953486
+    sha256: "535a119de7932f361092665d692c19fe3847992ba777a934b44323e973674784"
+    git_blob_sha: "0f53a43e74e23349ac46e59387f188b58ea177fc"
+    content_summary: "Vertical professional portrait of Helen Hà Nguyễn in a light blazer, photographed in a bright residential interior."
+    usage:
+      - "Helen author/profile identity"
+      - "professional bio pages"
+      - "platforms/accounts explicitly centered on Helen as the Realtor"
+    avoid:
+      - "using by default on a brand-only NHÀ MỸ CALI account"
+      - "AI face alteration or replacement"
+      - "heavy crop that removes important head/shoulder context unless a platform requires a portrait crop"
+    notes: "Exact user-supplied PNG committed; do not substitute a generated person."
 
-  generic_cover_master:
-    expected_path: "assets/cover/nhamycali-cover-master.jpg"
+  official_cover_banner:
+    path: "assets/cover/nhamycali-cover-official.png"
+    source_filename: "banner.png"
+    source: "User-supplied official NHÀ MỸ CALI banner"
+    received_date: "2026-09-28"
+    present: true
+    approved_public_use: true
+    owner: "NHÀ MỸ CALI"
+    mime_type: "image/png"
+    width_px: 851
+    height_px: 315
+    aspect_ratio_approx: "2.70:1"
+    color_mode: "RGBA"
+    transparency: "effectively opaque; alpha range 254-255"
+    size_bytes: 303413
+    sha256: "2de0f4865357155cd1f7c57f18b404e0c8ecc51b59fbd3464b8e0e837a52cc2e"
+    git_blob_sha: "e797cabb64a303e50c17d646094b0bbcb4b8e9a7"
+    content_summary:
+      - "Coldwell Banker Realty co-branding"
+      - "NHÀ MỸ CALI"
+      - "Ngôi Nhà Mỹ Mơ Ước Cho Người Việt"
+      - "Kênh bất động sản đáng tin cậy tại Bay Area, California"
+      - "Giúp người Việt an tâm mua nhà Mỹ"
+      - "(408) 623-6577"
+      - "www.nhamycali.com"
+      - "San Francisco/Bay Area waterfront skyline visual"
+    usage:
+      - "official cover/banner reference"
+      - "cover placements whose aspect ratio and size fit without destructive crop"
+    avoid:
+      - "treating it as a universal high-resolution master"
+      - "upscaling for very large placements"
+      - "cropping out Coldwell Banker Realty or contact information"
+      - "extracting the Coldwell Banker logo as a separate reusable asset"
+    notes: "Exact user-supplied PNG committed. Resolution is 851x315, so use as an official supplied banner/reference rather than a universal high-resolution master."
+
+  high_resolution_cover_master:
+    expected_path: "assets/cover/nhamycali-cover-master-highres.png"
     present: false
     approved_public_use: false
     source: null
     owner: "NHÀ MỸ CALI"
-    notes: "Awaiting upload or approved design source."
+    notes: "Optional future asset. A higher-resolution master is useful for platform-specific derivatives but is not required for the pilot."
 
   horizontal_logo:
     expected_path: "assets/logo/nhamycali-logo-horizontal.png"
@@ -45,7 +141,7 @@ assets:
     approved_public_use: false
     source: null
     owner: "NHÀ MỸ CALI"
-    notes: "Optional second-wave asset."
+    notes: "Optional future asset."
 
   logo_svg_master:
     expected_path: "assets/logo/nhamycali-logo.svg"
@@ -53,4 +149,4 @@ assets:
     approved_public_use: false
     source: null
     owner: "NHÀ MỸ CALI"
-    notes: "Optional but preferred if official source exists."
+    notes: "Optional future asset; preferred if an official vector source exists."
