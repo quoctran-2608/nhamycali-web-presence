@@ -1,6 +1,6 @@
 # NHÀ MỸ CALI — Brand DNA for Agents
 
-Version: 1.0  
+Version: 1.1  
 Snapshot date: 2026-09-28  
 Purpose: concise operating context for Codex/AI. For machine-readable facts, `BRAND_ENTITY.yaml` has higher authority.
 
@@ -19,6 +19,129 @@ The important word is **“an tâm”**. The brand should not merely show attrac
 Canonical one-liner:
 
 > **NHÀ MỸ CALI là thương hiệu/kênh bất động sản tập trung giúp người Việt hiểu, mua và bán nhà tại California, đặc biệt San Jose và Bay Area, với trọng tâm là sự an tâm, rõ ràng và đồng hành.**
+
+---
+
+## 1A. Visual identity and approved taglines
+
+The project owner supplied the first canonical visual asset set on **2026-09-28**. These files are committed under `assets/` and are approved for public use according to `assets/ASSET_MANIFEST.yaml`.
+
+### Approved visual assets
+
+**Default brand avatar**
+
+`assets/avatar/nhamycali-avatar-square.png`
+
+- Circular NHÀ MỸ CALI identity.
+- House/roof + star symbol.
+- Includes the English supporting line **“Bay Area Dream Home.”**
+- This is the default profile image for accounts representing **NHÀ MỸ CALI as a brand**.
+
+**Full transparent logo**
+
+`assets/logo/nhamycali-logo-transparent.png`
+
+- House/roof + star symbol.
+- Full **NHÀ MỸ CALI** wordmark.
+- Transparent PNG.
+- Best for headers, logo fields and layouts where the full wordmark remains legible.
+
+**Helen Hà Nguyễn professional portrait**
+
+`assets/helen/helen-ha-nguyen-headshot.png`
+
+- Official user-supplied professional portrait.
+- Use for Helen-centered author/Realtor/professional identities.
+- Do not use by default for a brand-only NHÀ MỸ CALI account.
+- Never replace Helen with a generated or synthetic person.
+
+**Official supplied cover/banner**
+
+`assets/cover/nhamycali-cover-official.png`
+
+The banner includes:
+
+- Coldwell Banker Realty co-branding;
+- **NHÀ MỸ CALI**;
+- **“Ngôi Nhà Mỹ Mơ Ước Cho Người Việt”**;
+- “Kênh bất động sản đáng tin cậy tại Bay Area, California”;
+- “Giúp người Việt an tâm mua nhà Mỹ”;
+- phone **(408) 623-6577**;
+- **www.nhamycali.com**;
+- a Bay Area / San Francisco waterfront visual.
+
+The supplied banner is **851 × 315**, so it is an approved official banner/reference but not a universal high-resolution master.
+
+### Tagline hierarchy
+
+Use the following hierarchy:
+
+1. **Core mission / primary brand promise**  
+   **“Giúp Người Việt An Tâm Mua Nhà Mỹ.”**
+
+2. **Approved visual banner tagline**  
+   **“Ngôi Nhà Mỹ Mơ Ước Cho Người Việt.”**
+
+3. **Approved avatar support line**  
+   **“Bay Area Dream Home.”**
+
+These three lines belong to the same NHÀ MỸ CALI identity. Do not treat them as separate brands.
+
+The core mission remains the primary verbal positioning. The other two lines are supporting visual/tagline assets.
+
+### Visual language observed in supplied assets
+
+Without claiming an official design-system specification, the supplied assets consistently show:
+
+- blue / dark-blue dominant branding;
+- white backgrounds/contrast;
+- light-blue accents;
+- stylized house/roof imagery;
+- a star symbol;
+- Bay Area / San Francisco visual context;
+- clean real-estate/professional presentation.
+
+**Do not invent official HEX values or font names until authoritative source data is provided.**
+
+### Brand-vs-person image rule
+
+Use this decision:
+
+```text
+Does the account represent NHÀ MỸ CALI as a brand?
+    → use the brand avatar by default
+
+Does the account represent Helen Hà Nguyễn as an individual Realtor/author?
+    → use Helen's professional portrait
+
+Is identity ambiguous?
+    → stop and decide before publishing
+```
+
+This is especially important for:
+- Gravatar;
+- About.me;
+- Medium;
+- Substack;
+- any author/profile system that mixes organization and person identity.
+
+### Cover and co-branding rule
+
+The official supplied banner visibly contains **Coldwell Banker Realty** branding.
+
+This visual evidence does **not** override the legal-relationship guardrail elsewhere in this document.
+
+Therefore:
+
+- use the supplied banner intact when appropriate;
+- do not extract the Coldwell Banker logo as a standalone reusable asset;
+- do not crop away the co-branding while presenting the result as the original banner;
+- do not infer that NHÀ MỸ CALI is owned by or is a subsidiary of Coldwell Banker from the banner alone;
+- use the canonical relationship wording already defined for Helen.
+
+For platform-specific image decisions, follow:
+
+`assets/PLATFORM_ASSET_POLICY.yaml`
 
 ---
 
