@@ -45,45 +45,65 @@ Do not begin broad signup until the remaining access inputs and the live platfor
 
 ## Phase 2 — Platform research pass
 
-Before account creation, verify each target:
+Status: **Wave 1 live research completed on 2026-09-28.**
 
-- exact domain;
-- service still active;
-- current signup flow;
-- public profile availability;
-- website field;
-- platform role;
-- free vs paid requirements;
-- automation restrictions;
-- whether NHÀ MỸ CALI already has an account.
+Authoritative snapshot:
+- `research/WAVE_1_LIVE_RESEARCH_2026-09-28.md`
+- `research/WAVE_1_DECISIONS.yaml`
 
-Update:
-- `campaign/PLATFORMS.yaml`
-- `state/accounts.csv`
+Key outcomes:
+- Gravatar: existing Helen profile found; audit only.
+- Bluesky: active pilot candidate; domain handle `@nhamycali.com` is the preferred long-term identity after separate DNS approval.
+- About.me: removed from brand signup under current Terms interpretation.
+- Medium: manual-only because Medium Rules prohibit automated account registration/posting.
+- Substack: active human-supervised pilot candidate.
+- Blogger: active human-supervised pilot candidate.
+- Google Sites: technically viable but deferred until a distinct resource-hub concept is approved.
+- Feedly: removed from SEO signup; optional monitoring utility.
+- Inoreader: removed from SEO signup; Terms explicitly identify automated registrations for SEO boosting as abusive.
+- Linktree: existing official account audited; manual changes only.
+- Pinterest: already excluded by owner decision.
 
-Priority:
-- Wave 1 first.
+Before any actual signup, re-check the exact target in-platform because a public-search no-match is not proof of absence.
 
 ## Phase 3 — Pilot batch
 
 Do not start with all platforms.
 
-Recommended pilot:
-1. Gravatar
-2. About.me
-3. Bluesky
-4. Medium
+### Active browser-assisted creation candidates
 
-Pinterest is excluded from the active campaign by owner decision and should not be part of the pilot.
+1. **Bluesky**
+2. **Substack**
+3. **Blogger**
 
-For each:
-- verify existing account;
+### Existing-account audits
+
+4. **Gravatar** — existing Helen profile; no duplicate creation.
+5. **Linktree** — existing official account; manual changes only.
+
+### Manual platform execution
+
+6. **Medium** — Codex may prepare copy/content, but account creation and publishing must be performed manually under current Medium Rules.
+
+### Deferred
+
+7. **Google Sites** — wait for a distinct resource-hub/event concept.
+
+### Removed from active signup
+
+- About.me
+- Feedly
+- Inoreader
+- Pinterest
+
+For each active candidate:
+- verify existing account inside the platform immediately before signup;
 - create only if absent;
 - complete profile;
-- add canonical website;
+- add canonical website where appropriate;
 - verify public view;
 - log state;
-- stop at CAPTCHA/SMS/manual verification.
+- stop at CAPTCHA/SMS/OTP/manual verification.
 
 ## Phase 4 — Pilot audit
 
@@ -99,19 +119,20 @@ Adjust rules before continuing.
 
 ## Phase 5 — Publishing/distribution expansion
 
-Potential:
-- Substack
-- Blogger
+After the pilot audit, research the next candidates individually:
+
 - WordPress.com
 - Tumblr
 - Flipboard
-- Feedly
-- Inoreader
 - Follow.it
 - NewsBlur
 - Feedspot
 - Feeder
 - The Old Reader
+
+Medium remains manual-only.
+
+Feedly and Inoreader are no longer active SEO/signup targets; they may be used manually for internal monitoring if useful.
 
 Only seed content where there is an actual content role.
 
