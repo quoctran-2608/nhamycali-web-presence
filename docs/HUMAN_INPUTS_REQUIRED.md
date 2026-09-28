@@ -50,29 +50,30 @@ Do not guess these from screenshots if official files exist.
 
 ## 3. Registration account decisions
 
-Before browser automation starts, the human should decide:
+### Confirmed by owner on 2026-09-28
 
-- one primary registration email;
-- recovery email, if appropriate;
-- approved phone for SMS verification, if any;
+- Primary registration mailbox: **selected** and intentionally kept outside this public repository.
+- SMS primary: **owner-controlled Vietnam mobile**, stored only as a runtime secret.
+- SMS fallback: **existing U.S. business phone**, used only when a platform does not accept the Vietnam number.
+- Exact runtime values belong in local `secrets/.env`; see `docs/REGISTRATION_POLICY.md`.
+
+### Still optional/pending
+
+- recovery email;
 - password-manager workflow.
 
-**Do not put actual passwords or recovery codes in GitHub.**
-
-A recommended registration-email pattern is a dedicated brand-owned mailbox such as:
-
-- `social@nhamycali.com`
-- `marketing@nhamycali.com`
-
-This is only a naming recommendation. Do not create or assume either mailbox exists without confirmation.
+**Do not put actual passwords, OTPs, recovery codes, the private registration mailbox, or the private Vietnam verification number in GitHub.**
 
 ## 4. Existing-account knowledge
 
 For each platform, tell the agent if you already know an account exists.
 
-Especially useful now:
+Known decision:
 
-- Pinterest — public research suggests NHÀ MỸ CALI may already link to a Pinterest account, but canonical URL/ownership has not been recorded.
+- Pinterest — owner confirms NHÀ MỸ CALI already has an account but does not want Pinterest developed in this campaign. Leave it untouched unless reactivated.
+
+Still useful to identify:
+
 - TikTok — not part of the current target list, but public canonical status is still unresolved.
 - Any old Blogger/WordPress/Medium/Tumblr/Substack accounts.
 - Any personal Helen account that should **not** be converted into a brand account.
