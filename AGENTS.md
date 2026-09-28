@@ -32,11 +32,11 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 5. `brand/COPY_LIBRARY.md`
 6. `assets/ASSET_MANIFEST.yaml`
 7. `assets/PLATFORM_ASSET_POLICY.yaml`
-8. `campaign/ACCOUNT_CREATION_RULES.md`
-9. `campaign/SEO_LINK_POLICY.md`
-10. `campaign/PLATFORMS.yaml`
-11. `docs/REGISTRATION_POLICY.md`
-13. the relevant state files under `state/`
+8. `docs/REGISTRATION_POLICY.md`
+9. `campaign/ACCOUNT_CREATION_RULES.md`
+10. `campaign/SEO_LINK_POLICY.md`
+11. `campaign/PLATFORMS.yaml`
+12. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
