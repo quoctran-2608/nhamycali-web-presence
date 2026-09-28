@@ -19,13 +19,25 @@ Status: **built in foundation-v1**
 
 ## Phase 1 — Human inputs and asset normalization
 
-Goal:
-- add approved logo/avatar/headshot/banner;
-- confirm registration-email strategy;
-- confirm current public contact facts;
-- identify any pre-existing accounts.
+Status: **visual asset normalization complete; account-access inputs still pending**
 
-Do not begin mass signup until this phase is sufficiently complete.
+Completed:
+- approved logo committed;
+- approved brand avatar committed;
+- approved Helen professional portrait committed;
+- approved official banner committed;
+- asset provenance/hashes recorded;
+- brand-vs-person usage policy defined.
+
+Still required before pilot signup:
+- confirm registration-email strategy;
+- confirm recovery email/phone policy if used;
+- confirm password-management workflow outside Git;
+- confirm any pre-existing accounts already known by the owner.
+
+Current public contact facts remain in `brand/BRAND_ENTITY.yaml` and should be re-confirmed if the owner reports a change.
+
+Do not begin broad signup until the remaining access inputs and the live platform research pass are complete.
 
 ## Phase 2 — Platform research pass
 
