@@ -1,0 +1,53 @@
+platform_id,platform_name,status,username,registration_email,profile_url,website_added,profile_verified,email_verified,credential_managed_externally,manual_action_required,last_checked,notes
+blogger,Blogger,not_started,,,,false,false,false,true,false,,
+gravatar,Gravatar,not_started,,,,false,false,false,true,false,,
+wordpress_com,WordPress.com,not_started,,,,false,false,false,true,false,,
+weebly,Weebly,research_needed,,,,false,false,false,true,false,,Distinct use case required
+toodledo,Toodledo,not_suitable,,,,false,false,false,true,false,,Not an SEO target
+tumblr,Tumblr,not_started,,,,false,false,false,true,false,,
+pinterest,Pinterest,existing_account_check_needed,,,,false,false,false,true,false,,Prior Linktree research indicated Pinterest; verify URL/ownership first
+diigo,Diigo,research_needed,,,,false,false,false,true,false,,No mass bookmarking
+diigo_library,Diigo Library,not_suitable,,,,false,false,false,true,false,,Feature of Diigo; not separate account
+bluesky,Bluesky,not_started,,,,false,false,false,true,false,,
+instapaper,Instapaper,not_suitable,,,,false,false,false,true,false,,Read-later utility
+bitly,Bitly,not_started,,,,false,false,false,true,false,,Tracking utility; manual plan required
+evernote,Evernote,not_suitable,,,,false,false,false,true,false,,Productivity tool
+onenote,Microsoft OneNote,not_suitable,,,,false,false,false,true,false,,Productivity tool
+nimbusnote,Nimbus Note,research_needed,,,,false,false,false,true,false,,Verify current product/domain
+trello,Trello,not_suitable,,,,false,false,false,true,false,,Internal project-management use only
+trello_board,Trello Board,not_suitable,,,,false,false,false,true,false,,Not separate account
+dropbox,Dropbox,not_suitable,,,,false,false,false,true,false,,File storage
+start_me,start.me,research_needed,,,,false,false,false,true,false,,Public resource page only if useful
+fivehundredpx,500px,manual_asset_required,,,,false,false,false,true,true,,Requires approved original photography
+raindrop,Raindrop.io,research_needed,,,,false,false,false,true,false,,No bookmark spam
+follow_it,Follow.it,not_started,,,,false,false,false,true,false,,
+newsblur,NewsBlur,not_started,,,,false,false,false,true,false,,
+inoreader,Inoreader,not_started,,,,false,false,false,true,false,,
+feedspot,Feedspot,not_started,,,,false,false,false,true,false,,
+writexo,Writexo,research_needed,,,,false,false,false,true,false,,Exact service/domain unverified
+lnk_bio,Lnk.Bio,not_started,,,,false,false,false,true,false,,
+bloglovin,Bloglovin,research_needed,,,,false,false,false,true,false,,Verify current service health
+feedly,Feedly,not_started,,,,false,false,false,true,false,,
+skillshare,Skillshare,not_suitable,,,,false,false,false,true,false,,Only for real course strategy
+alltop,Alltop,research_needed,,,,false,false,false,true,false,,Verify current editorial submission
+flipboard,Flipboard,not_started,,,,false,false,false,true,false,,
+feeder,Feeder,not_started,,,,false,false,false,true,false,,
+protopage,Protopage,research_needed,,,,false,false,false,true,false,,Only useful public page
+the_old_reader,The Old Reader,not_started,,,,false,false,false,true,false,,
+justpast_it,Justpast.it (user-provided name),research_needed,,,,false,false,false,true,true,,Ambiguous name; verify before action
+google_sites,Google Sites,not_started,,,,false,false,false,true,false,,Distinct resource-hub plan required
+pearltrees,Pearltrees,research_needed,,,,false,false,false,true,false,,
+ifttt,IFTTT,not_started,,,,false,false,false,true,false,,Automation utility; not backlink target
+postach,Postach / Postach.io,research_needed,,,,false,false,false,true,false,,Verify exact current service/domain
+behance,Behance,manual_asset_required,,,,false,false,false,true,true,,Needs genuine creative portfolio
+strikingly,Strikingly,research_needed,,,,false,false,false,true,false,,Distinct landing/resource purpose required
+about_me,About.me,not_started,,,,false,false,false,true,false,,
+reddit,Reddit,not_started,,,,false,false,false,true,false,,Profile only by default; no automated promotional posts
+ted,TED,research_needed,,,,false,false,false,true,false,,Relevant public account use case unverified
+disqus,Disqus,not_started,,,,false,false,false,true,false,,No automated comment-link campaign
+substack,Substack,not_started,,,,false,false,false,true,false,,
+all4webs,All4webs,research_needed,,,,false,false,false,true,false,,Exact current service/domain unverified
+kickstarter,Kickstarter,not_suitable,,,,false,false,false,true,false,,Only for genuine crowdfunding
+medium,Medium,not_started,,,,false,false,false,true,false,,
+soundcloud,SoundCloud,manual_asset_required,,,,false,false,false,true,true,,Only with audio/podcast plan
+linktree,Linktree,existing_account_found,nhamycali,,https://linktr.ee/nhamycali,true,true,false,true,false,2026-09-28,Known official public account; audit only

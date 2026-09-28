@@ -1,0 +1,103 @@
+schema_version: 1
+last_verified: "2026-09-28"
+
+brand:
+  canonical_name: "NHÀ MỸ CALI"
+  preferred_display_name: "NHÀ MỸ CALI"
+  ascii_name: "Nha My Cali"
+  preferred_username: "nhamycali"
+  tagline_vi: "Giúp Người Việt An Tâm Mua Nhà Mỹ"
+  category_primary: "Real Estate"
+  category_secondary:
+    - "Real Estate Agent"
+    - "Real Estate Education"
+  primary_language: "vi"
+  secondary_language: "en"
+
+website:
+  canonical_url: "https://nhamycali.com/"
+  display_domain: "nhamycali.com"
+
+geography:
+  primary_market: "San Jose / San Francisco Bay Area, California"
+  broader_market: "California"
+  city: "San Jose"
+  state: "CA"
+  country: "United States"
+
+public_contact:
+  phone: "408-623-6577"
+  email: "realestate@nhamycali.com"
+
+office:
+  street: "1712 Meridian Ave"
+  city: "San Jose"
+  state: "CA"
+  postal_code: "95125"
+  country: "United States"
+
+human_anchor:
+  name_vi: "Helen Hà Nguyễn"
+  name_en: "Helen Ha Nguyen"
+  public_role: "Realtor®"
+  brand_role: "Founder / gương mặt chuyên môn chủ đạo của NHÀ MỸ CALI"
+  brokerage: "Coldwell Banker Realty"
+  calre: "01256922"
+  languages:
+    - "Vietnamese"
+    - "English"
+
+positioning:
+  one_liner: "NHÀ MỸ CALI là thương hiệu/kênh bất động sản tập trung giúp người Việt hiểu, mua và bán nhà tại California, đặc biệt San Jose và Bay Area, với trọng tâm là sự an tâm, rõ ràng và đồng hành."
+  archetype_primary: "Guide / Caregiver"
+  archetype_secondary: "Sage / Educator"
+  brand_traits:
+    - "Vietnamese-first"
+    - "trustworthy"
+    - "clear"
+    - "practical"
+    - "calm"
+    - "professional"
+    - "local"
+    - "family-oriented"
+
+core_audiences:
+  - "Người Việt mua nhà lần đầu tại Mỹ"
+  - "Gia đình Việt tại San Jose / Bay Area"
+  - "Người Việt tại Việt Nam quan tâm bất động sản California"
+  - "Người mua để đầu tư"
+  - "Người bán nhà"
+  - "Người cần hiểu quy trình tài chính và giao dịch bất động sản Mỹ"
+  - "Khách hàng 55+ / retirement khi phù hợp"
+
+content_pillars:
+  - "Listings"
+  - "Open House"
+  - "Buyer Education"
+  - "Seller Education"
+  - "Market Intelligence"
+  - "Finance and Transaction Literacy"
+  - "Neighborhood and Lifestyle"
+  - "Nhà Vui / Home & Life"
+
+legal_relationship_note: >-
+  Do not state or imply that NHÀ MỸ CALI is owned by, a subsidiary of,
+  or a legal division of Coldwell Banker unless documentary evidence is added.
+  Canonical phrasing: Helen Hà Nguyễn is a Realtor® at Coldwell Banker Realty
+  and is the Founder / professional face of NHÀ MỸ CALI.
+
+dynamic_fields_warning:
+  - "listing inventory"
+  - "listing price"
+  - "MLS data"
+  - "DOM"
+  - "HOA"
+  - "space rent"
+  - "Open House schedule"
+  - "mortgage rates"
+  - "market statistics"
+  - "review counts"
+  - "follower counts"
+  - "school boundaries"
+  - "loan programs"
+  - "laws and regulations"

@@ -1,0 +1,665 @@
+schema_version: 1
+last_updated: "2026-09-28"
+
+# Role taxonomy:
+# entity_profile       = public brand identity / citation / navigation
+# publishing           = original/adapted public content
+# social               = ongoing public social presence
+# visual               = visual discovery / portfolio
+# rss_distribution     = feed discovery / subscription / aggregation
+# curation             = public curation when genuinely useful
+# community            = participation governed by community rules
+# utility              = operational tool, not an SEO backlink target
+# automation           = workflow automation
+# crowdfunding         = use only for a real campaign
+# education_marketplace= use only for a real course/instructor purpose
+# research_needed      = platform/domain/current suitability must be verified
+
+# Automation modes:
+# candidate            = may proceed after preflight verification
+# audit_existing       = find/verify existing official account; do not create duplicate
+# manual_plan_required = do not auto-create/publish until a human-approved use case exists
+# skip_for_seo         = do not create for backlink purposes
+# research_first       = verify exact platform/current status before any account action
+
+waves:
+  wave_1:
+    objective: "High-signal entity, publishing, social and feed presence"
+    platform_ids:
+      - gravatar
+      - pinterest
+      - bluesky
+      - about_me
+      - medium
+      - substack
+      - blogger
+      - google_sites
+      - feedly
+      - inoreader
+      - linktree
+
+  wave_2:
+    objective: "Additional legitimate publishing/distribution/curation after Wave 1 audit"
+    platform_ids:
+      - wordpress_com
+      - tumblr
+      - flipboard
+      - follow_it
+      - newsblur
+      - feedspot
+      - feeder
+      - the_old_reader
+      - lnk_bio
+      - start_me
+      - pearltrees
+
+  wave_3:
+    objective: "Creative/specialized presence only when matching assets/use cases exist"
+    platform_ids:
+      - behance
+      - fivehundredpx
+      - soundcloud
+      - weebly
+      - strikingly
+      - postach
+      - protopage
+      - alltop
+      - bloglovin
+
+  wave_4:
+    objective: "Community, utility and ambiguous platforms; no backlink automation"
+    platform_ids:
+      - reddit
+      - disqus
+      - diigo
+      - instapaper
+      - raindrop
+      - bitly
+      - evernote
+      - onenote
+      - nimbusnote
+      - toodledo
+      - trello
+      - dropbox
+      - ifttt
+      - skillshare
+      - kickstarter
+      - ted
+      - writexo
+      - all4webs
+      - justpast_it
+
+platforms:
+
+  - id: blogger
+    name: "Blogger"
+    domain: "blogger.com"
+    role: "publishing"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Use as a distinct supporting publication; do not mirror the full main site."
+
+  - id: gravatar
+    name: "Gravatar"
+    domain: "gravatar.com"
+    role: "entity_profile"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Good entity/profile candidate; use approved avatar."
+
+  - id: wordpress_com
+    name: "WordPress.com"
+    domain: "wordpress.com"
+    role: "publishing"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Distinct editorial purpose required; not a clone of nhamycali.com."
+
+  - id: weebly
+    name: "Weebly"
+    domain: "weebly.com"
+    role: "publishing"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: false
+    note: "Only use if a non-redundant microsite/resource purpose is approved."
+
+  - id: toodledo
+    name: "Toodledo"
+    domain: "toodledo.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Productivity tool; not a backlink target."
+
+  - id: tumblr
+    name: "Tumblr"
+    domain: "tumblr.com"
+    role: "publishing"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Use short visual/text content; avoid duplicate-article dumping."
+
+  - id: pinterest
+    name: "Pinterest"
+    domain: "pinterest.com"
+    role: "visual"
+    tier: 1
+    initial_status: "existing_account_check_needed"
+    automation_mode: "audit_existing"
+    website_link_expected: true
+    publish_content: true
+    note: "Prior public Linktree research indicated a Pinterest link, but the canonical profile URL is not yet recorded. Verify before creating."
+
+  - id: diigo
+    name: "Diigo"
+    domain: "diigo.com"
+    role: "curation"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "manual_plan_required"
+    website_link_expected: false
+    publish_content: false
+    note: "Do not mass-bookmark for SEO."
+
+  - id: diigo_library
+    name: "Diigo Library"
+    domain: "diigo.com"
+    role: "curation"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Feature of Diigo, not a separate account target. Track under Diigo."
+
+  - id: bluesky
+    name: "Bluesky"
+    domain: "bsky.app"
+    role: "social"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Public social presence and educational updates."
+
+  - id: instapaper
+    name: "Instapaper"
+    domain: "instapaper.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Read-later utility; not an SEO backlink asset."
+
+  - id: bitly
+    name: "Bitly"
+    domain: "bitly.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_started"
+    automation_mode: "manual_plan_required"
+    website_link_expected: false
+    publish_content: false
+    note: "Use for legitimate campaign tracking/short links, not ranking."
+
+  - id: evernote
+    name: "Evernote"
+    domain: "evernote.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Private/productivity use only unless a separate operational need exists."
+
+  - id: onenote
+    name: "Microsoft OneNote"
+    domain: "onenote.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Microsoft productivity service; not an SEO backlink target."
+
+  - id: nimbusnote
+    name: "Nimbus Note"
+    domain: null
+    role: "research_needed"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: false
+    publish_content: false
+    note: "Verify current product/domain/brand status before any action."
+
+  - id: trello
+    name: "Trello"
+    domain: "trello.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Project-management tool; may be used internally, not for backlink creation."
+
+  - id: trello_board
+    name: "Trello Board"
+    domain: "trello.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "Not a separate platform/account. Track under Trello."
+
+  - id: dropbox
+    name: "Dropbox"
+    domain: "dropbox.com"
+    role: "utility"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: false
+    publish_content: false
+    note: "File storage; not a public backlink target."
+
+  - id: start_me
+    name: "start.me"
+    domain: "start.me"
+    role: "curation"
+    tier: 2
+    initial_status: "research_needed"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Use only if a genuinely useful public resource/start page is created."
+
+  - id: fivehundredpx
+    name: "500px"
+    domain: "500px.com"
+    role: "visual"
+    tier: 3
+    initial_status: "manual_asset_required"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: true
+    note: "Only if NHÀ MỸ CALI owns/licensed original high-quality photography."
+
+  - id: raindrop
+    name: "Raindrop.io"
+    domain: "raindrop.io"
+    role: "curation"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "manual_plan_required"
+    website_link_expected: false
+    publish_content: false
+    note: "Do not use private bookmarking as an SEO backlink tactic."
+
+  - id: follow_it
+    name: "Follow.it"
+    domain: "follow.it"
+    role: "rss_distribution"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Evaluate feed-follow/subscription use; verify public/indexable outcome."
+
+  - id: newsblur
+    name: "NewsBlur"
+    domain: "newsblur.com"
+    role: "rss_distribution"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: false
+    publish_content: false
+    note: "Feed reader/discovery role, not raw backlink target."
+
+  - id: inoreader
+    name: "Inoreader"
+    domain: "inoreader.com"
+    role: "rss_distribution"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: false
+    publish_content: false
+    note: "Evaluate feed discovery/subscription and any public profile/feed page."
+
+  - id: feedspot
+    name: "Feedspot"
+    domain: "feedspot.com"
+    role: "rss_distribution"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Research submission/listing process and quality requirements."
+
+  - id: writexo
+    name: "Writexo"
+    domain: null
+    role: "research_needed"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: null
+    publish_content: null
+    note: "Exact service/domain/current availability not yet verified."
+
+  - id: lnk_bio
+    name: "Lnk.Bio"
+    domain: "lnk.bio"
+    role: "entity_profile"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Optional link-in-bio presence; avoid redundant proliferation without purpose."
+
+  - id: bloglovin
+    name: "Bloglovin"
+    domain: "bloglovin.com"
+    role: "rss_distribution"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: true
+    publish_content: false
+    note: "Verify current service health and signup/submission availability."
+
+  - id: feedly
+    name: "Feedly"
+    domain: "feedly.com"
+    role: "rss_distribution"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: false
+    publish_content: false
+    note: "Use for feed discovery/subscription; do not describe private subscription as a backlink."
+
+  - id: skillshare
+    name: "Skillshare"
+    domain: "skillshare.com"
+    role: "education_marketplace"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: true
+    note: "Only if NHÀ MỸ CALI has a real course/instructor strategy. Do not create for backlink only."
+
+  - id: alltop
+    name: "Alltop"
+    domain: "alltop.com"
+    role: "rss_distribution"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: true
+    publish_content: false
+    note: "Verify current submission/editorial process; do not assume acceptance."
+
+  - id: flipboard
+    name: "Flipboard"
+    domain: "flipboard.com"
+    role: "curation"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Use legitimate magazine/curation workflow with useful content."
+
+  - id: feeder
+    name: "Feeder"
+    domain: "feeder.co"
+    role: "rss_distribution"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: false
+    publish_content: false
+    note: "Feed-reader role; verify whether any public page exists."
+
+  - id: protopage
+    name: "Protopage"
+    domain: "protopage.com"
+    role: "curation"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: true
+    publish_content: false
+    note: "Only use a public page if genuinely useful, not as a doorway/backlink page."
+
+  - id: the_old_reader
+    name: "The Old Reader"
+    domain: "theoldreader.com"
+    role: "rss_distribution"
+    tier: 2
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: false
+    publish_content: false
+    note: "Feed-reader/discovery role."
+
+  - id: justpast_it
+    name: "Justpast.it (user-provided name)"
+    domain: null
+    role: "research_needed"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: null
+    publish_content: null
+    note: "Possible typo/ambiguity. Do not assume this means JustPaste.it. Verify with human or current web research first."
+
+  - id: google_sites
+    name: "Google Sites"
+    domain: "sites.google.com"
+    role: "publishing"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: true
+    note: "Create only after a distinct resource-hub purpose is defined; no doorway-site duplication."
+
+  - id: pearltrees
+    name: "Pearltrees"
+    domain: "pearltrees.com"
+    role: "curation"
+    tier: 2
+    initial_status: "research_needed"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Use only for useful public collections; avoid mass-link curation."
+
+  - id: ifttt
+    name: "IFTTT"
+    domain: "ifttt.com"
+    role: "automation"
+    tier: 4
+    initial_status: "not_started"
+    automation_mode: "manual_plan_required"
+    website_link_expected: false
+    publish_content: false
+    note: "Workflow automation tool. Use later for legitimate distribution operations, not backlink creation."
+
+  - id: postach
+    name: "Postach / Postach.io"
+    domain: null
+    role: "research_needed"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: null
+    publish_content: null
+    note: "Verify current exact service/domain and whether it remains active before planning."
+
+  - id: behance
+    name: "Behance"
+    domain: "behance.net"
+    role: "visual"
+    tier: 3
+    initial_status: "manual_asset_required"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: true
+    note: "Use only for real design/creative portfolio work owned by NHÀ MỸ CALI."
+
+  - id: strikingly
+    name: "Strikingly"
+    domain: "strikingly.com"
+    role: "publishing"
+    tier: 3
+    initial_status: "research_needed"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: false
+    note: "Only use if a distinct landing/resource purpose exists; do not create a redundant SEO microsite."
+
+  - id: about_me
+    name: "About.me"
+    domain: "about.me"
+    role: "entity_profile"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: false
+    note: "Good candidate if current free/public profile remains suitable."
+
+  - id: reddit
+    name: "Reddit"
+    domain: "reddit.com"
+    role: "community"
+    tier: 4
+    initial_status: "not_started"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: false
+    note: "Profile creation only by default. No automated promotional posting/comment backlinks."
+
+  - id: ted
+    name: "TED"
+    domain: "ted.com"
+    role: "community"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: null
+    publish_content: false
+    note: "No assumed backlink value. Verify whether a relevant public profile/account use case exists."
+
+  - id: disqus
+    name: "Disqus"
+    domain: "disqus.com"
+    role: "community"
+    tier: 4
+    initial_status: "not_started"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: false
+    note: "No automated comment-link campaign."
+
+  - id: substack
+    name: "Substack"
+    domain: "substack.com"
+    role: "publishing"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Use as a real newsletter/editorial channel, not a one-post backlink shell."
+
+  - id: all4webs
+    name: "All4webs"
+    domain: null
+    role: "research_needed"
+    tier: 4
+    initial_status: "research_needed"
+    automation_mode: "research_first"
+    website_link_expected: null
+    publish_content: null
+    note: "Exact current service/domain/quality not verified."
+
+  - id: kickstarter
+    name: "Kickstarter"
+    domain: "kickstarter.com"
+    role: "crowdfunding"
+    tier: 4
+    initial_status: "not_suitable"
+    automation_mode: "skip_for_seo"
+    website_link_expected: true
+    publish_content: false
+    note: "Create only for a genuine crowdfunding campaign, never for backlink purposes."
+
+  - id: medium
+    name: "Medium"
+    domain: "medium.com"
+    role: "publishing"
+    tier: 1
+    initial_status: "not_started"
+    automation_mode: "candidate"
+    website_link_expected: true
+    publish_content: true
+    note: "Good educational publishing candidate. Use original/substantial adapted content."
+
+  - id: soundcloud
+    name: "SoundCloud"
+    domain: "soundcloud.com"
+    role: "publishing"
+    tier: 3
+    initial_status: "manual_asset_required"
+    automation_mode: "manual_plan_required"
+    website_link_expected: true
+    publish_content: true
+    note: "Use only if NHÀ MỸ CALI has an audio/podcast strategy."
+
+  - id: linktree
+    name: "Linktree"
+    domain: "linktr.ee"
+    role: "entity_profile"
+    tier: 1
+    initial_status: "existing_account_found"
+    automation_mode: "audit_existing"
+    website_link_expected: true
+    publish_content: false
+    canonical_url: "https://linktr.ee/nhamycali"
+    note: "Known official public account. Audit/normalize only; do not create another."
