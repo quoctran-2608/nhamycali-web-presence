@@ -40,7 +40,8 @@ Codex phải bắt đầu từ:
 10. `campaign/SEO_LINK_POLICY.md`
 11. `campaign/PLATFORMS.yaml`
 12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
-13. `state/`
+13. `playbooks/PILOT_SEQUENCE.yaml` + exact platform playbook
+14. `state/`
 
 ## Cấu trúc hiện tại
 
@@ -71,12 +72,27 @@ Codex phải bắt đầu từ:
 │   ├── SEO_LINK_POLICY.md
 │   └── CONTENT_SEEDING_PLAN.md
 ├── docs/
+│   ├── CODEX_BROWSER_PILOT.md
 │   ├── EXECUTION_ROADMAP.md
 │   ├── HUMAN_INPUTS_REQUIRED.md
 │   └── REGISTRATION_POLICY.md
 ├── research/
 │   ├── WAVE_1_DECISIONS.yaml
 │   └── WAVE_1_LIVE_RESEARCH_2026-09-28.md
+├── playbooks/
+│   ├── README.md
+│   ├── PILOT_SEQUENCE.yaml
+│   ├── BLUESKY.md
+│   ├── SUBSTACK.md
+│   ├── BLOGGER.md
+│   ├── GRAVATAR_AUDIT.md
+│   ├── LINKTREE_AUDIT.md
+│   └── MEDIUM_MANUAL.md
+├── content/
+│   └── seed/
+│       ├── BLUESKY_SEED.md
+│       ├── SUBSTACK_WELCOME.md
+│       └── BLOGGER_FIRST_POST.md
 ├── secrets/
 │   └── .env.example
 ├── state/
@@ -125,7 +141,8 @@ Continue to next platform
 - [x] Chặng 5A — Xác nhận registration mailbox + SMS verification policy ngoài Git.
 - [ ] Chặng 5B — Chọn password-management workflow; recovery email là tùy chọn.
 - [x] Chặng 6 — Research live Wave 1 platforms trước khi signup.
-- [ ] Chặng 7 — Pilot browser-assisted trên Bluesky → Substack → Blogger, từng nền tảng một.
+- [x] Chặng 7A — Soạn pilot playbook + seed content + Codex entry point.
+- [ ] Chặng 7B — Chạy pilot Bluesky duy nhất, audit xong mới sang Substack/Blogger.
 - [ ] Chặng 8 — Audit pilot rồi mới scale.
 
 ## Registry hiện tại
@@ -170,11 +187,21 @@ Chi tiết:
 - `research/WAVE_1_LIVE_RESEARCH_2026-09-28.md`
 - `research/WAVE_1_DECISIONS.yaml`
 
+Pilot package đã sẵn sàng:
+
+- `docs/CODEX_BROWSER_PILOT.md`
+- `playbooks/PILOT_SEQUENCE.yaml`
+- `playbooks/BLUESKY.md`
+- `playbooks/SUBSTACK.md`
+- `playbooks/BLOGGER.md`
+- seed content tương ứng trong `content/seed/`.
+
 Ưu tiên tiếp theo:
 
-- chọn cách quản lý password ngoài Git;
+- bảo đảm có nơi lưu password unique ngoài Git;
 - recovery email nếu muốn;
-- bắt đầu pilot **Bluesky trước**, sau đó audit kết quả rồi mới đi Substack/Blogger;
+- chạy **Bluesky duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
+- audit kết quả rồi mới cho phép Substack/Blogger;
 - xác nhận thêm các account cũ nếu owner nhớ ra.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
