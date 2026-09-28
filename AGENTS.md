@@ -35,7 +35,8 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 8. `campaign/ACCOUNT_CREATION_RULES.md`
 9. `campaign/SEO_LINK_POLICY.md`
 10. `campaign/PLATFORMS.yaml`
-11. the relevant state files under `state/`
+11. `docs/REGISTRATION_POLICY.md`
+13. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
@@ -130,6 +131,8 @@ Never commit or print:
 - bank information.
 
 Secrets belong outside Git. A local `secrets/.env` may be used if the execution environment supports it, but that file is ignored by Git.
+
+Registration email and SMS verification contacts selected by the owner are runtime secrets. Follow `docs/REGISTRATION_POLICY.md`; do not copy those private values into Markdown, YAML, CSV, issues, pull requests, screenshots, or logs.
 
 Do not store passwords in `state/accounts.csv`.
 
