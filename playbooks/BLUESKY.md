@@ -16,24 +16,26 @@ The domain-handle step requires DNS and is separate from initial account creatio
 
 ## 2. Preflight — mandatory
 
+Owner status for this pilot:
+
+> **The authorized NHÀ MỸ CALI project owner confirmed on 2026-09-30 that NHÀ MỸ CALI does not currently have a Bluesky account.**
+
+Therefore, **do not repeat account-discovery/search for this Bluesky pilot**. Logged-out/internal search availability is not a blocker.
+
 Before clicking Sign up:
 
-1. Read `research/WAVE_1_DECISIONS.yaml`.
-2. Search Bluesky internally for:
-   - NHÀ MỸ CALI
-   - Nha My Cali
-   - nhamycali
-   - nhamycali.com
-3. Inspect any likely match.
-4. If an official existing account is found:
-   - do not create another;
-   - update state to `existing_account_found`;
-   - record public URL;
-   - stop for ownership/login confirmation.
-5. Confirm local runtime secret `REGISTRATION_EMAIL` is available.
-6. Confirm unique credential storage is available outside Git.
-7. Confirm approved asset:
+1. Read `research/WAVE_1_DECISIONS.yaml` and confirm the Bluesky `owner_attestation` is present.
+2. Proceed directly to the official Bluesky signup flow.
+3. Confirm local runtime secret `REGISTRATION_EMAIL` is available.
+4. Confirm the runtime password secret required by the current local pilot configuration is available.
+5. Confirm approved asset:
    - `assets/avatar/nhamycali-avatar-square.png`
+6. Create **at most one** NHÀ MỸ CALI Bluesky account.
+
+If the signup flow itself reveals that the email/handle is already attached to an existing account or otherwise indicates an ownership conflict:
+- stop;
+- do not create a duplicate;
+- record the conflict for human resolution.
 
 ## 3. Identity model
 
@@ -70,7 +72,7 @@ Use the current live UI rather than assuming historical field order.
 Rules:
 
 - Registration email: load from runtime secret, never from repo.
-- Password: unique; store outside Git.
+- Password: load from the approved local runtime secret for the current pilot; never print, log, or commit it. The owner may rotate it after account creation.
 - Date/age or other eligibility field: do not fabricate. Human must provide any personal/legal eligibility detail if requested.
 - Phone verification: follow `docs/REGISTRATION_POLICY.md`.
 - OTP: human action.
@@ -187,7 +189,7 @@ Never record password, OTP, registration email, or private verification phone.
 
 Stop immediately for:
 
-- existing likely official account;
+- signup reveals an unexpected existing-account or ownership conflict;
 - CAPTCHA that needs human action;
 - OTP;
 - age/identity fact not available;
