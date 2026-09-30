@@ -1,8 +1,9 @@
 # Blogger Pilot Playbook
 
 Research snapshot: 2026-09-28  
+Execution update: 2026-09-30  
 Platform: https://www.blogger.com/  
-Mode: **human-supervised browser through an authorized Google Account**
+Mode: **autonomous routine browser through an authorized Google Account with hard security/authorization checkpoints**
 
 ## 1. Purpose
 
@@ -12,6 +13,26 @@ It must not become:
 - a clone of nhamycali.com;
 - a doorway site;
 - a collection of thin pages built only to point at the main website.
+
+## 1.1. Autonomous execution rule
+
+Proceed without asking the owner for routine reversible Blogger UI work.
+
+Autonomous actions include:
+- ordinary Next/Continue/Save/Edit/Create/Publish controls;
+- retrying an unresponsive control up to 3 times;
+- reloading or reopening the official Blogger page;
+- selecting a simple readable theme;
+- configuring non-sensitive layout/navigation defaults;
+- adapting non-canonical copy to field limits;
+- uploading approved assets;
+- creating the approved About/navigation structure;
+- publishing the approved first article;
+- running public QA and updating repo state/report.
+
+If a normal UI control still cannot be activated after reasonable retries, ask for one manual click only, then resume from the resulting page without restarting.
+
+Hard checkpoints remain Google security verification, CAPTCHA/anti-bot, identity/business documents, payment/custom-domain authorization, uncertain existing ownership, unresolved naming conflict, Terms conflict, or destructive irreversible action.
 
 ## 2. Preflight
 
@@ -53,9 +74,9 @@ Availability must be checked live.
 
 If unavailable:
 - do not add random numbers;
-- stop for a naming decision.
-
-Potential human-approved alternatives can be considered later, such as a descriptive educational slug, but Codex must not invent one during the pilot.
+- do not invent an unrelated slug;
+- use only an already-approved clean brand-consistent fallback if one is available in current repo rules;
+- otherwise stop for a naming decision.
 
 ## 5. Assets
 
@@ -151,8 +172,7 @@ Blogger uses the authorized Google Account, but the public blog must not acciden
 
 Preview public pages while logged out where possible.
 
-If Blogger forces an unwanted public Google/Blogger profile identity:
-- stop and resolve before publishing.
+If Blogger exposes an unwanted private/personal Google identity publicly, stop and resolve before publishing. Ordinary author/display-label choices may be normalized autonomously when they can truthfully use canonical brand data.
 
 ## 11. Public QA
 
@@ -182,14 +202,18 @@ If this becomes a stable official property, add it to `brand/OFFICIAL_LINKS.yaml
 
 ## 13. Stop conditions
 
-Stop for:
-- an existing official Blogger property;
-- Google account security challenge;
-- identity/profile exposure issue;
-- desired Blogspot address unavailable;
-- request to create a custom domain;
-- unexpected paid requirement;
-- inability to distinguish public vs private account information.
+Stop only for:
+- a strong existing official Blogger property with uncertain ownership;
+- Google account security/OTP/2FA challenge requiring human interaction;
+- CAPTCHA/anti-bot;
+- identity/business document request;
+- unwanted public exposure of private Google identity that cannot be normalized truthfully;
+- preferred Blogspot address unavailable with no approved clean fallback;
+- payment/custom-domain authorization;
+- Terms/policy conflict;
+- destructive irreversible action.
+
+Ordinary theme/layout choices, profile/About copy fitting, navigation setup, approved asset upload, Save/Create/Publish controls, and public QA are not stop conditions.
 
 ## 14. Success definition
 
