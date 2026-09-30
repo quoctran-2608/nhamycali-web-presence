@@ -1,6 +1,6 @@
 # Registration & Verification Policy
 
-Version: 1.2  
+Version: 1.3  
 Initial confirmation: 2026-09-28  
 Updated by project owner: 2026-09-30
 
@@ -122,6 +122,21 @@ Human action is required only when:
 - identity/business documents are requested;
 - an account-recovery/ownership decision is required;
 - payment/subscription/Stripe/card/bank authorization is required.
+
+## 8.1. Standard terms / agreement authorization
+
+The owner has pre-authorized acceptance of standard free-account/publication:
+- Terms of Service;
+- Privacy Policy;
+- Community Guidelines;
+- Publisher/Creator Agreements;
+- ordinary signup consent controls.
+
+See `docs/OWNER_AUTHORIZATIONS.md`.
+
+Codex should accept these standard agreements autonomously and continue without asking again.
+
+Do not use this authorization to make unsupported factual/legal attestations or to accept payment/financial commitments.
 
 ## 9. Platform-specific exceptions
 
