@@ -144,7 +144,8 @@ Continue to next platform
 - [x] Chặng 7A — Soạn pilot playbook + seed content + Codex entry point.
 - [x] Chặng 7B — Bluesky pilot completed và public QA đạt.
 - [x] Chặng 8A — Audit/close-out Bluesky completed.
-- [ ] Chặng 8B — Chạy Substack pilot, audit xong mới sang Blogger.
+- [x] Chặng 8B — Substack pilot completed; brand subdomain resolved to nhamycali.substack.com.
+- [ ] Chặng 8C — Chạy Blogger pilot, audit xong mới mở rộng Wave 2.
 
 ## Registry hiện tại
 
@@ -187,8 +188,8 @@ Registration policy hiện đã xác nhận ở mức cần thiết để resear
 Live Wave 1 research + Bluesky pilot hiện có trạng thái:
 
 - **Completed:** Bluesky — https://bsky.app/profile/nhamycali.bsky.social
-- **Next pilot:** Substack.
-- **Ready after Substack:** Blogger.
+- **Completed:** Substack — https://nhamycali.substack.com/; author profile https://substack.com/@helenhanguyen
+- **Next pilot:** Blogger.
 - **Existing — audit only:** Gravatar, Linktree.
 - **Manual-only:** Medium.
 - **Deferred:** Google Sites.
@@ -209,10 +210,10 @@ Pilot package đã sẵn sàng:
 
 Ưu tiên tiếp theo:
 
-- chạy **Substack duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
+- chạy **Blogger duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
 - Codex được phép chủ động với toàn bộ thao tác UI thông thường, chỉnh copy không-canonical, upload asset, save/publish nội dung đã duyệt và cập nhật repo;
 - chỉ dừng ở hard blocker: CAPTCHA/anti-bot, OTP/2FA/security challenge, giấy tờ định danh, payment, ownership conflict, Terms conflict hoặc destructive irreversible action;
-- audit Substack rồi mới chuyển Blogger.
+- audit Blogger rồi mới mở rộng Wave 2.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
 
