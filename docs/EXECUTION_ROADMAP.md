@@ -69,7 +69,7 @@ Before actual signup, re-check the exact target in-platform **unless a dated own
 
 ## Phase 3 — Pilot batch
 
-Status: **Bluesky completed and audited; Substack is the next live pilot.**
+Status: **Bluesky and Substack completed and audited; Blogger is the next live pilot.**
 
 Pilot package:
 - `docs/CODEX_BROWSER_PILOT.md`
@@ -84,11 +84,11 @@ Do not start with all platforms.
 ### Completed
 
 - **Bluesky** — completed 2026-09-30; public profile verified at https://bsky.app/profile/nhamycali.bsky.social; one approved seed post published; no DNS changes.
+- **Substack** — completed 2026-09-30; publication at https://nhamycali.substack.com/; Helen author profile at https://substack.com/@helenhanguyen; one web-only welcome issue published; no paid subscription, Stripe, custom domain, or DNS changes.
 
-### Active browser-assisted creation candidates
+### Active browser-assisted creation candidate
 
-1. **Substack** — next live pilot.
-2. **Blogger** — run only after Substack review.
+1. **Blogger** — next live pilot.
 
 ### Existing-account audits
 
@@ -137,7 +137,19 @@ Workflow lesson incorporated:
 - ordinary UI actions should be autonomous and retried before escalating;
 - human input is reserved for hard security/authorization blockers.
 
-Next audit target: Substack.
+### Substack audit — PASS
+
+Verified/owner-confirmed on 2026-09-30:
+- publication name/avatar/About structure completed;
+- Helen author identity remains separate;
+- canonical website navigation present;
+- one welcome issue published web-only;
+- email verification completed;
+- brand-consistent publication subdomain successfully changed to https://nhamycali.substack.com/;
+- no Stripe, paid subscriptions, custom domain, or DNS changes;
+- no unresolved manual action remains.
+
+Next audit target: Blogger.
 
 ## Phase 5 — Publishing/distribution expansion
 
