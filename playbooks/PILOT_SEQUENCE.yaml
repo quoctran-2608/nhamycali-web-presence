@@ -24,6 +24,7 @@ global_gates:
     - "SMS_PHONE_FALLBACK"
   autonomous_routine_actions:
     - "ordinary navigation and form buttons"
+    - "standard free signup terms/privacy/community/publisher agreement acceptance"
     - "profile/About copy adaptation within canonical facts"
     - "approved asset upload"
     - "reasonable non-sensitive category/default selection"
@@ -41,7 +42,7 @@ global_gates:
     - "identity or business document request"
     - "payment/subscription/Stripe/card/bank authorization"
     - "existing account with uncertain ownership"
-    - "unexpected Terms/policy conflict"
+    - "Terms/policy conflict that expressly prohibits the intended workflow or requires a non-routine legal/commercial commitment outside the standing owner authorization"
     - "material factual claim unsupported by canonical data"
     - "destructive irreversible action such as account deletion"
 

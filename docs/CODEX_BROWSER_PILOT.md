@@ -23,12 +23,13 @@ Do not recreate or re-run signup for completed platforms.
 6. `assets/ASSET_MANIFEST.yaml`
 7. `assets/PLATFORM_ASSET_POLICY.yaml`
 8. `docs/REGISTRATION_POLICY.md`
-9. `research/WAVE_1_DECISIONS.yaml`
-10. `playbooks/PILOT_SEQUENCE.yaml`
-11. `playbooks/BLOGGER.md`
-12. `content/seed/BLOGGER_FIRST_POST.md`
-13. `state/accounts.csv`
-14. `state/manual_actions.md`
+9. `docs/OWNER_AUTHORIZATIONS.md`
+10. `research/WAVE_1_DECISIONS.yaml`
+11. `playbooks/PILOT_SEQUENCE.yaml`
+12. `playbooks/BLOGGER.md`
+13. `content/seed/BLOGGER_FIRST_POST.md`
+14. `state/accounts.csv`
+15. `state/manual_actions.md`
 
 ## Instruction to Codex
 
@@ -37,6 +38,8 @@ Use this task wording:
 > Execute the NHÀ MỸ CALI **Blogger pilot only** according to the repository rules and `playbooks/BLOGGER.md`.
 >
 > Operate autonomously for routine reversible browser work. Do not ask me before ordinary Blogger actions such as New blog, Next, Save, Publish, Pages, Layout, Theme, navigation, reasonable non-sensitive field selection, copy fitting, approved asset upload, or public QA when the intended outcome is defined by the repo.
+>
+> I have also granted standing authorization in `docs/OWNER_AUTHORIZATIONS.md` for standard free-account/service Terms of Service, Privacy Policy, Community Guidelines, Publisher/Creator Agreement, and equivalent ordinary signup consent controls. Tick/click those standard acceptance controls and continue without asking me again.
 >
 > If an ordinary UI action does not respond, retry it up to 3 times using normal browser controls, reload, or direct navigation to the official Blogger page. If browser tooling still cannot activate the control, ask me for one manual click only and then continue from the resulting page without restarting.
 >
@@ -61,10 +64,10 @@ Use this task wording:
 >
 > Stop only for a hard blocker:
 > - Google security challenge, CAPTCHA, OTP/2FA
-> - identity/business documents
+> - identity/business documents or unsupported factual/legal attestation
 > - strong existing-account ownership conflict
-> - payment/custom-domain purchase
-> - Terms/policy conflict
+> - payment/custom-domain purchase or other financial commitment
+> - Terms/policy language that expressly prohibits the intended workflow or requires a non-routine legal/commercial commitment outside the standing authorization
 > - unsupported material factual claim
 > - destructive irreversible action
 >
@@ -91,10 +94,13 @@ Human input is expected only for:
 - Google login/security verification if the browser requires it;
 - CAPTCHA/anti-bot;
 - OTP/2FA/security verification;
-- identity/business documents;
+- identity/business documents or missing factual/legal attestations;
 - payment/financial authorization;
 - ambiguous ownership;
+- non-routine prohibited-workflow/legal-commercial conflicts;
 - destructive irreversible actions.
+
+Standard free-service Terms/Privacy/Community/Publisher agreement acceptance is already authorized and is **not** a human checkpoint.
 
 ## Expected output
 

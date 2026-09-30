@@ -33,12 +33,13 @@ Before doing any account, profile, content, SEO, or browser work, read in this o
 6. `assets/ASSET_MANIFEST.yaml`
 7. `assets/PLATFORM_ASSET_POLICY.yaml`
 8. `docs/REGISTRATION_POLICY.md`
-9. `campaign/ACCOUNT_CREATION_RULES.md`
-10. `campaign/SEO_LINK_POLICY.md`
-11. `campaign/PLATFORMS.yaml`
-12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
-13. `playbooks/PILOT_SEQUENCE.yaml` and the exact platform playbook before pilot execution
-14. the relevant state files under `state/`
+9. `docs/OWNER_AUTHORIZATIONS.md`
+10. `campaign/ACCOUNT_CREATION_RULES.md`
+11. `campaign/SEO_LINK_POLICY.md`
+12. `campaign/PLATFORMS.yaml`
+13. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
+14. `playbooks/PILOT_SEQUENCE.yaml` and the exact platform playbook before pilot execution
+15. the relevant state files under `state/`
 
 If instructions conflict, this order of authority applies:
 
@@ -161,11 +162,28 @@ Human intervention is required only for hard blockers such as:
 - identity/business-document verification;
 - payment, subscription purchase, Stripe/card/bank connection, or other financial authorization;
 - ambiguous ownership of an existing account;
-- a Terms/policy conflict that makes the intended automation questionable;
+- a Terms/policy conflict that expressly prohibits the intended automation/workflow or requires a non-routine legal/commercial commitment outside `docs/OWNER_AUTHORIZATIONS.md`;
 - a request to publish a material factual claim not supported by canonical data;
 - destructive deletion or irreversible account closure.
 
 These safeguards are not optional, but everything outside them should be handled as autonomously as practical.
+
+## 6.2. Standing owner authorization for standard signup terms
+
+The owner has granted standing authorization in `docs/OWNER_AUTHORIZATIONS.md`.
+
+For approved free account/profile/publication workflows, Codex may autonomously accept standard:
+- Terms of Service;
+- Privacy Policy;
+- Community Guidelines;
+- standard Publisher/Creator Agreements;
+- ordinary registration consent checkboxes/buttons.
+
+Do **not** ask again merely because the signup flow presents an ordinary standard terms-acceptance step.
+
+This authorization does not permit false factual attestations, payment/financial commitments, identity-document claims, or bypassing security controls.
+
+If the external platform or Codex product itself enforces an action-time approval, obtain that required approval and continue. Do not treat the existence of a mandatory product approval as a project-policy blocker.
 
 ## 7. Credential policy
 
@@ -373,7 +391,7 @@ Stop and require human action only when:
 - identity/business verification or sensitive legal documents are requested;
 - payment, paid subscription, Stripe/card/bank connection, or other financial authorization is required;
 - an existing account may belong to NHÀ MỸ CALI but ownership is uncertain;
-- platform Terms appear to prohibit the intended automation;
+- platform Terms expressly prohibit the intended automation/workflow or require a non-routine legal/commercial commitment outside the standing owner authorization;
 - the platform would require making a material factual claim not supported by canonical data;
 - a destructive/irreversible action such as account deletion is requested.
 
