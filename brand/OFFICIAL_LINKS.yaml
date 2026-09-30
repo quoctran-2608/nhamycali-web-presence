@@ -33,10 +33,11 @@ canonical:
     status: "verified_public"
 
   substack:
-    url: "https://helenhanguyen.substack.com/"
-    handle: "helenhanguyen.substack.com"
+    url: "https://nhamycali.substack.com/"
+    handle: "nhamycali.substack.com"
     status: "verified_public"
-    note: "NHÀ MỸ CALI publication publicly verified; author profile is https://substack.com/@helenhanguyen. Preferred brand subdomain was not applied and remains an owner follow-up."
+    author_profile: "https://substack.com/@helenhanguyen"
+    note: "NHÀ MỸ CALI publication subdomain updated by the owner on 2026-09-30. Helen Hà Nguyễn remains the separate author profile."
 
 related_professional_profiles:
   helen_gravatar:
