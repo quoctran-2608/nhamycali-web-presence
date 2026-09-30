@@ -36,15 +36,20 @@ Use original/adapted copy, not mass duplicate posts.
 
 ### Substack
 
-Recommended role:
+Status: **pilot completed 2026-09-30**.
+
+Publication:
+- https://nhamycali.substack.com/
+
+Author:
+- https://substack.com/@helenhanguyen
+
+Recommended ongoing role:
 - newsletter;
 - weekly/biweekly market + buyer education;
 - Open House digest when there is enough value.
 
-Initial issue:
-- brand introduction;
-- what subscribers will receive;
-- link to canonical website.
+The initial welcome issue is already published. Do not recreate the publication or repeat the pilot onboarding.
 
 ### Blogger / WordPress.com
 
@@ -190,10 +195,10 @@ Never seed from unverified scraped third-party copy.
 
 Completed:
 - Bluesky — social/entity presence.
+- Substack — newsletter/editorial channel.
 
 Current:
-1. Substack — newsletter/editorial channel.
-2. Blogger — supporting educational publication after Substack audit.
+1. Blogger — supporting educational publication.
 
 ### Audit existing
 
@@ -215,7 +220,7 @@ Current:
 - Inoreader
 - Pinterest
 
-Audit Substack before moving to Blogger, then continue expansion only after the pilot workflow remains stable.
+Audit Blogger before expanding Wave 2.
 
 ## 9. Success criteria
 
