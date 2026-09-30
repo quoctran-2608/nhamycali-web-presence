@@ -4,12 +4,14 @@ This is the current browser-execution entry point.
 
 ## Current live task
 
-**Run only the Substack pilot. Bluesky is completed. Do not run Blogger in the same task.**
+**Run only the Blogger pilot. Bluesky and Substack are completed.**
 
-Bluesky canonical profile:
-- https://bsky.app/profile/nhamycali.bsky.social
-- status: completed
-- do not recreate or re-run signup
+Completed canonical properties:
+- Bluesky: https://bsky.app/profile/nhamycali.bsky.social
+- Substack publication: https://nhamycali.substack.com/
+- Substack author profile: https://substack.com/@helenhanguyen
+
+Do not recreate or re-run signup for completed platforms.
 
 ## Required reading
 
@@ -23,8 +25,8 @@ Bluesky canonical profile:
 8. `docs/REGISTRATION_POLICY.md`
 9. `research/WAVE_1_DECISIONS.yaml`
 10. `playbooks/PILOT_SEQUENCE.yaml`
-11. `playbooks/SUBSTACK.md`
-12. `content/seed/SUBSTACK_WELCOME.md`
+11. `playbooks/BLOGGER.md`
+12. `content/seed/BLOGGER_FIRST_POST.md`
 13. `state/accounts.csv`
 14. `state/manual_actions.md`
 
@@ -32,58 +34,61 @@ Bluesky canonical profile:
 
 Use this task wording:
 
-> Execute the NHÀ MỸ CALI **Substack pilot only** according to the repository rules and `playbooks/SUBSTACK.md`.
+> Execute the NHÀ MỸ CALI **Blogger pilot only** according to the repository rules and `playbooks/BLOGGER.md`.
 >
-> Operate autonomously for routine reversible browser work. Do not ask me before ordinary actions such as Next, Continue, Save, Edit, Upload, Skip, Create, Publish, Post, navigation, reasonable field selection, copy fitting, or public QA when the intended result is already defined by the repo.
+> Operate autonomously for routine reversible browser work. Do not ask me before ordinary Blogger actions such as New blog, Next, Save, Publish, Pages, Layout, Theme, navigation, reasonable non-sensitive field selection, copy fitting, approved asset upload, or public QA when the intended outcome is defined by the repo.
 >
-> If an ordinary UI action does not respond, retry it up to 3 times using normal browser actions, reload, or direct navigation to the official page. If browser tooling still cannot activate the control, ask me for one manual click only, then continue from the resulting page without restarting the workflow.
+> If an ordinary UI action does not respond, retry it up to 3 times using normal browser controls, reload, or direct navigation to the official Blogger page. If browser tooling still cannot activate the control, ask me for one manual click only and then continue from the resulting page without restarting.
 >
-> Perform one reasonable existing-account check. Prior research found no clear NHÀ MỸ CALI Substack property. If a strong likely official account is found, stop for ownership confirmation. If no strong match is found, or logged-out search is unavailable and signup does not reveal an ownership conflict, proceed with signup rather than looping on discovery.
+> Use the authorized Google Account already available in the browser/session. Inspect the Blogger dashboard for an existing NHÀ MỸ CALI blog. If a strong likely official blog already exists, stop for ownership confirmation. If the dashboard shows no matching blog and creation proceeds normally, do not loop on public-search absence; proceed with the pilot.
 >
-> Preferred public architecture:
-> - publication/brand: NHÀ MỸ CALI
-> - author/person identity, only where Substack exposes a distinct author field: Helen Hà Nguyễn
-> - canonical website: https://nhamycali.com/
-> - preferred handle: nhamycali
-> - publication avatar: assets/avatar/nhamycali-avatar-square.png
-> - Helen portrait only for a distinct author/person identity
+> Preferred Blogger identity:
+> - Blog title: NHÀ MỸ CALI — Cẩm Nang Mua Nhà Mỹ
+> - Preferred Blogspot address: nhamycali.blogspot.com
+> - Canonical website: https://nhamycali.com/
+> - Approved brand assets from the repo
 >
-> Adapt non-canonical bio/About/description/title copy autonomously to fit live field limits while preserving canonical facts and brand meaning. You may choose reasonable categories, navigation order, visibility defaults and other non-sensitive settings without asking me.
+> If the preferred Blogspot address is unavailable, choose the cleanest brand-consistent descriptive fallback allowed by `playbooks/BLOGGER.md`. Do not add random numbers.
 >
-> Use the approved welcome issue from `content/seed/SUBSTACK_WELCOME.md`. Publish only the first approved welcome issue during this pilot; do not bulk-import the website archive.
+> Create the useful static/public structure defined in the playbook:
+> - Giới thiệu/About
+> - Website chính / canonical link to https://nhamycali.com/
+> - clean readable navigation
 >
-> Do not purchase a custom domain, enable paid subscriptions, connect Stripe, or make any payment.
+> Publish exactly one approved first article from `content/seed/BLOGGER_FIRST_POST.md`. You may adapt formatting, headings, spacing, excerpt and other non-canonical presentation details for Blogger readability, but preserve factual/canonical meaning. Do not bulk-copy the NHÀ MỸ CALI website.
+>
+> Do not expose the private registration Gmail or unrelated Google-profile details on public pages.
 >
 > Stop only for a hard blocker:
-> - CAPTCHA/anti-bot requiring human interaction
-> - OTP/2FA/email/SMS security code or security challenge you cannot legitimately complete
+> - Google security challenge, CAPTCHA, OTP/2FA
 > - identity/business documents
-> - payment/subscription/Stripe/card/bank authorization
-> - existing account with uncertain ownership
+> - strong existing-account ownership conflict
+> - payment/custom-domain purchase
 > - Terms/policy conflict
+> - unsupported material factual claim
 > - destructive irreversible action
 >
-> Credential fields: use the approved local secret workflow when the browser environment permits it. If the browser security boundary prevents moving a secret from local runtime into a credential field, ask me to fill only those credential/verification fields directly in the browser, then immediately continue the rest autonomously. Do not expose the secret in chat, logs, repo files, reports, or commit metadata.
+> Credential fields: if the browser security boundary requires the owner to perform Google login/security verification, ask only for that specific manual action, then continue the Blogger workflow autonomously.
 >
 > After public QA succeeds:
 > - update `state/accounts.csv`
-> - update `brand/OFFICIAL_LINKS.yaml` only with verified public Substack URL(s)
-> - resolve any Substack blocker in `state/manual_actions.md`
-> - create/update a Substack platform report
+> - update `brand/OFFICIAL_LINKS.yaml` only with the verified public Blogger URL
+> - resolve any Blogger blocker in `state/manual_actions.md`
+> - create/update a Blogger platform report
 > - scan the diff for secrets
 > - run `git diff --check`
 > - commit the non-secret changes
-> - report the public URLs and commit SHA
+> - report the public blog URL and commit SHA
 > - STOP
 >
-> Do not start Blogger or any other platform.
+> Do not start another platform.
 
 ## Human checkpoints
 
 Routine UI is not a checkpoint.
 
 Human input is expected only for:
-- credential entry if the browser cannot securely transfer local secrets;
+- Google login/security verification if the browser requires it;
 - CAPTCHA/anti-bot;
 - OTP/2FA/security verification;
 - identity/business documents;
@@ -94,19 +99,19 @@ Human input is expected only for:
 ## Expected output
 
 Codex should report:
-- whether an existing Substack property was found;
-- whether a new profile/publication was created;
-- handle and public URLs;
+- whether an existing Blogger property was found;
+- whether a new blog was created;
+- final Blogspot URL;
 - whether canonical website appears publicly;
-- whether brand/avatar/About passed QA;
-- whether the welcome issue was published;
+- whether approved brand identity passed QA;
+- whether the first article was published;
 - any hard blocker encountered;
 - exact state/report files updated;
 - commit SHA;
 - confirmation that no secret was committed.
 
-## After Substack
+## After Blogger
 
 Stop for audit.
 
-Blogger is the next candidate only after the Substack result is reviewed.
+Do not expand to the next platform until the Blogger result is reviewed.
