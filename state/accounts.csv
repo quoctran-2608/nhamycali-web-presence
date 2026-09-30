@@ -8,7 +8,7 @@ tumblr,Tumblr,not_started,,,,false,false,false,true,false,,
 pinterest,Pinterest,not_suitable,,,,false,false,false,true,false,2026-09-28,Owner confirmed an existing account but intentionally excluded Pinterest from the active campaign; do not create or develop unless reactivated
 diigo,Diigo,research_needed,,,,false,false,false,true,false,,No mass bookmarking
 diigo_library,Diigo Library,not_suitable,,,,false,false,false,true,false,,Feature of Diigo; not separate account
-bluesky,Bluesky,ready_for_pilot,,,,false,false,false,true,false,2026-09-28,Live research complete; re-check in-platform existence before signup; preferred long-term handle @nhamycali.com after separate DNS approval
+bluesky,Bluesky,manual_action_required,,,,false,false,false,true,true,2026-09-30,In-app search unavailable while logged out; public web search returned no matches; https://bsky.app/profile/nhamycali.bsky.social could not resolve; signup flow did not open; no credentials submitted and no account created
 instapaper,Instapaper,not_suitable,,,,false,false,false,true,false,,Read-later utility
 bitly,Bitly,not_started,,,,false,false,false,true,false,,Tracking utility; manual plan required
 evernote,Evernote,not_suitable,,,,false,false,false,true,false,,Productivity tool
