@@ -1,9 +1,10 @@
-schema_version: 1
+schema_version: 2
 last_updated: "2026-09-30"
 
 purpose: >-
-  Execution order and gates for the first live browser-assisted NHÀ MỸ CALI
-  web-presence pilot. This file does not authorize bypassing security controls.
+  Current execution order for NHÀ MỸ CALI browser-assisted web-presence work.
+  Routine reversible UI work should be autonomous. Hard security/authorization
+  controls remain human checkpoints.
 
 global_gates:
   required_reading:
@@ -21,58 +22,66 @@ global_gates:
   optional_runtime_secrets:
     - "SMS_PHONE_PRIMARY"
     - "SMS_PHONE_FALLBACK"
-  password_storage_requirement: >-
-    For the current pilot, the owner has approved a temporary bootstrap password
-    supplied only through DEFAULT_ACCOUNT_PASSWORD in local secrets/.env. Never expose
-    or commit the literal value. Before broad scaling, rotate to unique per-platform
-    credentials/password-manager storage.
-  stop_on:
-    - "CAPTCHA requiring human interaction"
-    - "OTP/SMS code"
+  autonomous_routine_actions:
+    - "ordinary navigation and form buttons"
+    - "profile/About copy adaptation within canonical facts"
+    - "approved asset upload"
+    - "reasonable non-sensitive category/default selection"
+    - "save/edit/publish actions explicitly authorized by a playbook"
+    - "public QA"
+    - "state/report update and commit"
+  retry_policy: >-
+    Retry an ordinary unresponsive UI action up to 3 times, including reload or
+    direct navigation to the official page. If browser tooling still cannot activate
+    a normal control, ask the owner for one manual click and resume from the resulting
+    page without restarting the workflow.
+  hard_stop_on:
+    - "CAPTCHA or anti-bot challenge requiring human interaction"
+    - "OTP/2FA/email/SMS security code or security challenge the browser cannot legitimately complete"
     - "identity or business document request"
-    - "payment request not explicitly authorized"
+    - "payment/subscription/Stripe/card/bank authorization"
     - "existing account with uncertain ownership"
     - "unexpected Terms/policy conflict"
-    - "requested public field would expose a private registration secret"
+    - "material factual claim unsupported by canonical data"
+    - "destructive irreversible action such as account deletion"
+
+completed:
+  - platform_id: "bluesky"
+    completed_date: "2026-09-30"
+    public_url: "https://bsky.app/profile/nhamycali.bsky.social"
+    result: "Public profile verified, email verified, canonical website visible, seed post 1 published, no DNS changes."
 
 sequence:
 
   - order: 1
-    platform_id: "bluesky"
-    playbook: "playbooks/BLUESKY.md"
-    mode: "human_supervised_browser"
-    goal: "Create or normalize one official NHÀ MỸ CALI brand account if absent."
-    post_step_gate: "Audit public profile before continuing to another new account."
+    platform_id: "substack"
+    playbook: "playbooks/SUBSTACK.md"
+    mode: "autonomous_routine_browser"
+    goal: "Create and configure a genuine NHÀ MỸ CALI newsletter/publication if no owned existing property is found."
+    post_step_gate: "Verify public profile/publication and first issue, update state/report, then stop for audit."
 
   - order: 2
+    platform_id: "blogger"
+    playbook: "playbooks/BLOGGER.md"
+    mode: "autonomous_routine_browser"
+    goal: "Create a distinct educational supporting blog if absent."
+    post_step_gate: "Run only after Substack audit."
+
+  - order: 3
     platform_id: "gravatar"
     playbook: "playbooks/GRAVATAR_AUDIT.md"
     mode: "audit_existing"
     goal: "Confirm ownership/access and canonical link on existing Helen profile."
     post_step_gate: "No new Gravatar account."
 
-  - order: 3
+  - order: 4
     platform_id: "linktree"
     playbook: "playbooks/LINKTREE_AUDIT.md"
     mode: "manual_audit"
-    goal: "Review existing official Linktree; no automated edits."
-    post_step_gate: "Record recommendations only unless owner manually edits."
-
-  - order: 4
-    platform_id: "substack"
-    playbook: "playbooks/SUBSTACK.md"
-    mode: "human_supervised_browser"
-    goal: "Create a genuine NHÀ MỸ CALI newsletter/publication if absent."
-    post_step_gate: "Verify public profile/publication and first content before continuing."
+    goal: "Review existing official Linktree."
+    post_step_gate: "No automated account recreation."
 
   - order: 5
-    platform_id: "blogger"
-    playbook: "playbooks/BLOGGER.md"
-    mode: "human_supervised_browser"
-    goal: "Create a distinct educational supporting blog if absent."
-    post_step_gate: "Verify public blog/About/canonical link and first article."
-
-  - order: 6
     platform_id: "medium"
     playbook: "playbooks/MEDIUM_MANUAL.md"
     mode: "manual_only"
@@ -90,10 +99,10 @@ deferred:
     reason: "Requires an approved distinct resource-hub/event concept."
 
 completion_definition:
-  - "Every created profile is publicly verified."
-  - "No duplicate official identity was created."
+  - "Every created profile/publication is publicly verified."
+  - "No known duplicate official identity was created."
   - "Canonical website is present where appropriate."
   - "Approved assets are used correctly."
   - "No private credential/verification data is committed."
   - "state/accounts.csv is updated after every platform."
-  - "A batch report is created from templates/platform_report.md."
+  - "A platform report is created or updated."
