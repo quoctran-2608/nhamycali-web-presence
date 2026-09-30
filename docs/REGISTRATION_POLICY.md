@@ -1,7 +1,8 @@
 # Registration & Verification Policy
 
-Version: 1.0  
-Confirmed by project owner: 2026-09-28
+Version: 1.1  
+Initial confirmation: 2026-09-28  
+Updated by project owner: 2026-09-30
 
 ## 1. Security model
 
