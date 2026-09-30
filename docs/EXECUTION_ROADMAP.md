@@ -69,7 +69,7 @@ Before actual signup, re-check the exact target in-platform **unless a dated own
 
 ## Phase 3 — Pilot batch
 
-Status: **execution playbooks prepared; live account execution not started.**
+Status: **Bluesky completed and audited; Substack is the next live pilot.**
 
 Pilot package:
 - `docs/CODEX_BROWSER_PILOT.md`
@@ -81,11 +81,14 @@ Pilot package:
 
 Do not start with all platforms.
 
+### Completed
+
+- **Bluesky** — completed 2026-09-30; public profile verified at https://bsky.app/profile/nhamycali.bsky.social; one approved seed post published; no DNS changes.
+
 ### Active browser-assisted creation candidates
 
-1. **Bluesky** — run first and stop after public audit.
-2. **Substack** — run only after Bluesky pilot review.
-3. **Blogger** — run only after Substack review.
+1. **Substack** — next live pilot.
+2. **Blogger** — run only after Substack review.
 
 ### Existing-account audits
 
@@ -118,15 +121,23 @@ For each active candidate:
 
 ## Phase 4 — Pilot audit
 
-Review:
-- account suspension/security issues;
-- profile consistency;
-- public indexing;
-- actual referral usefulness;
-- whether website link displays correctly;
-- whether signup automation appears permitted/stable.
+### Bluesky audit — PASS
 
-Adjust rules before continuing.
+Verified on 2026-09-30:
+- public profile reachable;
+- canonical display name/avatar/bio in place;
+- nhamycali.com visible as public link;
+- registration email/phone/credentials not exposed;
+- email verification completed;
+- one approved seed post published;
+- no DNS/_atproto changes;
+- no unresolved manual action remains.
+
+Workflow lesson incorporated:
+- ordinary UI actions should be autonomous and retried before escalating;
+- human input is reserved for hard security/authorization blockers.
+
+Next audit target: Substack.
 
 ## Phase 5 — Publishing/distribution expansion
 

@@ -12,16 +12,18 @@ Read:
 
 ## Current pilot
 
+### Completed
+
+- `BLUESKY.md` — completed and audited 2026-09-30.
+
 ### Browser-assisted, one at a time
 
-1. `BLUESKY.md`
-2. `SUBSTACK.md`
-3. `BLOGGER.md`
+1. `SUBSTACK.md` — **current next pilot**
+2. `BLOGGER.md` — only after Substack audit
 
-Do not start platform 2 until platform 1 has been:
-- publicly verified;
-- recorded in state;
-- audited for unexpected security/policy issues.
+Routine reversible UI actions are autonomous. Codex should not ask before ordinary navigation, Save/Edit/Upload/Create/Publish actions, copy fitting, or other playbook-defined non-sensitive work.
+
+Hard human checkpoints remain security/authorization events such as CAPTCHA/anti-bot, OTP/2FA/security verification, identity documents, payment/financial authorization, ambiguous ownership, Terms conflicts, and destructive irreversible actions.
 
 ### Existing-account audits
 
@@ -36,11 +38,7 @@ Do not start platform 2 until platform 1 has been:
 
 A playbook is not permission to bypass a live platform control.
 
-If the live UI/policy differs from the research snapshot:
-- stop;
-- verify the current rule;
-- update the repo;
-- then continue.
+If the live UI differs in ordinary layout/control details, adapt and continue autonomously. If the live **policy/Terms** materially conflicts with the intended workflow, stop, verify the rule, update the repo, then continue only if appropriate.
 
 ## Secrets
 

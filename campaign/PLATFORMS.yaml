@@ -1,5 +1,5 @@
 schema_version: 1
-last_updated: "2026-09-28"
+last_updated: "2026-09-30"
 
 # Role taxonomy:
 # entity_profile       = public brand identity / citation / navigation
@@ -16,6 +16,7 @@ last_updated: "2026-09-28"
 # research_needed      = platform/domain/current suitability must be verified
 
 # Automation modes:
+# completed            = verified canonical platform property; do not recreate
 # candidate            = may proceed after preflight verification
 # audit_existing       = find/verify existing official account; do not create duplicate
 # manual_only          = platform action must be performed manually; Codex may prepare copy/checklists
@@ -196,12 +197,14 @@ platforms:
     domain: "bsky.app"
     role: "social"
     tier: 1
-    initial_status: "ready_for_pilot"
-    automation_mode: "candidate"
+    initial_status: "completed"
+    automation_mode: "completed"
     website_link_expected: true
     publish_content: true
+    canonical_url: "https://bsky.app/profile/nhamycali.bsky.social"
+    current_handle: "@nhamycali.bsky.social"
     preferred_long_term_handle: "@nhamycali.com"
-    note: "Live research complete 2026-09-28. Official organizations are supported; Bluesky strongly encourages owned-domain handles. Re-check in-platform existence before signup. Domain-handle DNS is a separate human-approved step."
+    note: "Pilot completed and publicly verified 2026-09-30. Owner created the account in browser; Codex completed profile QA and published seed post 1. Email verification complete. No DNS/_atproto changes. Do not recreate the account."
 
   - id: instapaper
     name: "Instapaper"
@@ -608,7 +611,7 @@ platforms:
     automation_mode: "candidate"
     website_link_expected: true
     publish_content: true
-    note: "Live research complete 2026-09-28. Strong newsletter/editorial fit with profile and homepage links. Use a human-supervised browser session, re-check account existence first, and do not mirror the entire canonical website."
+    note: "Next active pilot after Bluesky close-out. Codex should execute routine UI autonomously, use NHÀ MỸ CALI as the publication brand, use Helen only for a distinct author/person identity, and stop only for hard security/authorization blockers or an existing-account ownership conflict."
 
   - id: all4webs
     name: "All4webs"

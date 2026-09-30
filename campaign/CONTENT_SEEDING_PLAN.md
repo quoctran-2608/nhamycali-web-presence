@@ -103,11 +103,18 @@ Use only if NHÀ MỸ CALI has rights to publish high-quality original real-esta
 
 ### Bluesky
 
+Status: **pilot completed 2026-09-30**.
+
 Role:
 - short educational posts;
 - market/news commentary;
 - new resources;
 - brand updates.
+
+Canonical profile:
+- https://bsky.app/profile/nhamycali.bsky.social
+
+Do not recreate the account. Future posting should follow normal social-content planning rather than signup/pilot workflow.
 
 ### Reddit
 
@@ -181,9 +188,12 @@ Never seed from unverified scraped third-party copy.
 
 ### Browser-assisted pilot candidates
 
-1. Bluesky — social/entity presence.
-2. Substack — newsletter/editorial channel.
-3. Blogger — supporting educational publication.
+Completed:
+- Bluesky — social/entity presence.
+
+Current:
+1. Substack — newsletter/editorial channel.
+2. Blogger — supporting educational publication after Substack audit.
 
 ### Audit existing
 
@@ -205,7 +215,7 @@ Never seed from unverified scraped third-party copy.
 - Inoreader
 - Pinterest
 
-Audit the first three candidates one platform at a time before expanding.
+Audit Substack before moving to Blogger, then continue expansion only after the pilot workflow remains stable.
 
 ## 9. Success criteria
 

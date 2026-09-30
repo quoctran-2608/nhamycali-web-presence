@@ -126,9 +126,46 @@ Automation must **not** bypass or defeat:
 - platform restrictions;
 - payment gates.
 
-When blocked by one of these, stop that platform cleanly and record it in `state/manual_actions.md`.
+When blocked by one of these hard security/authorization controls, stop at that exact step and record it in `state/manual_actions.md`. Do not stop for ordinary UI friction that can be retried or resolved by a non-destructive navigation step.
 
 Never use fake phone numbers, fake addresses, disposable identity documents, synthetic reviews, or fabricated credentials.
+
+## 6.1. Autonomous execution mode
+
+The default operating mode is **autonomous for ordinary, reversible platform work**.
+
+Codex should **not ask for confirmation for routine UI actions** when the intended outcome is already defined by this repository or the current task.
+
+Codex may proceed on its own to:
+
+- click ordinary buttons such as Next, Continue, Save, Done, Edit Profile, Upload, Create, Publish, Post, Skip, Back, Cancel, and equivalent controls;
+- retry a normal UI action up to 3 times when the page appears unresponsive;
+- reload or navigate directly to the relevant official page when an ordinary UI transition fails;
+- fill non-sensitive profile fields from canonical brand data;
+- upload approved assets;
+- adapt bio/About/description/title copy to fit platform limits while preserving meaning;
+- choose reasonable categories, labels, navigation order, visibility settings, and other non-sensitive defaults that fit the documented platform role;
+- publish content that is already approved by the relevant playbook/seed-content file;
+- verify the public result;
+- update state/report files;
+- commit the resulting non-secret repository changes.
+
+Do **not** stop merely because a normal button did not respond on the first attempt. After reasonable retries, ask the owner for a single manual click only if the browser tooling still cannot activate the control; then continue from the resulting page without restarting the workflow.
+
+Codex may edit public-facing non-canonical copy autonomously when needed for fit or clarity, but must preserve canonical facts. It must not invent or alter canonical identity facts such as legal names, phone numbers, emails, addresses, licenses, brokerage relationships, ownership claims, or verified official URLs.
+
+Human intervention is required only for hard blockers such as:
+
+- CAPTCHA or anti-bot challenge requiring a human;
+- OTP, 2FA, email/SMS verification code or security challenge that the browser cannot legitimately complete;
+- identity/business-document verification;
+- payment, subscription purchase, Stripe/card/bank connection, or other financial authorization;
+- ambiguous ownership of an existing account;
+- a Terms/policy conflict that makes the intended automation questionable;
+- a request to publish a material factual claim not supported by canonical data;
+- destructive deletion or irreversible account closure.
+
+These safeguards are not optional, but everything outside them should be handled as autonomously as practical.
 
 ## 7. Credential policy
 
@@ -329,16 +366,18 @@ When changing canonical brand facts or campaign policy:
 
 ## 16. Stop conditions
 
-Stop and require human action when:
+Stop and require human action only when:
 
-- identity verification is required;
-- SMS verification is required and no approved number is available;
-- a CAPTCHA cannot be completed normally;
-- an existing account may already belong to NHÀ MỸ CALI but ownership is uncertain;
+- CAPTCHA/anti-bot verification requires human interaction;
+- OTP, 2FA, email/SMS verification code or security challenge cannot be legitimately completed by the connected browser;
+- identity/business verification or sensitive legal documents are requested;
+- payment, paid subscription, Stripe/card/bank connection, or other financial authorization is required;
+- an existing account may belong to NHÀ MỸ CALI but ownership is uncertain;
 - platform Terms appear to prohibit the intended automation;
-- a payment is required;
-- a platform requests legal/business documents;
-- the platform would require making a claim not supported by canonical data.
+- the platform would require making a material factual claim not supported by canonical data;
+- a destructive/irreversible action such as account deletion is requested.
+
+Ordinary UI controls, profile edits, copy fitting, uploads, saves, posts/publishes already authorized by the playbook, and routine navigation are **not** stop conditions.
 
 ## 17. Completion report
 

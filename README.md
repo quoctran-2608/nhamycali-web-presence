@@ -142,8 +142,9 @@ Continue to next platform
 - [x] Chặng 5B — Cho phép temporary bootstrap password trong local `secrets/.env` cho pilot; password manager/unique passwords là bước hardening trước khi scale.
 - [x] Chặng 6 — Research live Wave 1 platforms trước khi signup.
 - [x] Chặng 7A — Soạn pilot playbook + seed content + Codex entry point.
-- [ ] Chặng 7B — Chạy pilot Bluesky duy nhất, audit xong mới sang Substack/Blogger.
-- [ ] Chặng 8 — Audit pilot rồi mới scale.
+- [x] Chặng 7B — Bluesky pilot completed và public QA đạt.
+- [x] Chặng 8A — Audit/close-out Bluesky completed.
+- [ ] Chặng 8B — Chạy Substack pilot, audit xong mới sang Blogger.
 
 ## Registry hiện tại
 
@@ -152,6 +153,12 @@ Continue to next platform
 - Linktree đã được ghi nhận là account hiện hữu.
 - Pinterest: owner xác nhận đã có account nhưng **đã loại khỏi chiến dịch chủ động**; Codex không tạo, phát triển hay sửa profile này nếu chưa được tái kích hoạt.
 - Những platform chưa xác minh chính xác như Writexo/All4webs/Justpast.it/Postach được khóa ở chế độ **research first**.
+
+### Autonomous browser mode
+
+Browser execution mặc định là **autonomous đối với thao tác bình thường**. Codex không cần hỏi lại trước mỗi nút Next/Continue/Save/Edit/Publish, không cần hỏi lại khi rút gọn bio theo giới hạn ký tự, và có thể retry/reload/navigate lại trang hợp lệ nếu UI không phản hồi.
+
+Canonical facts vẫn là ranh giới cứng: Codex không được tự bịa hoặc thay đổi tên pháp lý, contact, địa chỉ, license, brokerage relationship, ownership claim hay verified URL.
 
 ## Human input tiếp theo
 
@@ -177,9 +184,11 @@ Registration policy hiện đã xác nhận ở mức cần thiết để resear
 - Pinterest đã có nhưng không còn nằm trong active campaign;
 - Bluesky: owner xác nhận ngày 2026-09-30 rằng chưa có account, nên pilot được đi thẳng vào signup và bỏ qua duplicate-discovery.
 
-Live Wave 1 research đã hoàn tất. Kết quả chính:
+Live Wave 1 research + Bluesky pilot hiện có trạng thái:
 
-- **Ready for pilot:** Bluesky, Substack, Blogger.
+- **Completed:** Bluesky — https://bsky.app/profile/nhamycali.bsky.social
+- **Next pilot:** Substack.
+- **Ready after Substack:** Blogger.
 - **Existing — audit only:** Gravatar, Linktree.
 - **Manual-only:** Medium.
 - **Deferred:** Google Sites.
@@ -200,10 +209,10 @@ Pilot package đã sẵn sàng:
 
 Ưu tiên tiếp theo:
 
-- recovery email nếu muốn;
-- chạy **Bluesky duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`; owner attestation cho phép bỏ qua account search và đi thẳng signup;
-- audit kết quả rồi mới cho phép Substack/Blogger;
-- xác nhận thêm các account cũ nếu owner nhớ ra.
+- chạy **Substack duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
+- Codex được phép chủ động với toàn bộ thao tác UI thông thường, chỉnh copy không-canonical, upload asset, save/publish nội dung đã duyệt và cập nhật repo;
+- chỉ dừng ở hard blocker: CAPTCHA/anti-bot, OTP/2FA/security challenge, giấy tờ định danh, payment, ownership conflict, Terms conflict hoặc destructive irreversible action;
+- audit Substack rồi mới chuyển Blogger.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
 
