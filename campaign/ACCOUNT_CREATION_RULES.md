@@ -43,7 +43,24 @@ Allowed autonomous actions include:
 
 If a normal UI button still cannot be activated after reasonable retries, request one manual click and resume from the resulting page. Do not restart the workflow or create a new blocker unless the issue truly prevents progress.
 
-Hard blockers remain CAPTCHA/anti-bot, OTP/2FA/security verification, identity documents, payment authorization, ambiguous ownership, Terms conflicts, or destructive irreversible actions.
+Hard blockers remain CAPTCHA/anti-bot, OTP/2FA/security verification, identity documents, payment authorization, ambiguous ownership, prohibited-workflow Terms conflicts, or destructive irreversible actions.
+
+## 2.2. Standard terms acceptance
+
+Standing owner authorization is recorded in `docs/OWNER_AUTHORIZATIONS.md`.
+
+For approved free-account/profile/publication workflows, Codex may autonomously:
+- tick standard Terms/Privacy/Community/Publisher Agreement checkboxes;
+- click I agree / Accept / Agree and continue / equivalent controls;
+- continue account/publication creation without asking the owner again solely for standard terms acceptance.
+
+Do not stop for standard terms acceptance.
+
+Stop only if the agreement requires:
+- payment or paid-plan commitment;
+- a factual/legal attestation not supported by canonical data or explicit owner instruction;
+- identity/business documents;
+- a workflow the live terms expressly prohibit.
 
 ## 3. Allowed signup data
 
