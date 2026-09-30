@@ -20,20 +20,6 @@ Do **not** put passwords, recovery codes, TOTP secrets, identity-document number
 
 ## Open actions
 
-### Substack — publication subdomain naming follow-up
-
-- Platform ID: substack
-- Date: 2026-09-30
-- Current status: manual_action_required
-- URL: https://helenhanguyen.substack.com/publish/settings#danger-zone
-- Step reached: NHÀ MỸ CALI publication and welcome issue are public at the current Helen-based subdomain. The Change publication subdomain control was confirmed, but the current URL remained unchanged.
-- What the platform requires: An owner review of Substack's publication subdomain setting to apply the preferred brand-consistent name or choose an approved fallback.
-- What has already been completed: Owner created the account and completed email verification; Codex configured and publicly verified the brand publication, About, official website navigation link, and one web-only welcome issue. The Helen author profile remains separate.
-- Exact human action required: Review the publication's Change publication subdomain control and select an available approved brand-consistent handle. Do not add random numbers. Tell Codex the final public URL if repo state should be updated.
-- Does the account currently exist publicly?: Yes; https://helenhanguyen.substack.com/ and https://helenhanguyen.substack.com/p/chao-mung-en-voi-nha-my-cali
-- Safe to resume after action?: yes
-- Notes: User accepted the Publisher Agreement and Privacy Policy. No security challenge was bypassed; no secret was recorded; Stripe, paid subscriptions, and custom domain were not enabled.
-
 ## Entry template
 
 ```markdown
@@ -63,11 +49,18 @@ When resolved:
 
 ## Resolved actions
 
+### Substack — publication subdomain naming follow-up
+
+- Platform ID: substack
+- Date resolved: 2026-09-30
+- Resolution: Owner successfully changed the publication subdomain to https://nhamycali.substack.com/. The canonical repository state was updated and no further Substack subdomain action is required.
+
+
 ### Substack — one-time email verification
 
 - Platform ID: substack
 - Date resolved: 2026-09-30
-- Resolution: Owner completed the one-time email verification and created the account. Codex then completed the publication setup and public QA. A separate subdomain naming follow-up remains open above.
+- Resolution: Owner completed the one-time email verification and created the account. Codex then completed the publication setup and public QA. The later subdomain naming follow-up was also resolved on 2026-09-30.
 
 ### Bluesky — account discovery and signup entry point blocked
 

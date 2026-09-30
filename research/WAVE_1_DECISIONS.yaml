@@ -5,9 +5,9 @@ last_updated: "2026-09-30"
 summary:
   completed_pilots:
     - bluesky
-  next_pilot: "substack"
-  active_pilot_candidates:
     - substack
+  next_pilot: "blogger"
+  active_pilot_candidates:
     - blogger
   existing_account_audits:
     - gravatar
@@ -90,20 +90,19 @@ platforms:
       - "https://help.medium.com/hc/en-us/articles/213477928-Medium-Rules"
 
   substack:
-    decision: "active_pilot_candidate"
-    existing_public_match_found: false
-    existing_search_confidence: "targeted web search only; re-check inside Substack"
-    create_new_account_if_absent: true
-    execution: "human_supervised_browser"
-    custom_domain_required: false
-    canonical_site_should_remain: "https://nhamycali.com/"
-    rationale: "Strong newsletter/publishing fit with profile, website/social links, homepage links and outbound navigation."
-    official_sources:
-      - "https://support.substack.com/hc/en-us/articles/29152946791188-How-can-I-publish-on-Substack"
-      - "https://support.substack.com/hc/en-us/articles/360037825111-How-do-I-create-a-publication-on-Substack"
-      - "https://support.substack.com/hc/en-us/articles/360059181172-How-do-I-add-links-to-my-Substack-homepage"
-      - "https://support.substack.com/hc/en-us/articles/20512194655892-How-do-I-organize-the-navigation-bar-on-my-Substack-publication"
-      - "https://substack.com/tos"
+    decision: "pilot_completed"
+    completed_date: "2026-09-30"
+    publication_url: "https://nhamycali.substack.com/"
+    author_profile_url: "https://substack.com/@helenhanguyen"
+    public_profile_verified: true
+    email_verified: true
+    website_link_verified: true
+    welcome_issue_published: true
+    paid_subscriptions_enabled: false
+    stripe_connected: false
+    custom_domain_configured: false
+    unresolved_manual_actions: false
+    note: "Owner changed the publication subdomain to nhamycali.substack.com after the initial Codex run. Helen remains the separate author identity."
 
   blogger:
     decision: "active_pilot_candidate"

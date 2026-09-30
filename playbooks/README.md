@@ -15,11 +15,11 @@ Read:
 ### Completed
 
 - `BLUESKY.md` — completed and audited 2026-09-30.
+- `SUBSTACK.md` — completed and audited 2026-09-30; publication at https://nhamycali.substack.com/.
 
 ### Browser-assisted, one at a time
 
-1. `SUBSTACK.md` — **current next pilot**
-2. `BLOGGER.md` — only after Substack audit
+1. `BLOGGER.md` — **current next pilot**
 
 Routine reversible UI actions are autonomous. Codex should not ask before ordinary navigation, Save/Edit/Upload/Create/Publish actions, copy fitting, or other playbook-defined non-sensitive work.
 
