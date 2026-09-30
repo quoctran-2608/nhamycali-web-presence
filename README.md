@@ -36,12 +36,13 @@ Codex phải bắt đầu từ:
 6. `assets/ASSET_MANIFEST.yaml`
 7. `assets/PLATFORM_ASSET_POLICY.yaml`
 8. `docs/REGISTRATION_POLICY.md`
-9. `campaign/ACCOUNT_CREATION_RULES.md`
-10. `campaign/SEO_LINK_POLICY.md`
-11. `campaign/PLATFORMS.yaml`
-12. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
-13. `playbooks/PILOT_SEQUENCE.yaml` + exact platform playbook
-14. `state/`
+9. `docs/OWNER_AUTHORIZATIONS.md`
+10. `campaign/ACCOUNT_CREATION_RULES.md`
+11. `campaign/SEO_LINK_POLICY.md`
+12. `campaign/PLATFORMS.yaml`
+13. `research/WAVE_1_DECISIONS.yaml` when working on Wave 1
+14. `playbooks/PILOT_SEQUENCE.yaml` + exact platform playbook
+15. `state/`
 
 ## Cấu trúc hiện tại
 
@@ -75,6 +76,7 @@ Codex phải bắt đầu từ:
 │   ├── CODEX_BROWSER_PILOT.md
 │   ├── EXECUTION_ROADMAP.md
 │   ├── HUMAN_INPUTS_REQUIRED.md
+│   ├── OWNER_AUTHORIZATIONS.md
 │   └── REGISTRATION_POLICY.md
 ├── research/
 │   ├── WAVE_1_DECISIONS.yaml
@@ -161,6 +163,14 @@ Browser execution mặc định là **autonomous đối với thao tác bình th
 
 Canonical facts vẫn là ranh giới cứng: Codex không được tự bịa hoặc thay đổi tên pháp lý, contact, địa chỉ, license, brokerage relationship, ownership claim hay verified URL.
 
+### Standing owner authorization
+
+Owner đã phê duyệt trước việc Codex tự tick/bấm **I agree / Accept / Continue** đối với Terms of Service, Privacy Policy, Community Guidelines và standard Publisher/Creator Agreements trong luồng tạo **free account/profile/publication** đã được repo phê duyệt.
+
+Chi tiết và giới hạn nằm trong `docs/OWNER_AUTHORIZATIONS.md`.
+
+Điều này không cho phép Codex bịa thông tin pháp lý/cá nhân, chấp nhận payment/paid trial/Stripe/card/bank, hoặc bypass CAPTCHA/OTP/security controls.
+
 ## Human input tiếp theo
 
 Xem:
@@ -212,7 +222,8 @@ Pilot package đã sẵn sàng:
 
 - chạy **Blogger duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
 - Codex được phép chủ động với toàn bộ thao tác UI thông thường, chỉnh copy không-canonical, upload asset, save/publish nội dung đã duyệt và cập nhật repo;
-- chỉ dừng ở hard blocker: CAPTCHA/anti-bot, OTP/2FA/security challenge, giấy tờ định danh, payment, ownership conflict, Terms conflict hoặc destructive irreversible action;
+- standard free signup Terms/Privacy/Community/Publisher Agreement đã được owner pre-authorize; không hỏi lại;
+- chỉ dừng ở hard blocker: CAPTCHA/anti-bot, OTP/2FA/security challenge, giấy tờ định danh/thiếu factual attestation, payment, ownership conflict, Terms cấm workflow hoặc yêu cầu commitment ngoài authorization, hoặc destructive irreversible action;
 - audit Blogger trước khi mở rộng Wave 1/2 tiếp theo.
 
 Không gửi password, mã 2FA, recovery code hoặc giấy tờ định danh vào repo.
