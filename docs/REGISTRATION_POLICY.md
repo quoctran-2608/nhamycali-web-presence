@@ -1,6 +1,6 @@
 # Registration & Verification Policy
 
-Version: 1.1  
+Version: 1.2  
 Initial confirmation: 2026-09-28  
 Updated by project owner: 2026-09-30
 
@@ -96,7 +96,9 @@ For the current pilot, the owner has explicitly approved using a temporary defau
 
 `DEFAULT_ACCOUNT_PASSWORD`
 
-Codex may read that secret and enter it directly into an approved signup form.
+Codex may use that secret for an approved signup flow **when the browser/runtime security boundary permits secure transfer into the credential field**.
+
+If the connected browser does not permit Codex to transfer a local secret into the credential field, this is not a platform failure. Ask the owner to enter only the credential field directly in the browser, then continue the remaining workflow autonomously.
 
 Rules:
 - never print, echo, log, screenshot, commit, or copy the literal password into repo content;
@@ -110,13 +112,16 @@ Before broad scaling, return to unique-per-platform credentials/password-manager
 
 Codex may fill approved registration fields in a browser session.
 
-Codex must stop for human action when:
+Codex should continue autonomously through routine browser actions and ordinary profile/publication setup.
 
-- OTP entry is required;
-- CAPTCHA requires human interaction;
+Human action is required only when:
+
+- the browser security boundary requires the owner to enter a credential directly;
+- OTP/2FA/security verification requires human interaction;
+- CAPTCHA/anti-bot requires human interaction;
 - identity/business documents are requested;
-- an account-recovery decision is required;
-- payment authorization is required.
+- an account-recovery/ownership decision is required;
+- payment/subscription/Stripe/card/bank authorization is required.
 
 ## 9. Platform-specific exceptions
 
