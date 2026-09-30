@@ -20,6 +20,20 @@ Do **not** put passwords, recovery codes, TOTP secrets, identity-document number
 
 ## Open actions
 
+### Blogger — Google account re-authentication required
+
+- Platform ID: blogger
+- Date: 2026-09-30
+- Current status: manual_action_required
+- URL: https://accounts.google.com/signin
+- Step reached: Blogger redirected to Google's “Verify it’s you” page and requires the authorized account to sign in again before continuing to Blogger.
+- What the platform requires: Re-authentication of the already-authorized Google Account in the browser.
+- What has already been completed: Opened the official Blogger site and selected the authorized brand Google Account already available in the account chooser. No Blogger dashboard was reached; no blog was inspected, created, or published.
+- Exact human action required: Complete Google sign-in/security verification directly in the browser. Do not send a password or OTP in chat. Tell Codex when the Blogger dashboard opens so the pilot can resume without repeating account selection.
+- Does the account currently exist publicly?: Unknown; Blogger ownership dashboard has not been reached and no blog was created in this attempt.
+- Safe to resume after action?: yes
+- Notes: No security control was bypassed and no private account value was written to repo state.
+
 ## Entry template
 
 ```markdown
