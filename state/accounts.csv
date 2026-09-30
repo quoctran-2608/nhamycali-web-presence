@@ -1,5 +1,5 @@
 platform_id,platform_name,status,username,registration_email,profile_url,website_added,profile_verified,email_verified,credential_managed_externally,manual_action_required,last_checked,notes
-blogger,Blogger,manual_action_required,,,,false,false,false,true,true,2026-09-30,"Blogger pilot attempted; authorized Google Account was selected, but Google requires sign-in again at a Verify it's you checkpoint before Blogger dashboard access; no Blogger blog was inspected or created"
+blogger,Blogger,manual_action_required,nhamycali,,https://nhamycali.blogspot.com/,true,false,false,true,true,2026-09-30,"Blog created under the authorized Google Account after owner completed Google security re-authentication; public root, About page, first post, title/description, and canonical website link verified. Approved full-logo header remains incomplete; Page Header Edit requires one owner click."
 gravatar,Gravatar,existing_account_found,helensoldhouses,,https://gravatar.com/helensoldhouses,true,true,false,true,true,2026-09-28,Existing Helen Ha Nguyen personal professional profile already links to NHÀ MỸ CALI; confirm owner access before any changes; do not create duplicate
 wordpress_com,WordPress.com,not_started,,,,false,false,false,true,false,,
 weebly,Weebly,research_needed,,,,false,false,false,true,false,,Distinct use case required

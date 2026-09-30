@@ -20,19 +20,19 @@ Do **not** put passwords, recovery codes, TOTP secrets, identity-document number
 
 ## Open actions
 
-### Blogger — Google account re-authentication required
+### Blogger — Page Header editor needs one owner click
 
 - Platform ID: blogger
 - Date: 2026-09-30
 - Current status: manual_action_required
-- URL: https://accounts.google.com/signin
-- Step reached: Blogger redirected to Google's “Verify it’s you” page and requires the authorized account to sign in again before continuing to Blogger.
-- What the platform requires: Re-authentication of the already-authorized Google Account in the browser.
-- What has already been completed: Opened the official Blogger site and selected the authorized brand Google Account already available in the account chooser. No Blogger dashboard was reached; no blog was inspected, created, or published.
-- Exact human action required: Complete Google sign-in/security verification directly in the browser. Do not send a password or OTP in chat. Tell Codex when the Blogger dashboard opens so the pilot can resume without repeating account selection.
-- Does the account currently exist publicly?: Unknown; Blogger ownership dashboard has not been reached and no blog was created in this attempt.
+- URL: https://www.blogger.com/blog/layout/5616237818585011709
+- Step reached: Blogger blog is public and the Layout canvas is open. Browser control could not activate the Page Header gadget's Edit control after normal retries.
+- What the platform requires: No platform security action is pending. One ordinary browser click is needed to open the Header gadget editor.
+- What has already been completed: Owner completed Google's security re-authentication. The blog, About page, one approved post, title, description, and canonical website navigation are public and verified. The default Blogger theme image remains in the header; the approved logo has not been uploaded.
+- Exact human action required: In Blogger Layout, click the pencil/Edit icon beside the “NHÀ MỸ CALI — Cẩm Nang Mua …” Page Header gadget, then tell Codex when the editor opens. Codex can then upload the approved logo and finish public QA.
+- Does the account currently exist publicly?: Yes; https://nhamycali.blogspot.com/
 - Safe to resume after action?: yes
-- Notes: No security control was bypassed and no private account value was written to repo state.
+- Notes: The Blogger pilot remains incomplete. Do not mark the account completed or add it to canonical official links until the approved header identity is verified. No private account value was written to repo state.
 
 ## Entry template
 
@@ -62,6 +62,12 @@ When resolved:
 4. never paste secrets used to resolve it.
 
 ## Resolved actions
+
+### Blogger — Google account re-authentication
+
+- Platform ID: blogger
+- Date resolved: 2026-09-30
+- Resolution: Owner completed Google's verification in the browser. Blogger dashboard access resumed; the blog was created and public setup continued. No security control was bypassed.
 
 ### Substack — publication subdomain naming follow-up
 
