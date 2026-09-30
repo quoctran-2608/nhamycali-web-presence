@@ -8,7 +8,7 @@ tumblr,Tumblr,not_started,,,,false,false,false,true,false,,
 pinterest,Pinterest,not_suitable,,,,false,false,false,true,false,2026-09-28,Owner confirmed an existing account but intentionally excluded Pinterest from the active campaign; do not create or develop unless reactivated
 diigo,Diigo,research_needed,,,,false,false,false,true,false,,No mass bookmarking
 diigo_library,Diigo Library,not_suitable,,,,false,false,false,true,false,,Feature of Diigo; not separate account
-bluesky,Bluesky,manual_action_required,nhamycali.bsky.social,,https://bsky.app/profile/nhamycali.bsky.social,true,true,false,true,true,2026-09-30,Account created manually by owner in browser; public profile QA passed for display name, approved avatar, bio, and website; email verification is required before posting the first seed post; 145 following observed and left unchanged; no DNS changes
+bluesky,Bluesky,completed,nhamycali.bsky.social,,https://bsky.app/profile/nhamycali.bsky.social,true,true,true,true,false,2026-09-30,Account created manually by owner in browser; Codex completed profile and publicly verified display name, approved avatar, bio, website link, and seed post 1; owner completed email verification; 145 following observed and left unchanged; no DNS changes
 instapaper,Instapaper,not_suitable,,,,false,false,false,true,false,,Read-later utility
 bitly,Bitly,not_started,,,,false,false,false,true,false,,Tracking utility; manual plan required
 evernote,Evernote,not_suitable,,,,false,false,false,true,false,,Productivity tool
