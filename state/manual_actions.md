@@ -60,7 +60,7 @@ When resolved:
 
 - Platform ID: substack
 - Date resolved: 2026-09-30
-- Resolution: Owner completed the one-time email verification and created the account. Codex then completed the publication setup and public QA. A separate subdomain naming follow-up remains open above.
+- Resolution: Owner completed the one-time email verification and created the account. Codex then completed the publication setup and public QA. The later subdomain naming follow-up was also resolved on 2026-09-30.
 
 ### Bluesky — account discovery and signup entry point blocked
 
