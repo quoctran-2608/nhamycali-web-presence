@@ -3,8 +3,10 @@ research_date: "2026-09-28"
 last_updated: "2026-09-30"
 
 summary:
-  active_pilot_candidates:
+  completed_pilots:
     - bluesky
+  next_pilot: "substack"
+  active_pilot_candidates:
     - substack
     - blogger
   existing_account_audits:
@@ -37,24 +39,25 @@ platforms:
       - "https://support.gravatar.com/managing-account-settings/"
 
   bluesky:
-    decision: "active_pilot_candidate"
-    existing_public_match_found: false
-    owner_attestation:
-      no_existing_official_account: true
+    decision: "pilot_completed"
+    completed_date: "2026-09-30"
+    canonical_url: "https://bsky.app/profile/nhamycali.bsky.social"
+    handle: "@nhamycali.bsky.social"
+    public_profile_verified: true
+    email_verified: true
+    website_link_verified: true
+    first_seed_post_published: true
+    first_seed_post_url: "https://bsky.app/profile/nhamycali.bsky.social/post/3mwppsbyyn726"
+    owner_created_account_manually: true
+    codex_completed_profile_and_qa: true
+    dns_changed: false
+    unresolved_manual_actions: false
+    historical_owner_attestation:
+      no_existing_official_account_before_signup: true
       confirmed_date: "2026-09-30"
-      authority: "NHÀ MỸ CALI project owner"
-      effect: "Skip further duplicate-discovery and proceed directly to signup. Stop only if signup itself reveals an existing-account/ownership conflict."
-    existing_search_confidence: "Owner explicitly confirmed no existing NHÀ MỸ CALI Bluesky account on 2026-09-30; prior public search also found no match."
-    create_new_account_if_absent: true
-    execution: "human_supervised_browser"
     preferred_long_term_handle: "@nhamycali.com"
     requires_dns_for_domain_handle: true
-    brand_avatar: "assets/avatar/nhamycali-avatar-square.png"
-    rationale: "Official organizations are supported; Bluesky encourages owned-domain handles for organizational identity verification."
-    official_sources:
-      - "https://bsky.social/about/support/tos"
-      - "https://bsky.social/about/blog/4-28-2023-domain-handle-tutorial"
-      - "https://bsky.social/about/blog/04-21-2025-verification"
+    note: "Closed pilot. Do not recreate or re-run signup. Future work may separately evaluate migration to the domain handle after explicit DNS approval."
 
   about_me:
     decision: "not_suitable_for_brand_campaign"
@@ -173,5 +176,5 @@ platforms:
 limitations:
   - "No-match web search is not proof that an account does not exist."
   - "When no owner attestation exists, re-check exact account existence inside the target platform immediately before signup."
-  - "For Bluesky, owner attestation dated 2026-09-30 overrides the otherwise-required duplicate-discovery step."
+  - "Bluesky pilot is completed; do not use the old pre-signup owner attestation as a reason to re-run signup."
   - "Policies and interfaces may change after the research date."
