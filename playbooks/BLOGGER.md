@@ -28,7 +28,15 @@ Proceed without asking for permission for ordinary reversible Blogger actions:
 
 If the browser cannot activate a normal button after reasonable retries, ask for one manual click only and continue from the resulting page.
 
-Stop only for hard blockers: Google security challenge/OTP/CAPTCHA, ambiguous ownership, identity/business verification, payment, Terms conflict, unsupported factual claim, or destructive irreversible action.
+### Standard agreement acceptance
+
+The owner has already authorized Codex to accept ordinary free-account Blogger/Google signup or service terms, privacy acknowledgements, community/content-policy acknowledgements, and equivalent standard consent controls when they appear as part of this approved pilot.
+
+Codex should click/tick these ordinary acceptance controls without asking the owner again.
+
+This does not authorize false age/identity/business attestations, payment, purchase, or bypassing security verification.
+
+Stop only for hard blockers: Google security challenge/OTP/CAPTCHA, ambiguous ownership, identity/business verification, payment, a Terms conflict expressly prohibiting the intended workflow, unsupported factual claim, or destructive irreversible action.
 
 ## 2. Preflight
 
