@@ -1,5 +1,5 @@
 schema_version: 1
-last_verified: "2026-09-28"
+last_verified: "2026-09-30"
 
 canonical:
   website:
@@ -27,6 +27,11 @@ canonical:
     handle: "nhamycali"
     status: "verified_public"
 
+  bluesky:
+    url: "https://bsky.app/profile/nhamycali.bsky.social"
+    handle: "nhamycali.bsky.social"
+    status: "verified_public"
+
 related_professional_profiles:
   helen_gravatar:
     url: "https://gravatar.com/helensoldhouses"
@@ -41,7 +46,6 @@ unverified_or_not_yet_recorded:
     url: null
     status: "known_existing_excluded_from_campaign"
     note: "Owner confirmed an existing NHÀ MỸ CALI Pinterest account. Canonical URL is not recorded here, and the platform is intentionally excluded from active development. Do not create or modify unless reactivated."
-  bluesky: null
   medium: null
   substack: null
   blogger: null
