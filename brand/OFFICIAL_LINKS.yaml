@@ -32,6 +32,12 @@ canonical:
     handle: "nhamycali.bsky.social"
     status: "verified_public"
 
+  substack:
+    url: "https://helenhanguyen.substack.com/"
+    handle: "helenhanguyen.substack.com"
+    status: "verified_public"
+    note: "NHÀ MỸ CALI publication publicly verified; author profile is https://substack.com/@helenhanguyen. Preferred brand subdomain was not applied and remains an owner follow-up."
+
 related_professional_profiles:
   helen_gravatar:
     url: "https://gravatar.com/helensoldhouses"
@@ -47,7 +53,6 @@ unverified_or_not_yet_recorded:
     status: "known_existing_excluded_from_campaign"
     note: "Owner confirmed an existing NHÀ MỸ CALI Pinterest account. Canonical URL is not recorded here, and the platform is intentionally excluded from active development. Do not create or modify unless reactivated."
   medium: null
-  substack: null
   blogger: null
   wordpress_com: null
   google_sites: null
