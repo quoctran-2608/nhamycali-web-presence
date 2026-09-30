@@ -51,37 +51,36 @@ completed:
     public_url: "https://bsky.app/profile/nhamycali.bsky.social"
     result: "Public profile verified, email verified, canonical website visible, seed post 1 published, no DNS changes."
 
+  - platform_id: "substack"
+    completed_date: "2026-09-30"
+    public_url: "https://nhamycali.substack.com/"
+    author_url: "https://substack.com/@helenhanguyen"
+    result: "NHÀ MỸ CALI publication completed; one web-only welcome issue published; brand subdomain resolved; no paid/Stripe/custom-domain/DNS changes."
+
 sequence:
 
   - order: 1
-    platform_id: "substack"
-    playbook: "playbooks/SUBSTACK.md"
-    mode: "autonomous_routine_browser"
-    goal: "Create and configure a genuine NHÀ MỸ CALI newsletter/publication if no owned existing property is found."
-    post_step_gate: "Verify public profile/publication and first issue, update state/report, then stop for audit."
-
-  - order: 2
     platform_id: "blogger"
     playbook: "playbooks/BLOGGER.md"
     mode: "autonomous_routine_browser"
     goal: "Create a distinct educational supporting blog if absent."
-    post_step_gate: "Run only after Substack audit."
+    post_step_gate: "Verify public blog/About/canonical link and first article, update state/report, then stop for audit."
 
-  - order: 3
+  - order: 2
     platform_id: "gravatar"
     playbook: "playbooks/GRAVATAR_AUDIT.md"
     mode: "audit_existing"
     goal: "Confirm ownership/access and canonical link on existing Helen profile."
     post_step_gate: "No new Gravatar account."
 
-  - order: 4
+  - order: 3
     platform_id: "linktree"
     playbook: "playbooks/LINKTREE_AUDIT.md"
     mode: "manual_audit"
     goal: "Review existing official Linktree."
     post_step_gate: "No automated account recreation."
 
-  - order: 5
+  - order: 4
     platform_id: "medium"
     playbook: "playbooks/MEDIUM_MANUAL.md"
     mode: "manual_only"
