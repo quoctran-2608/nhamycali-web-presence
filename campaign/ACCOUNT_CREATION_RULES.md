@@ -17,7 +17,7 @@ Before opening a signup form:
 - inspect `campaign/PLATFORMS.yaml`;
 - check `state/accounts.csv`;
 - check `brand/OFFICIAL_LINKS.yaml`;
-- search for an existing NHÀ MỸ CALI account;
+- search for an existing NHÀ MỸ CALI account **unless the authorized owner has explicitly confirmed that no account exists on this exact platform and that confirmation is recorded in repo context**;
 - confirm the exact domain is legitimate;
 - confirm the platform is still active;
 - confirm the platform purpose fits the campaign;
@@ -84,6 +84,19 @@ Fallback:
 If all are unavailable, stop and request a human naming decision. Do not add arbitrary numbers.
 
 ## 7. Existing-account handling
+
+### Owner confirmation
+
+If the authorized owner explicitly confirms that NHÀ MỸ CALI does not have an account on a specific platform:
+
+- record that confirmation with the platform and date;
+- duplicate-discovery may be skipped for that platform;
+- proceed to signup if the platform is otherwise approved;
+- if signup reveals an existing-account or ownership conflict, stop immediately.
+
+Do not require logged-in search, public API search, or additional discovery solely to prove absence after a clear owner confirmation.
+
+### Existing account found
 
 If a likely official account exists:
 
