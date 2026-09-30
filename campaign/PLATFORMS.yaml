@@ -1,5 +1,5 @@
 schema_version: 1
-last_updated: "2026-09-28"
+last_updated: "2026-09-30"
 
 # Role taxonomy:
 # entity_profile       = public brand identity / citation / navigation
@@ -16,6 +16,7 @@ last_updated: "2026-09-28"
 # research_needed      = platform/domain/current suitability must be verified
 
 # Automation modes:
+# completed            = verified canonical platform property; do not recreate
 # candidate            = may proceed after preflight verification
 # audit_existing       = find/verify existing official account; do not create duplicate
 # manual_only          = platform action must be performed manually; Codex may prepare copy/checklists
