@@ -2,7 +2,7 @@
 
 Research snapshot: 2026-09-28  
 Platform: https://www.blogger.com/  
-Mode: **human-supervised browser through an authorized Google Account**
+Mode: **autonomous routine browser through an authorized Google Account, with hard security/authorization checkpoints**
 
 ## 1. Purpose
 
@@ -13,6 +13,23 @@ It must not become:
 - a doorway site;
 - a collection of thin pages built only to point at the main website.
 
+## 1.1. Autonomous execution rule
+
+Proceed without asking for permission for ordinary reversible Blogger actions:
+- opening dashboard/settings/editor;
+- clicking New blog/Next/Save/Publish/Pages/Layout/Theme and equivalent controls;
+- retrying an unresponsive normal control up to 3 times;
+- filling title, description, About, navigation and other public fields from canonical data;
+- choosing reasonable non-sensitive Blogger defaults;
+- uploading approved logo/avatar assets where the UI supports them;
+- formatting and publishing the one approved first post;
+- public QA;
+- state/report updates and commit.
+
+If the browser cannot activate a normal button after reasonable retries, ask for one manual click only and continue from the resulting page.
+
+Stop only for hard blockers: Google security challenge/OTP/CAPTCHA, ambiguous ownership, identity/business verification, payment, Terms conflict, unsupported factual claim, or destructive irreversible action.
+
 ## 2. Preflight
 
 After authorized Google login:
@@ -20,13 +37,13 @@ After authorized Google login:
 1. Open Blogger dashboard.
 2. Inspect the blog selector.
 3. Search for any existing NHÀ MỸ CALI/Nha My Cali blog owned by the account.
-4. Also search publicly for the candidate Blogspot address before creation.
-5. If an existing official blog is found:
+4. Also check the candidate Blogspot address before creation when practical.
+5. If a strong likely existing official blog is found:
    - do not create another;
    - record public URL;
    - audit it first.
 
-Do not infer absence solely from Google web search.
+Do not loop on absence-proof. If the authorized Blogger dashboard shows no NHÀ MỸ CALI blog and creation proceeds without an ownership conflict, continue with the pilot.
 
 ## 3. Blog identity
 
@@ -53,9 +70,11 @@ Availability must be checked live.
 
 If unavailable:
 - do not add random numbers;
-- stop for a naming decision.
+- try clean brand-consistent descriptive alternatives derived from the approved title, such as `nhamycalicam nang` only if the platform syntax permits a clean ASCII slug;
+- prefer the shortest clear alternative;
+- stop only if no clean approved-style alternative is available.
 
-Potential human-approved alternatives can be considered later, such as a descriptive educational slug, but Codex must not invent one during the pilot.
+Do not create confusing or spammy numeric variants.
 
 ## 5. Assets
 
@@ -182,14 +201,17 @@ If this becomes a stable official property, add it to `brand/OFFICIAL_LINKS.yaml
 
 ## 13. Stop conditions
 
-Stop for:
-- an existing official Blogger property;
-- Google account security challenge;
-- identity/profile exposure issue;
-- desired Blogspot address unavailable;
-- request to create a custom domain;
-- unexpected paid requirement;
-- inability to distinguish public vs private account information.
+Stop only for:
+- a strong likely existing official Blogger property with uncertain ownership;
+- Google account security challenge/OTP/CAPTCHA;
+- identity/business verification;
+- accidental public exposure of private account information that cannot be resolved safely;
+- payment or paid custom-domain authorization;
+- Terms/policy conflict;
+- unsupported factual claim;
+- destructive irreversible action.
+
+Ordinary Blogger UI changes, layout differences, clean slug fallback selection, theme choice, profile/page creation, navigation setup and publishing the approved first post are not stop conditions.
 
 ## 14. Success definition
 
