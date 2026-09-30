@@ -61,5 +61,6 @@ unverified_or_not_yet_recorded:
 
 rules:
   - "Never infer a profile URL from the preferred username."
-  - "Search for existing official accounts before creating new accounts."
+  - "Search for existing official accounts before creating new accounts unless a dated owner-attestation exception exists for that exact platform."
   - "Move a URL into canonical only after public verification and known ownership."
+  - "Once a canonical account is verified, do not recreate or re-run signup for that platform."
