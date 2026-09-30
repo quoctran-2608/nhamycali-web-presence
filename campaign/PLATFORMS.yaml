@@ -101,7 +101,7 @@ platforms:
     automation_mode: "candidate"
     website_link_expected: true
     publish_content: true
-    note: "Live research complete 2026-09-28. Uses a Google Account. Inspect the authorized Blogger dashboard for any existing NHÀ MỸ CALI blog before creating one. Use only as a distinct supporting publication; do not mirror the full main site."
+    note: "Current next pilot after Substack close-out. Uses the authorized Google Account. Codex should execute routine UI autonomously, create a distinct educational supporting publication rather than a clone, and stop only for hard security/authorization blockers or ownership conflicts."
 
   - id: gravatar
     name: "Gravatar"
@@ -607,11 +607,13 @@ platforms:
     domain: "substack.com"
     role: "publishing"
     tier: 1
-    initial_status: "ready_for_pilot"
-    automation_mode: "candidate"
+    initial_status: "completed"
+    automation_mode: "completed"
     website_link_expected: true
     publish_content: true
-    note: "Next active pilot after Bluesky close-out. Codex should execute routine UI autonomously, use NHÀ MỸ CALI as the publication brand, use Helen only for a distinct author/person identity, and stop only for hard security/authorization blockers or an existing-account ownership conflict."
+    canonical_url: "https://nhamycali.substack.com/"
+    author_profile: "https://substack.com/@helenhanguyen"
+    note: "Pilot completed 2026-09-30. NHÀ MỸ CALI publication is public at nhamycali.substack.com; Helen Hà Nguyễn remains the separate author profile. One welcome issue published web-only. No Stripe, paid subscription, custom domain, or DNS."
 
   - id: all4webs
     name: "All4webs"
