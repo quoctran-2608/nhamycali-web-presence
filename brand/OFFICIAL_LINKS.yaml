@@ -35,7 +35,7 @@ canonical:
   substack:
     url: "https://nhamycali.substack.com/"
     handle: "nhamycali.substack.com"
-    status: "verified_public_owner_confirmed"
+    status: "verified_public"
     author_profile: "https://substack.com/@helenhanguyen"
     note: "Owner confirmed the NHÀ MỸ CALI publication subdomain was successfully changed from helenhanguyen.substack.com to nhamycali.substack.com on 2026-09-30."
 
