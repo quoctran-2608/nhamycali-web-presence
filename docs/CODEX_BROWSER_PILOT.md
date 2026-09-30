@@ -25,7 +25,7 @@ Required reading:
 
 Use this task wording:
 
-> Execute the NHÀ MỸ CALI Bluesky pilot exactly according to the repository rules and `playbooks/BLUESKY.md`. Before creating anything, search inside Bluesky for an existing official NHÀ MỸ CALI account. Create at most one account, only if no official account exists. Use approved brand assets and runtime secrets; never print or commit secrets. Stop for CAPTCHA, OTP, security challenge, payment, identity verification, ambiguous existing ownership, or any live-policy conflict. Do not change DNS unless I explicitly approve that step during the run. After the public profile is verified, update only the non-secret repository state and produce a platform report. Do not start another platform.
+> Execute the NHÀ MỸ CALI Bluesky pilot exactly according to the repository rules and `playbooks/BLUESKY.md`. The authorized owner has confirmed that NHÀ MỸ CALI does not currently have a Bluesky account, and this is recorded in `research/WAVE_1_DECISIONS.yaml`. **Do not repeat account-discovery/search. Proceed directly to the official Bluesky signup flow and create at most one account.** Use approved brand assets and runtime secrets; never print or commit secrets. Stop for CAPTCHA, OTP, security challenge, payment, identity verification, an unexpected existing-account/ownership conflict revealed during signup, or any live-policy conflict. Do not change DNS unless I explicitly approve that step during the run. After the public profile is verified, update only the non-secret repository state and produce a platform report. Do not start another platform.
 
 ## Human preparation before running
 
@@ -33,7 +33,7 @@ The browser/runtime should have:
 
 - legitimate access to the approved registration mailbox;
 - the approved phone available if an OTP is required;
-- a secure place to save a unique password outside Git;
+- the approved local runtime password secret configured outside Git for this pilot;
 - access to this repository;
 - browser access to Bluesky.
 
