@@ -25,6 +25,26 @@ Before opening a signup form:
 
 Do not proceed from a stale saved URL without confirming the domain.
 
+## 2.1. Routine UI autonomy
+
+For an approved platform/workflow, Codex should continue without asking for permission for routine, reversible actions.
+
+Allowed autonomous actions include:
+- clicking normal navigation and submit controls;
+- retrying an unresponsive normal button up to 3 times;
+- reloading or reopening the official page when needed;
+- filling public profile fields from canonical data;
+- adapting non-canonical copy to character limits;
+- selecting reasonable non-sensitive categories/defaults;
+- uploading approved assets;
+- saving profile changes;
+- publishing only the content explicitly authorized by the playbook/seed file;
+- updating and committing non-secret state/report files.
+
+If a normal UI button still cannot be activated after reasonable retries, request one manual click and resume from the resulting page. Do not restart the workflow or create a new blocker unless the issue truly prevents progress.
+
+Hard blockers remain CAPTCHA/anti-bot, OTP/2FA/security verification, identity documents, payment authorization, ambiguous ownership, Terms conflicts, or destructive irreversible actions.
+
 ## 3. Allowed signup data
 
 Use only approved fields from `brand/BRAND_ENTITY.yaml` and approved runtime secrets.
@@ -198,6 +218,8 @@ Where supported, populate appropriate fields:
 - relevant official social links.
 
 Do not fill irrelevant fields simply to reach 100% profile completion.
+
+Codex may rewrite or shorten non-canonical profile copy to fit a live platform's field limits without asking again, provided the meaning and canonical facts remain intact.
 
 ## 14. First content
 
