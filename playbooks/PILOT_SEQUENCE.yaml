@@ -1,5 +1,5 @@
 schema_version: 1
-last_updated: "2026-09-28"
+last_updated: "2026-09-30"
 
 purpose: >-
   Execution order and gates for the first live browser-assisted NHÀ MỸ CALI
@@ -17,13 +17,15 @@ global_gates:
     - "research/WAVE_1_DECISIONS.yaml"
   runtime_secrets_required:
     - "REGISTRATION_EMAIL"
+    - "DEFAULT_ACCOUNT_PASSWORD"
   optional_runtime_secrets:
     - "SMS_PHONE_PRIMARY"
     - "SMS_PHONE_FALLBACK"
   password_storage_requirement: >-
-    Before creating more than one new account, confirm that unique credentials
-    can be stored securely outside Git. Browser/password-manager storage is acceptable
-    if configured by the authorized owner.
+    For the current pilot, the owner has approved a temporary bootstrap password
+    supplied only through DEFAULT_ACCOUNT_PASSWORD in local secrets/.env. Never expose
+    or commit the literal value. Before broad scaling, rotate to unique per-platform
+    credentials/password-manager storage.
   stop_on:
     - "CAPTCHA requiring human interaction"
     - "OTP/SMS code"

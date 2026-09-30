@@ -57,10 +57,14 @@ Do not guess these from screenshots if official files exist.
 - SMS fallback: **existing U.S. business phone**, used only when a platform does not accept the Vietnam number.
 - Exact runtime values belong in local `secrets/.env`; see `docs/REGISTRATION_POLICY.md`.
 
+### Pilot-ready decisions
+
+- temporary bootstrap password workflow approved by owner; literal value stays only in local `secrets/.env`;
+- password-manager / unique-per-platform rotation is deferred to post-pilot hardening.
+
 ### Still optional/pending
 
-- recovery email;
-- password-manager workflow.
+- recovery email.
 
 **Do not put actual passwords, OTPs, recovery codes, the private registration mailbox, or the private Vietnam verification number in GitHub.**
 
@@ -68,9 +72,10 @@ Do not guess these from screenshots if official files exist.
 
 For each platform, tell the agent if you already know an account exists.
 
-Known decision:
+Known decisions:
 
 - Pinterest — owner confirms NHÀ MỸ CALI already has an account but does not want Pinterest developed in this campaign. Leave it untouched unless reactivated.
+- Bluesky — owner confirmed on 2026-09-30 that NHÀ MỸ CALI does **not** have a Bluesky account. The Bluesky pilot may skip duplicate-discovery and proceed directly to signup.
 
 Still useful to identify:
 

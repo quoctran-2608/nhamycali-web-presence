@@ -1,5 +1,6 @@
 schema_version: 1
 research_date: "2026-09-28"
+last_updated: "2026-09-30"
 
 summary:
   active_pilot_candidates:
@@ -38,7 +39,12 @@ platforms:
   bluesky:
     decision: "active_pilot_candidate"
     existing_public_match_found: false
-    existing_search_confidence: "targeted web search only; re-check inside platform"
+    owner_attestation:
+      no_existing_official_account: true
+      confirmed_date: "2026-09-30"
+      authority: "NHÀ MỸ CALI project owner"
+      effect: "Skip further duplicate-discovery and proceed directly to signup. Stop only if signup itself reveals an existing-account/ownership conflict."
+    existing_search_confidence: "Owner explicitly confirmed no existing NHÀ MỸ CALI Bluesky account on 2026-09-30; prior public search also found no match."
     create_new_account_if_absent: true
     execution: "human_supervised_browser"
     preferred_long_term_handle: "@nhamycali.com"
@@ -166,5 +172,6 @@ platforms:
 
 limitations:
   - "No-match web search is not proof that an account does not exist."
-  - "Re-check exact account existence inside the target platform immediately before signup."
+  - "When no owner attestation exists, re-check exact account existence inside the target platform immediately before signup."
+  - "For Bluesky, owner attestation dated 2026-09-30 overrides the otherwise-required duplicate-discovery step."
   - "Policies and interfaces may change after the research date."

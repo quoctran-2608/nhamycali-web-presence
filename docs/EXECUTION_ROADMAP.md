@@ -34,10 +34,11 @@ Confirmed:
 - preferred SMS verification order selected: Vietnam mobile first, U.S. business phone only as fallback when Vietnam numbers are unsupported;
 - Pinterest is known to exist and is intentionally excluded from the active campaign.
 
-Still required before pilot signup:
-- choose/confirm password-management workflow outside Git;
-- optionally choose a recovery email;
-- confirm any additional pre-existing accounts already known by the owner.
+Pilot access decisions:
+- owner-approved temporary bootstrap password may be used from local `secrets/.env`;
+- unique-per-platform/password-manager hardening is required before broad scale, not as a blocker for the first pilot;
+- recovery email remains optional;
+- additional pre-existing account knowledge can be added when known.
 
 Current public contact facts remain in `brand/BRAND_ENTITY.yaml` and should be re-confirmed if the owner reports a change.
 
@@ -53,7 +54,7 @@ Authoritative snapshot:
 
 Key outcomes:
 - Gravatar: existing Helen profile found; audit only.
-- Bluesky: active pilot candidate; domain handle `@nhamycali.com` is the preferred long-term identity after separate DNS approval.
+- Bluesky: active pilot candidate; owner confirmed on 2026-09-30 that no NHÀ MỸ CALI Bluesky account exists, so duplicate-discovery is skipped and signup may proceed directly. Domain handle `@nhamycali.com` remains the preferred long-term identity after separate DNS approval.
 - About.me: removed from brand signup under current Terms interpretation.
 - Medium: manual-only because Medium Rules prohibit automated account registration/posting.
 - Substack: active human-supervised pilot candidate.
@@ -64,7 +65,7 @@ Key outcomes:
 - Linktree: existing official account audited; manual changes only.
 - Pinterest: already excluded by owner decision.
 
-Before any actual signup, re-check the exact target in-platform because a public-search no-match is not proof of absence.
+Before actual signup, re-check the exact target in-platform **unless a dated owner-attestation exception is recorded for that platform**. Bluesky currently has such an exception dated 2026-09-30.
 
 ## Phase 3 — Pilot batch
 
@@ -107,8 +108,8 @@ Do not start with all platforms.
 - Pinterest
 
 For each active candidate:
-- verify existing account inside the platform immediately before signup;
-- create only if absent;
+- verify existing account inside the platform immediately before signup unless a dated owner-attestation exception exists;
+- create only if absent or owner-attested as absent;
 - complete profile;
 - add canonical website where appropriate;
 - verify public view;

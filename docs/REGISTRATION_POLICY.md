@@ -1,7 +1,8 @@
 # Registration & Verification Policy
 
-Version: 1.0  
-Confirmed by project owner: 2026-09-28
+Version: 1.1  
+Initial confirmation: 2026-09-28  
+Updated by project owner: 2026-09-30
 
 ## 1. Security model
 
@@ -31,9 +32,12 @@ Populate locally:
 
 ```bash
 REGISTRATION_EMAIL=<approved registration Gmail>
+DEFAULT_ACCOUNT_PASSWORD=<owner-approved temporary bootstrap password>
 SMS_PHONE_PRIMARY=<approved Vietnam mobile in international format>
 SMS_PHONE_FALLBACK=<approved U.S. business phone in international format>
 ```
+
+`DEFAULT_ACCOUNT_PASSWORD` is an optional **temporary bootstrap secret** explicitly approved by the owner for the current pilot. The literal value must remain local and ignored by Git.
 
 Recommended international formatting:
 
@@ -84,14 +88,23 @@ Do not infer a recovery email from public brand contact data.
 
 ## 7. Password policy
 
-Passwords must be unique per platform and kept outside Git.
+Preferred long-term policy: use a unique password per platform and keep credentials outside Git.
 
-Until a password-manager workflow is confirmed:
+### Owner-approved temporary bootstrap exception
 
-- do not write passwords to repository files;
-- do not put passwords into `state/accounts.csv`;
-- allow the authorized browser/password manager to save credentials locally if the human has configured it;
-- if secure credential storage is unavailable, stop before scaling account creation.
+For the current pilot, the owner has explicitly approved using a temporary default password provided only through local runtime secret:
+
+`DEFAULT_ACCOUNT_PASSWORD`
+
+Codex may read that secret and enter it directly into an approved signup form.
+
+Rules:
+- never print, echo, log, screenshot, commit, or copy the literal password into repo content;
+- never put it into `state/accounts.csv`, reports, issues, PRs, or commit messages;
+- the owner intends to rotate pilot accounts to unique passwords later;
+- if a platform rejects the password or requires a different password policy, stop for a human decision rather than inventing another shared password.
+
+Before broad scaling, return to unique-per-platform credentials/password-manager storage.
 
 ## 8. Browser-session rule
 

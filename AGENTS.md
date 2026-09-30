@@ -71,16 +71,28 @@ If a field is unknown, keep it unknown. Do not infer it.
 
 ## 4. Account-discovery-first rule
 
-Before creating an account on any platform:
+Default rule before creating an account on any platform:
 
 1. Check `brand/OFFICIAL_LINKS.yaml`.
 2. Check `state/accounts.csv`.
-3. Search the platform and public web for an existing official NHÀ MỸ CALI profile.
+3. Search the platform/public web for an existing official NHÀ MỸ CALI profile when existence is uncertain.
 4. Compare branding, website, contact details, and ownership clues.
 5. If an official account appears to exist, **do not create a duplicate**.
 6. Record the finding and flag ownership/login recovery if needed.
 
-The default action is **verify first, create second**.
+### Owner-attestation exception
+
+A direct, explicit statement from the authorized project owner that **NHÀ MỸ CALI does not currently have an account on a specific platform** is sufficient to skip duplicate-discovery for that platform and proceed to signup.
+
+Requirements:
+- the confirmation must name or clearly refer to the exact platform;
+- record the confirmation in the relevant research/playbook/state context with a date;
+- the exception applies only to that platform, not globally;
+- if signup itself surfaces an existing account/ownership conflict, stop and resolve it rather than creating a duplicate.
+
+Do not block account creation merely because logged-out search is unavailable after an owner confirmation has been recorded.
+
+Default remains **verify first, create second** when account existence is uncertain. Owner attestation is an allowed verification path.
 
 ## 5. Username policy
 
@@ -202,9 +214,9 @@ For each platform:
 
 1. Research current platform purpose and signup requirements.
 2. Classify its campaign role.
-3. Check for an existing official account.
+3. Check for an existing official account, **unless an explicit owner-attestation exception is recorded for that platform**.
 4. Confirm that account creation is appropriate.
-5. Create account only if absent.
+5. Create account only if absent, or when the owner has explicitly confirmed that no account exists.
 6. Complete email verification if accessible through an approved mechanism.
 7. Configure display name and username.
 8. Upload approved avatar/logo.

@@ -16,7 +16,7 @@ Repo phục vụ 4 mục tiêu chính:
 ## Nguyên tắc
 
 - **Brand consistency trước số lượng account.**
-- **Verify first, create second.**
+- **Verify first, create second — trừ khi owner đã xác nhận rõ account chưa tồn tại trên đúng platform đó.**
 - **Không tạo account trùng nếu profile chính thức đã tồn tại.**
 - **Không dùng automation để bypass CAPTCHA, anti-bot, phone verification, identity verification hoặc security controls.**
 - **Không tạo nội dung/link chỉ để thao túng ranking.**
@@ -139,7 +139,7 @@ Continue to next platform
 - [x] Chặng 3 — Account state + execution templates.
 - [x] Chặng 4 — Nạp và duyệt brand assets thật.
 - [x] Chặng 5A — Xác nhận registration mailbox + SMS verification policy ngoài Git.
-- [ ] Chặng 5B — Chọn password-management workflow; recovery email là tùy chọn.
+- [x] Chặng 5B — Cho phép temporary bootstrap password trong local `secrets/.env` cho pilot; password manager/unique passwords là bước hardening trước khi scale.
 - [x] Chặng 6 — Research live Wave 1 platforms trước khi signup.
 - [x] Chặng 7A — Soạn pilot playbook + seed content + Codex entry point.
 - [ ] Chặng 7B — Chạy pilot Bluesky duy nhất, audit xong mới sang Substack/Blogger.
@@ -171,9 +171,11 @@ Banner hiện tại là asset chính thức 851×315, đủ làm reference/cover
 Registration policy hiện đã xác nhận ở mức cần thiết để research/pilot:
 
 - primary registration mailbox: đã chọn, giữ ngoài Git;
+- temporary bootstrap password: owner đã phê duyệt, chỉ đọc từ local `secrets/.env`, không ghi literal vào repo;
 - SMS verification: ưu tiên số Việt Nam do owner kiểm soát; dùng số business Mỹ làm fallback khi nền tảng không nhận số Việt Nam;
 - exact values chỉ được nạp qua local `secrets/.env`;
-- Pinterest đã có nhưng không còn nằm trong active campaign.
+- Pinterest đã có nhưng không còn nằm trong active campaign;
+- Bluesky: owner xác nhận ngày 2026-09-30 rằng chưa có account, nên pilot được đi thẳng vào signup và bỏ qua duplicate-discovery.
 
 Live Wave 1 research đã hoàn tất. Kết quả chính:
 
@@ -198,9 +200,8 @@ Pilot package đã sẵn sàng:
 
 Ưu tiên tiếp theo:
 
-- bảo đảm có nơi lưu password unique ngoài Git;
 - recovery email nếu muốn;
-- chạy **Bluesky duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`;
+- chạy **Bluesky duy nhất** theo `docs/CODEX_BROWSER_PILOT.md`; owner attestation cho phép bỏ qua account search và đi thẳng signup;
 - audit kết quả rồi mới cho phép Substack/Blogger;
 - xác nhận thêm các account cũ nếu owner nhớ ra.
 
